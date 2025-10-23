@@ -1,0 +1,144 @@
+---
+title: "Preparación del entorno de trabajo"
+subtitle: "Instalación del VSCode, Extensión LiveServer, NodeJS, Git y GitHub"
+subject: "JavaScript"
+author: "Javier Ribal del Río"
+date: "2025-10-11"
+date-modified: today
+
+format:
+  html: default
+  revealjs: 
+    history: false
+    output-file: entorno-reveal.html
+  pdf: default
+---
+
+**Contenido**
+
+- Concepto de IDE
+- Instalación del **Visual Studio Code** (VSCode)
+- Configuración del VSCode, extensión LiveServer
+- Instalación de NodeJS y `npm`
+- Introducción a Git y GitHub
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## IDE
+
+### ¿Qué es una IDE?
+
+Las Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.
+
+Aunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:
+
+- *Debugger* integrado en la interfaz
+- Gestor de archivos
+- *Editor de código inteligente*: autocompletados
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### ¿Cuántas IDE existen?
+
+- Android Studio
+- RStudio 
+- Eclipse
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### ¿Qué IDE utilizaremos nosotros?
+
+Principalmente trabajaremos con VSCode una IDE de proposito general que configuraremos para el desarrollo frontend
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### Instalación de VScode
+
+![](../../img/S0-01.png)
+
+[Enlace](https://code.visualstudio.com/download)
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### Familiarizarse con VSCode
+
+![](../../img/S0-02.png)
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+**Barra lateral:**
+
+- Explorador de archivos
+- Menú de Git
+- Menú de extensiones
+- Buscar
+- *Debugger*
+
+**Editor o área de edición:** componente más importante de la IDE, lugar donde se escribe el código.
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### Extensiones
+
+Las extensiones son aplicaciones software desarolladas por empresas o por particulares para modificar o agregar una nueva funcionalidad a las IDE. Pueden ir desde pequeñas modificaciones del tema o de la UI, o incorporar nuevas funcionalidades como la interacción con bases de datos.
+
+Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### Instalación de LiveServer
+
+
+
+![](../../img/S0-03.png)
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::

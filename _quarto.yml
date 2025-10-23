@@ -1,0 +1,58 @@
+
+project:
+  type: website 
+
+
+  preview: 
+    browser: false
+    port: 3000
+
+website:
+  title: "Training Center SW"
+
+  page-navigation: true
+  bread-crumbs: true
+  
+  sidebar:
+    title: "Training Center SW"
+    style: "docked"
+    search: false
+    tools: 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/javier-ribal-del-rio/
+        aria-label: LinkedIn
+  
+    logo: public/logo-text.png
+    contents:
+      - index.qmd
+      - section: "Bloque I Introducción"
+        contents:
+          - section: "Semana 0"
+            contents: 
+              - pages/Bloque1/entorno.qmd
+      - section: "Bloque I Javascript"
+        contents:
+          - section: "Semana 3"
+            contents: 
+              - pages/jsI.qmd
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [source, issue]
+  page-footer: "© Copyright 2025, Javier Ribal del Río - Hyperloop-UPV" 
+
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    lang: es
+    code-copy: true
+    code-overflow: wrap
+    anchor-sections: true
+  pdf:
+    documentclass: article
+    toc: true
+    number-sections: true
+    geometry:
+      - margin=2.5cm
