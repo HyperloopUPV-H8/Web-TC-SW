@@ -50,6 +50,7 @@ format:
     code-copy: true
     code-overflow: wrap
     anchor-sections: true
+    css: style/main.css
   pdf:
     documentclass: article
     toc: true

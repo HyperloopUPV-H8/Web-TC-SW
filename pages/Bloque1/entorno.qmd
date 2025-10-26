@@ -12,6 +12,11 @@ format:
     history: false
     output-file: entorno-reveal.html
   pdf: default
+format-links: 
+  - pdf
+  - format: revealjs
+    text: Presentación
+    icon: file-slides
 ---
 
 **Contenido**
@@ -121,6 +126,13 @@ Principalmente trabajaremos con VSCode una IDE de proposito general que configur
 
 Las extensiones son aplicaciones software desarolladas por empresas o por particulares para modificar o agregar una nueva funcionalidad a las IDE. Pueden ir desde pequeñas modificaciones del tema o de la UI, o incorporar nuevas funcionalidades como la interacción con bases de datos.
 
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
 Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)
 
 
@@ -140,5 +152,16 @@ Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que 
 ::: {.content-visible when-format="revealjs"}
 
 ---
+
+:::
+
+::: {.content-visible unless-format="revealjs"}
+
+1. Entrar en el menú de extensiones
+2. Buscar por *liveserver*
+3. Seleccionar extensión
+4. Instalar 
+
+- Al concluir la instalación debería de aparecer en la parte derecha de la barra de estado (barra interior)
 
 :::
