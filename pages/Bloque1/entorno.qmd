@@ -134,6 +134,8 @@ Las extensiones son aplicaciones software desarolladas por empresas o por partic
 
 :::
 
+#### LiveServer
+
 Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)
 
 
@@ -143,7 +145,7 @@ Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que 
 
 :::
 
-#### Instalación de LiveServer
+##### Instalación de LiveServer
 
 
 
@@ -190,3 +192,35 @@ De este modo, el mismo lenguaje puede usarse tanto en el frontend como en el bac
 Facilita la instalación, actualización y gestión de librerías que amplían las funcionalidades de los proyectos.
 
 Descarga node y npm  [nodejs.org](https://nodejs.org)
+
+
+# Git y GitHub
+## ¿Qué es Git?
+
+Git es un sistema de control de versiones distribuido.
+Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros.
+Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+##  ¿Qué es GitHub?
+
+GitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos.
+Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Git frente GitHub
+
+- Git es la herramienta de control de versiones.(Software Libre, Linux Fundation)
+
+- GitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)
