@@ -5,6 +5,7 @@ subject: "JavaScript"
 author: "Javier Ribal del Río"
 date: "2025-10-11"
 date-modified: today
+affiliation: "Hyperloop UPV"
 
 format:
   html: default
@@ -12,6 +13,11 @@ format:
     history: false
     output-file: entorno-reveal.html
   pdf: default
+format-links: 
+  - pdf
+  - format: revealjs
+    text: Presentación
+    icon: file-slides
 ---
 
 **Contenido**
@@ -121,6 +127,15 @@ Principalmente trabajaremos con VSCode una IDE de proposito general que configur
 
 Las extensiones son aplicaciones software desarolladas por empresas o por particulares para modificar o agregar una nueva funcionalidad a las IDE. Pueden ir desde pequeñas modificaciones del tema o de la UI, o incorporar nuevas funcionalidades como la interacción con bases de datos.
 
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### LiveServer
+
 Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)
 
 
@@ -130,7 +145,7 @@ Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que 
 
 :::
 
-#### Instalación de LiveServer
+##### Instalación de LiveServer
 
 
 
@@ -142,3 +157,70 @@ Nosotros para el transcurso del curso utilizaremos la extensión Liveserver que 
 ---
 
 :::
+
+::: {.content-visible unless-format="revealjs"}
+
+1. Entrar en el menú de extensiones
+2. Buscar por *liveserver*
+3. Seleccionar extensión
+4. Instalar 
+
+- Al concluir la instalación debería de aparecer en la parte derecha de la barra de estado (barra interior)
+
+:::
+
+
+## Node.JS y NPM
+
+### ¿Qué es node JS?
+
+
+**Node.js** es un **entorno de ejecución de JavaScript** basado en el motor V8 de Google Chrome.  
+Permite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.  
+De este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend.
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+### ¿Qué es NPM?
+
+**NPM (Node Package Manager)** es el gestor de paquetes de Node.js.  
+Facilita la instalación, actualización y gestión de librerías que amplían las funcionalidades de los proyectos.
+
+Descarga node y npm  [nodejs.org](https://nodejs.org)
+
+
+# Git y GitHub
+## ¿Qué es Git?
+
+Git es un sistema de control de versiones distribuido.
+Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros.
+Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+##  ¿Qué es GitHub?
+
+GitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos.
+Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Git frente GitHub
+
+- Git es la herramienta de control de versiones.(Software Libre, Linux Fundation)
+
+- GitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)
