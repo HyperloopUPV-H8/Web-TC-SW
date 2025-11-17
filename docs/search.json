@@ -7,56 +7,14 @@
     "text": "About this site"
   },
   {
-    "objectID": "pages/jsI.html",
-    "href": "pages/jsI.html",
-    "title": "Introducción a JS",
+    "objectID": "pages/rubric.html",
+    "href": "pages/rubric.html",
+    "title": "Rúbrica de evaluación",
     "section": "",
-    "text": "Contenido",
+    "text": "Durante el curso seguiremos la siguiente rúbrica para la calificación de las tareas. A pesar de que las calificaciones no son importantes, la rúbrica es un buen recordatorio de que aspectos hay que tener en cuenta en la programación web.\n\n\n\nPuntuación\n\n\nNo aplica\n\n\nDeficiente(0–4)\n\n\nInsuficiente(4–5)\n\n\nAceptable(5–7)\n\n\nBueno(7–9)\n\n\nExcelente(9–10)\n\n\n\n\nDiseño\n\n\nNo aplica.\n\n\nDiseño desordenado y/o con problemas de visualización funcional.\n\n\nDiseño básico pero con problemas de visualización o estructura.\n\n\nDiseño claro y ordenado, cumple los requisitos básicos.\n\n\nDiseño cuidado, buena estética y estructura clara.\n\n\nDiseño profesional, limpio, pulido y sobresaliente.\n\n\n\n\nProgramación\n\n\nNo aplica.\n\n\nCódigo incompleto o con errores graves.\n\n\nCódigo funcional parcialmente y/o con errores importantes.\n\n\nCódigo funcional y adecuado a la tarea.\n\n\nCódigo bien estructurado con mejoras respecto a lo exigido.\n\n\nCódigo impecable, eficiente y muy bien organizado.\n\n\n\n\nEsfuerzo e implicación\n\n\nNo aplica.\n\n\nBajo esfuerzo o dedicación mínima.\n\n\nEsfuerzo adecuado pero limitado.\n\n\nEsfuerzo notable, cumple con lo requerido.\n\n\nEsfuerzo claro, trabajo más allá de lo solicitado.\n\n\nDedicación sobresaliente y trabajo excepcional.\n\n\n\n\nDocumentación / Claridad\n\n\nNo aplica.\n\n\nDocumentación mínima o inexistente.\n\n\nDocumentación incompleta o confusa.\n\n\nDocumentación clara y suficiente.\n\n\nDocumentación bien presentada y detallada.\n\n\nDocumentación excelente y altamente profesional.\n\n\n\n\nFuncionalidad\n\n\nNo aplica.\n\n\nNo funciona o no cumple objetivos.\n\n\nFunciona de forma parcial.\n\n\nFunciona correctamente.\n\n\nFunciona con mejoras o funcionalidades extra.\n\n\nFunciona perfectamente y supera expectativas.\n\n\n\n\nInnovación\n\n\n(Nota extra)\n\n\n\n\nTOTAL:\n\n\n\n\n/60\n\n\n\n\nObservaciones:\n\n\n\n\n\nLa nota total será sobre 60 si hay algun criterio que no se aplique, se modificará la nota para que esté sobre base 60.",
     "crumbs": [
-      "Bloque II Javascript",
-      "Semana 3",
-      "Introducción a JS"
+      "Rúbrica de evaluación"
     ]
-  },
-  {
-    "objectID": "pages/jsI.html#introducción-a-js",
-    "href": "pages/jsI.html#introducción-a-js",
-    "title": "Introducción a JS",
-    "section": "Introducción a JS",
-    "text": "Introducción a JS\n\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:\nsadf\n\n\n\nCapa\nLenguaje\nFunción principal\n\n\n\n\nContenido\nHTML\nEstructura del documento\n\n\nPresentación\nCSS\nApariencia y diseño\n\n\nComportamiento\nJavaScript\nInteractividad y lógica",
-    "crumbs": [
-      "Bloque II Javascript",
-      "Semana 3",
-      "Introducción a JS"
-    ]
-  },
-  {
-    "objectID": "pages/jsI-reveal.html#introducción-a-js",
-    "href": "pages/jsI-reveal.html#introducción-a-js",
-    "title": "Introducción a JS",
-    "section": "Introducción a JS",
-    "text": "Introducción a JS\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:"
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#ide",
-    "href": "pages/Bloque1/entorno-reveal.html#ide",
-    "title": "Preparación del entorno de trabajo",
-    "section": "IDE",
-    "text": "IDE\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados"
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
-    "href": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Node.JS y NPM",
-    "text": "Node.JS y NPM\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend."
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#git-y-github",
-    "href": "pages/Bloque1/entorno-reveal.html#git-y-github",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Git y GitHub",
-    "text": "Git y GitHub\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión."
   },
   {
     "objectID": "pages/Bloque1/entorno.html",
@@ -99,12 +57,84 @@
     "href": "pages/Bloque1/entorno.html#git-y-github",
     "title": "Preparación del entorno de trabajo",
     "section": "Git y GitHub",
-    "text": "Git y GitHub\n\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.\n\n\n¿Qué es GitHub?\nGitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos. Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.\n\n\nGit frente GitHub\n\nGit es la herramienta de control de versiones.(Software Libre, Linux Fundation)\nGitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)\n\n\n\nUso de Git y GitHub\nEn Hyperloop UPV, tanto en los subsistemas de Software y Firmware utilizamos GitHub como herramienta de gestión de código.\nNosotros en el TC, también trataremos de facilitarnos con esta herramienta\n\n\nInstalación de Git y Cuenta de GitHub\n\nInstalación de Git\nCuenta de GitHub\n\n\n\nDigrama de trabajo de Git\n\n\nGit en VScode",
+    "text": "Git y GitHub\n\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.\n\n\n¿Qué es GitHub?\nGitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos. Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.\n\n\nGit frente GitHub\n\nGit es la herramienta de control de versiones.(Software Libre, Linux Fundation)\nGitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)\n\n\n\nUso de Git y GitHub\nEn Hyperloop UPV, tanto en los subsistemas de Software y Firmware utilizamos GitHub como herramienta de gestión de código.\nNosotros en el TC, también trataremos de facilitarnos con esta herramienta\n\n\nInstalación de Git y Cuenta de GitHub\n\nInstalación de Git\nCuenta de GitHub\n\n\n\nDiagrama de trabajo de Git\n\n\nGit en VScode",
     "crumbs": [
       "Bloque I Introducción",
       "Semana 0",
       "Preparación del entorno de trabajo"
     ]
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#ide",
+    "href": "pages/Bloque1/entorno-reveal.html#ide",
+    "title": "Preparación del entorno de trabajo",
+    "section": "IDE",
+    "text": "IDE\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados"
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
+    "href": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Node.JS y NPM",
+    "text": "Node.JS y NPM\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend."
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#git-y-github",
+    "href": "pages/Bloque1/entorno-reveal.html#git-y-github",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Git y GitHub",
+    "text": "Git y GitHub\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión."
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html",
+    "href": "pages/Bloque1/bloque1.html",
+    "title": "Bloque I Introducción",
+    "section": "",
+    "text": "El objetivo del bloque 1 es sentar la base para la realización del curso, aprendiendo las competencias mínimas para realizar el curso.\nEn este bloque se hará una introducción: las herramientas de trabajo, el lenguaje de marcado HTML que permite crear páginas web estáticas y el lenguaje de programación de CSS que nos permite formatear webs previamente construidas.\nEste bloque se compone de 3 semanas, 2 tareas de clase y dos tareas voluntarias.",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html#contenido",
+    "href": "pages/Bloque1/bloque1.html#contenido",
+    "title": "Bloque I Introducción",
+    "section": "Contenido",
+    "text": "Contenido\n\n\n\n\n\n\n\n\n\n\n\n\nSemana\nFecha\nContenido\nContenido de la clase\nTarea Clase\nMaterial Extra\nTarea Extra\n\n\n\n\n0\n21/11/2025\nIntroducción\nPresentación TC, VSCode, Git, LiveShare y GitHub\n-\n-\n-\n\n\n1\n28/11/2025\nHTML\nEstructura básica, links, listas, tablas, form, img, div, span\nWeb HL I\nEtiquetas: HTML5, video, iframe\nMi porfolio I\n\n\n2\n05/12/2025\nCSS\nEstilos básicos, clases, id, archivos externos\nWeb HL II\nSelectores y Pseudoclases\nMi porfolio II",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html#material",
+    "href": "pages/Bloque1/bloque1.html#material",
+    "title": "Bloque I Introducción",
+    "section": "Material",
+    "text": "Material\n\nMDN (Mozilla Developer Network), HTML y CSS\nW3Schools HTML y CSS\nVisual Studio Code Manual VSCode\nCSS tricks CSS Avanzado",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/jsI-reveal.html#introducción-a-js",
+    "href": "pages/jsI-reveal.html#introducción-a-js",
+    "title": "Introducción a JS",
+    "section": "Introducción a JS",
+    "text": "Introducción a JS\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:"
+  },
+  {
+    "objectID": "pages/jsI.html",
+    "href": "pages/jsI.html",
+    "title": "Introducción a JS",
+    "section": "",
+    "text": "Contenido"
+  },
+  {
+    "objectID": "pages/jsI.html#introducción-a-js",
+    "href": "pages/jsI.html#introducción-a-js",
+    "title": "Introducción a JS",
+    "section": "Introducción a JS",
+    "text": "Introducción a JS\n\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:\nsadf\n\n\n\nCapa\nLenguaje\nFunción principal\n\n\n\n\nContenido\nHTML\nEstructura del documento\n\n\nPresentación\nCSS\nApariencia y diseño\n\n\nComportamiento\nJavaScript\nInteractividad y lógica"
   },
   {
     "objectID": "index.html",

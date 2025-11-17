@@ -19,8 +19,8 @@ metadata:
 
 website:
   title: "Training Center SW"
+  bread-crumbs: true
 
-  
   sidebar:
     title: "Training Center SW"
     style: "docked"
@@ -30,18 +30,18 @@ website:
     logo: public/logo-text.png
     contents:
       - index.qmd
-      - section: "Bloque I Introducción"
+      - section: pages/Bloque1/bloque1.qmd
+        
         contents:
           - section: "Semana 0"
             contents: 
               - pages/Bloque1/entorno.qmd
-      - section: "Bloque II Javascript"
-        contents:
-          - section: "Semana 3"
-            contents: 
-              - pages/jsI.qmd
+          - text: "Próximamente..."
+      - section: "Bloque II Programación"
       - section: "Bloque III Interacción"
-      - section
+      - section: "Bloque IV Comunicación"
+
+      - pages/rubric.qmd
 
     footer: "![](https://i.imgur.com/jbGUd7N.png)<br><br><br> ©Javier Ribal del Río <br> 2025 - Hyperloop UPV"
   repo-url: https://github.com/HyperloopUPV-H8/Web-TC-SW

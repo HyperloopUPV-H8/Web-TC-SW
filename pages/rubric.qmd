@@ -1,0 +1,97 @@
+---
+title: "Rúbrica de evaluación"
+author: "Javier Ribal del Río"
+date: "2025-11-17"
+date-modified: today
+affiliation: "Hyperloop UPV"
+
+format:
+  html: default
+
+
+---
+
+Durante el curso seguiremos la siguiente rúbrica para la calificación de las tareas. A pesar de que las calificaciones *no son importantes*, la rúbrica es un buen recordatorio de que aspectos hay que tener en cuenta en la programación web.
+
+
+<table style="width:100%;border-collapse:collapse;border:1px solid #000;">
+<tr style="border:1px solid #000;">
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Puntuación</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">No aplica</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Deficiente<br>(0–4)</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Insuficiente<br>(4–5)</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Aceptable<br>(5–7)</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Bueno<br>(7–9)</th>
+<th style="border:1px solid #000;background:#f2f2f2;text-align:center;">Excelente<br>(9–10)</th>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Diseño</th>
+<td style="border:1px solid #000;">No aplica.</td>
+<td style="border:1px solid #000;">Diseño desordenado y/o con problemas de visualización funcional.</td>
+<td style="border:1px solid #000;">Diseño básico pero con problemas de visualización o estructura.</td>
+<td style="border:1px solid #000;">Diseño claro y ordenado, cumple los requisitos básicos.</td>
+<td style="border:1px solid #000;">Diseño cuidado, buena estética y estructura clara.</td>
+<td style="border:1px solid #000;">Diseño profesional, limpio, pulido y sobresaliente.</td>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Programación</th>
+<td style="border:1px solid #000;">No aplica.</td>
+<td style="border:1px solid #000;">Código incompleto o con errores graves.</td>
+<td style="border:1px solid #000;">Código funcional parcialmente y/o con errores importantes.</td>
+<td style="border:1px solid #000;">Código funcional y adecuado a la tarea.</td>
+<td style="border:1px solid #000;">Código bien estructurado con mejoras respecto a lo exigido.</td>
+<td style="border:1px solid #000;">Código impecable, eficiente y muy bien organizado.</td>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Esfuerzo e implicación</th>
+<td style="border:1px solid #000;">No aplica.</td>
+<td style="border:1px solid #000;">Bajo esfuerzo o dedicación mínima.</td>
+<td style="border:1px solid #000;">Esfuerzo adecuado pero limitado.</td>
+<td style="border:1px solid #000;">Esfuerzo notable, cumple con lo requerido.</td>
+<td style="border:1px solid #000;">Esfuerzo claro, trabajo más allá de lo solicitado.</td>
+<td style="border:1px solid #000;">Dedicación sobresaliente y trabajo excepcional.</td>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Documentación / Claridad</th>
+<td style="border:1px solid #000;">No aplica.</td>
+<td style="border:1px solid #000;">Documentación mínima o inexistente.</td>
+<td style="border:1px solid #000;">Documentación incompleta o confusa.</td>
+<td style="border:1px solid #000;">Documentación clara y suficiente.</td>
+<td style="border:1px solid #000;">Documentación bien presentada y detallada.</td>
+<td style="border:1px solid #000;">Documentación excelente y altamente profesional.</td>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Funcionalidad</th>
+<td style="border:1px solid #000;">No aplica.</td>
+<td style="border:1px solid #000;">No funciona o no cumple objetivos.</td>
+<td style="border:1px solid #000;">Funciona de forma parcial.</td>
+<td style="border:1px solid #000;">Funciona correctamente.</td>
+<td style="border:1px solid #000;">Funciona con mejoras o funcionalidades extra.</td>
+<td style="border:1px solid #000;">Funciona perfectamente y supera expectativas.</td>
+</tr>
+
+<tr>
+<th style="border:1px solid #000;">Innovación</th>
+<td colspan="6" style="border:1px solid #000;text-align:center;font-style:italic;">(Nota extra)</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #000;font-weight:bold;">TOTAL:</td>
+<td colspan="5" style="border:1px solid #000;"></td>
+<td style="border:1px solid #000;font-weight:bold;">/60</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #000;">Observaciones:</td>
+<td colspan="6" style="border:1px solid #000;"></td>
+</tr>
+
+</table>
+
+
+La nota total será sobre 60 si hay algun criterio que no se aplique, se modificará la nota para que esté sobre base 60.

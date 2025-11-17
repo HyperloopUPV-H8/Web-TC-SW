@@ -1,0 +1,34 @@
+---
+title: "Bloque I Introducción"
+author: "Javier Ribal del Río"
+date: "2025-11-17"
+date-modified: today
+affiliation: "Hyperloop UPV"
+---
+
+El objetivo del bloque 1 es sentar la base para la realización del curso, aprendiendo las competencias mínimas para realizar el curso.  
+
+En este bloque se hará una introducción: las herramientas de trabajo, el lenguaje de marcado HTML que permite crear páginas web estáticas y  el _lenguaje de programación_ de CSS que nos permite formatear webs previamente construidas.
+ 
+Este bloque se compone de 3 semanas, 2 tareas de clase y dos tareas voluntarias.
+
+## Contenido 
+
+
+|Semana | Fecha      | Contenido     | Contenido de la clase                                              | Tarea Clase | Material Extra                     | Tarea Extra   |
+|-------|-----------|---------------|---------------------------------------------------------------------|-------------|------------------------------------|---------------|
+| 0   | 21/11/2025  | Introducción  | Presentación TC, VSCode, Git, LiveShare y GitHub                   | -           | -                                  | -             |
+| 1   | 28/11/2025  | HTML          | Estructura básica, links, listas, tablas, form, img, div, span      | Web HL I    | Etiquetas: HTML5, video, iframe    | Mi porfolio I |
+| 2   | 05/12/2025  | CSS           | Estilos básicos, clases, id, archivos externos                      | Web HL II   | Selectores y Pseudoclases          | Mi porfolio II |
+
+## Material 
+
+
+- [MDN (Mozilla Developer Network)](https://developer.mozilla.org/es/), HTML y CSS
+- [W3Schools](https://www.w3schools.com/)  HTML y CSS
+- [Visual Studio Code Manual](https://code.visualstudio.com/docs/introvideos/basics) VSCode
+- [CSS tricks](https://css-tricks.com/) CSS Avanzado
+
+
+
+

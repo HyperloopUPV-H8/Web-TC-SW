@@ -261,7 +261,7 @@ Nosotros en el TC, también trataremos de facilitarnos con esta herramienta
 
 
 
-### Digrama de trabajo de Git
+### Diagrama de trabajo de Git
 
 ![](../../img/mapa-git.png)
 
