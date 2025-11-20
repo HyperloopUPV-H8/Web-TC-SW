@@ -139,11 +139,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Programa",
+    "title": "Programa TC",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.",
+    "text": "Hyperloop UPV – Subsistema de Software (SW)\nNivel: Básico – Enfoque principal en desarrollo frontend\nEstimado/a participante:\nBienvenido/a al Training Center (TC) del subsistema de Software (SW) de Hyperloop UPV. Este curso está orientado a introducirte en el desarrollo frontend y proporcionarte una base sólida que te permita integrarte con solvencia en el trabajo del equipo. La aproximación será clara, directa y orientada a la práctica, con el objetivo de que avances con fluidez y entiendas cómo trabajamos dentro del subsistema.\nA lo largo del programa se propondrá una tarea semanal, breve y enfocada exclusivamente a reforzar los contenidos tratados en cada sesión. Además, desarrollarás dos proyectos:\n1. Un proyecto individual, para afianzar tus competencias de forma autónoma.\n2. Un proyecto en grupo, en colaboración con miembros de otros subsistemas, para experimentar un entorno de trabajo multidisciplinar similar al que utilizamos en Hyperloop UPV.",
     "crumbs": [
-      "Programa"
+      "Programa TC"
+    ]
+  },
+  {
+    "objectID": "index.html#método-de-trabajo",
+    "href": "index.html#método-de-trabajo",
+    "title": "Programa TC",
+    "section": "Método de Trabajo",
+    "text": "Método de Trabajo\nCada sesión combinará contenidos conceptuales y ejercicios prácticos. El seguimiento del curso se complementará con material adicional disponible en:\nhttps://tc-software.hyperloopupv.com/\nEl curso está estructurado para que los conocimientos se integren a través de su aplicación directa en ejercicios, ejemplos y proyectos, favoreciendo una progresión técnica consistente.",
+    "crumbs": [
+      "Programa TC"
+    ]
+  },
+  {
+    "objectID": "index.html#syllabus-del-curso",
+    "href": "index.html#syllabus-del-curso",
+    "title": "Programa TC",
+    "section": "Syllabus del Curso",
+    "text": "Syllabus del Curso\nNivel básico – Desarrollo frontend\nA continuación se detalla la planificación del curso, organizada por sesiones y contenidos:\n\nTabla General del Curso\n\n\n\n\n\n\n\n\n\n\n\n\nN.º\nMes\nFecha\nBloque Temático\nContenido\nContenido de la clase\nMaterial Extra\n\n\n\n\n0\nNoviembre\n21/11/2025\nBloque 1: Introducción\nIntroducción\nPresentación TC, VSCode, Git, LiveShare y GitHub\nØ\n\n\n1\nNoviembre\n28/11/2025\n\nHTML\nEstructura básica, links, listas, tablas, form, img, div, span\nEtiquetas: HTML5, video, iframe\n\n\n2\nDiciembre\n05/12/2025\n\nCSS\nEstilos básicos, clases, id, archivos externos\nSelectores y Pseudoclases\n\n\n3\nDiciembre\n12/12/2025\nBloque 2: Programación\nJS I\nVariables, estructuras de control, aritmética básica\nCSS: Flex y Grid\n\n\n4\nDiciembre\n19/12/2025\n\nJS II\nArray, objetos, funciones, ES6\nPOO I: clases, instancias, métodos, propiedades…\n\n\n\nNAVIDADES\n\n\n\n\n\n\n\n5\nEnero\n16/12/2026\n\nJS III\nFunciones de Array (map, filter, reduce, foreach), valores truthy/falsy\nPOO II: herencia y métodos de Object\n\n\n6\nFebrero\n06/02/2026\nBloque 3: Interactividad\nDom\nTeoría de DOM. Ejemplos: botón que suma uno, leer un input o form\nSets, Mapas, Librería matemática\n\n\n7\nFebrero\n13/02/2026\n\nSesión de Proyecto*\nDudas, preguntas, recomendaciones\n-\n\n\n8\nFebrero\n20/02/2026\n\nReact I\nVite project, introducción a props\n-\n\n\n9\nFebrero\n27/02/2026\n\nReact II\nProps y State\nEjemplos varios de React\n\n\n10\nMarzo\n06/03/2026**\n\nReact III\nMás React\nMás Ejemplos\n\n\n11\nMarzo\n13/03/2026\nBloque 4\nAPI***\nTrabajar con un API con React\nTailwind\n\n\n\nFALLAS\n\n\n\n\n\n\n\n12\nMarzo\n27/03/2026\nComunicación\nWebsockets\nWebsockets\nLeve introducción teórica a Servidores",
+    "crumbs": [
+      "Programa TC"
+    ]
+  },
+  {
+    "objectID": "index.html#qué-puedes-esperar-del-curso",
+    "href": "index.html#qué-puedes-esperar-del-curso",
+    "title": "Programa TC",
+    "section": "Qué Puedes Esperar del Curso",
+    "text": "Qué Puedes Esperar del Curso\nAl finalizar este Training Center habrás adquirido:\n\nUna base sólida en HTML, CSS y JavaScript moderno.\n\nUna comprensión clara del flujo de trabajo frontend y de la estructura de un proyecto real.\n\nConocimientos esenciales de React y manejo de API.\n\nExperiencia desarrollando un proyecto individual y un proyecto conjunto con otros subsistemas, alineado con la dinámica habitual del equipo.\n\nUna rutina de trabajo reforzada mediante tareas semanales orientadas a consolidar los contenidos presentados.\nFamiliarizarte con el método de trabajo del subsistema de Softwares",
+    "crumbs": [
+      "Programa TC"
+    ]
+  },
+  {
+    "objectID": "index.html#cierre",
+    "href": "index.html#cierre",
+    "title": "Programa TC",
+    "section": "Cierre",
+    "text": "Cierre\nGracias por unirte al Training Center de Software. Tu incorporación es importante para el crecimiento técnico del equipo y este curso constituye el punto de partida. Te animo a participar activamente, plantear dudas siempre que lo necesites y aprovechar al máximo las sesiones.\nComenzamos.\nUn cordial saludo,\nJavier Ribal del Río Subsistema de Software HyperloopUPV",
+    "crumbs": [
+      "Programa TC"
     ]
   }
 ]
