@@ -8,7 +8,7 @@
 
 <meta name="author" content="Javier Ribal del Río">
 
-<title>Bloque I Introducción – Training Center SW</title>
+<title>HTML – Training Center SW</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -249,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/Bloque1/bloque1.html">Bloque I Introducción</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/Bloque1/bloque1.html">Bloque I Introducción</a></li><li class="breadcrumb-item"><a href="../../pages/Bloque1/html.html">Semana 1</a></li><li class="breadcrumb-item"><a href="../../pages/Bloque1/html.html">HTML</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -281,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../pages/Bloque1/bloque1.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../pages/Bloque1/bloque1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bloque I Introducción</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -307,16 +342,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Semana 1</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/Bloque1/html.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/Bloque1/html.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">HTML</span></a>
   </div>
 </li>
@@ -357,18 +392,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#contenido" id="toc-contenido" class="nav-link active" data-scroll-target="#contenido">Contenido</a></li>
-  <li><a href="#material" id="toc-material" class="nav-link" data-scroll-target="#material">Material</a></li>
+  <li><a href="#estructura-básica-de-las-páginas-web" id="toc-estructura-básica-de-las-páginas-web" class="nav-link active" data-scroll-target="#estructura-básica-de-las-páginas-web">Estructura básica de las páginas web</a>
+  <ul>
+  <li><a href="#qué-es-una-página-web" id="toc-qué-es-una-página-web" class="nav-link" data-scroll-target="#qué-es-una-página-web">¿Qué es una página web?</a></li>
+  <li><a href="#qué-partes-tiene-una-página-web-externas" id="toc-qué-partes-tiene-una-página-web-externas" class="nav-link" data-scroll-target="#qué-partes-tiene-una-página-web-externas">¿Qué partes tiene una página web? (externas)</a></li>
+  </ul></li>
+  <li><a href="#html5" id="toc-html5" class="nav-link" data-scroll-target="#html5">HTML5</a>
+  <ul>
+  <li><a href="#qué-es-html" id="toc-qué-es-html" class="nav-link" data-scroll-target="#qué-es-html">¿Qué es HTML?</a></li>
+  <li><a href="#estructura-básica" id="toc-estructura-básica" class="nav-link" data-scroll-target="#estructura-básica">Estructura básica</a></li>
+  <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head">Head</a></li>
+  <li><a href="#body" id="toc-body" class="nav-link" data-scroll-target="#body">Body</a>
+  <ul class="collapse">
+  <li><a href="#p-paragraph" id="toc-p-paragraph" class="nav-link" data-scroll-target="#p-paragraph"><code>&lt;p&gt;</code> <em>Paragraph</em></a></li>
+  <li><a href="#br-break-line" id="toc-br-break-line" class="nav-link" data-scroll-target="#br-break-line"><code>&lt;br&gt;</code> <em>Break Line</em></a></li>
+  <li><a href="#ul-unordered-list" id="toc-ul-unordered-list" class="nav-link" data-scroll-target="#ul-unordered-list"><code>&lt;ul&gt;</code> <em>Unordered list</em></a></li>
+  <li><a href="#ul-ordered-list" id="toc-ul-ordered-list" class="nav-link" data-scroll-target="#ul-ordered-list"><code>&lt;ul&gt;</code> <em>Ordered list</em></a></li>
+  <li><a href="#h-headings" id="toc-h-headings" class="nav-link" data-scroll-target="#h-headings"><code>&lt;h#&gt;</code> <em>Headings</em></a></li>
+  <li><a href="#div-divisor-y-span-span" id="toc-div-divisor-y-span-span" class="nav-link" data-scroll-target="#div-divisor-y-span-span"><code>&lt;div&gt;</code> <em>Divisor</em> y <code>&lt;span&gt;</code> <em>Span</em></a></li>
+  <li><a href="#strong-strong-i-italic" id="toc-strong-strong-i-italic" class="nav-link" data-scroll-target="#strong-strong-i-italic"><code>&lt;strong&gt;</code> <em>Strong</em>, <code>&lt;i&gt;</code> <em>Italic</em></a></li>
+  <li><a href="#comentario" id="toc-comentario" class="nav-link" data-scroll-target="#comentario">Comentario</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="bloque1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="html.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="ehtml.html"><i class="bi bi-file-slides"></i>Presentación</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/Bloque1/bloque1.html">Bloque I Introducción</a></li><li class="breadcrumb-item"><a href="../../pages/Bloque1/html.html">Semana 1</a></li><li class="breadcrumb-item"><a href="../../pages/Bloque1/html.html">HTML</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bloque I Introducción</h1>
+<h1 class="title">HTML</h1>
+<p class="subtitle lead">Estructura HTML, etiquetas básicas y diseño web</p>
 </div>
 
 
@@ -385,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">17 de noviembre de 2025</p>
+      <p class="date">22 de noviembre de 2025</p>
     </div>
   </div>
   
@@ -403,73 +459,170 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>El objetivo del bloque 1 es sentar la base para la realización del curso, aprendiendo las competencias mínimas para realizar el curso.</p>
-<p>En este bloque se hará una introducción: las herramientas de trabajo, el lenguaje de marcado HTML que permite crear páginas web estáticas y el <em>lenguaje de programación</em> de CSS que nos permite formatear webs previamente construidas.</p>
-<p>Este bloque se compone de 3 semanas, 2 tareas de clase y dos tareas voluntarias.</p>
-<section id="contenido" class="level2">
-<h2 class="anchored" data-anchor-id="contenido">Contenido</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 4%">
-<col style="width: 6%">
-<col style="width: 9%">
-<col style="width: 41%">
-<col style="width: 7%">
-<col style="width: 21%">
-<col style="width: 9%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Semana</th>
-<th>Fecha</th>
-<th>Contenido</th>
-<th>Contenido de la clase</th>
-<th>Tarea Clase</th>
-<th>Material Extra</th>
-<th>Tarea Extra</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td>21/11/2025</td>
-<td>Introducción</td>
-<td>Presentación TC, VSCode, Git, LiveShare y GitHub</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td>28/11/2025</td>
-<td>HTML</td>
-<td>Estructura básica, links, listas, tablas, form, img, div, span</td>
-<td>Web HL I</td>
-<td>Etiquetas: HTML5, video, iframe</td>
-<td>Mi porfolio I</td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td>05/12/2025</td>
-<td>CSS</td>
-<td>Estilos básicos, clases, id, archivos externos</td>
-<td>Web HL II</td>
-<td>Selectores y Pseudoclases</td>
-<td>Mi porfolio II</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="material" class="level2">
-<h2 class="anchored" data-anchor-id="material">Material</h2>
+<p><strong>Contenido</strong></p>
 <ul>
-<li><a href="https://developer.mozilla.org/es/">MDN (Mozilla Developer Network)</a>, HTML y CSS</li>
-<li><a href="https://www.w3schools.com/">W3Schools</a> HTML y CSS</li>
-<li><a href="https://code.visualstudio.com/docs/introvideos/basics">Visual Studio Code Manual</a> VSCode</li>
-<li><a href="https://css-tricks.com/">CSS tricks</a> CSS Avanzado</li>
+<li>Estructura básica de las páginas web</li>
+<li>Introducción a HTML5
+<ul>
+<li>Títulos</li>
+<li>Links</li>
+<li>Listas</li>
+<li>Tablas</li>
+<li>Bloques <code>span</code> y <code>div</code></li>
+<li>Formularios</li>
+</ul></li>
+<li>Reglas del diseño elementales</li>
 </ul>
+<section id="estructura-básica-de-las-páginas-web" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-básica-de-las-páginas-web">Estructura básica de las páginas web</h2>
+<section id="qué-es-una-página-web" class="level3">
+<h3 class="anchored" data-anchor-id="qué-es-una-página-web">¿Qué es una página web?</h3>
+<p>Una página web es un <strong>documento digital accesible desde un navegador</strong>, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos.</p>
+</section>
+<section id="qué-partes-tiene-una-página-web-externas" class="level3">
+<h3 class="anchored" data-anchor-id="qué-partes-tiene-una-página-web-externas">¿Qué partes tiene una página web? (externas)</h3>
+<p><img src="../../img/S1-01.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="html5" class="level2">
+<h2 class="anchored" data-anchor-id="html5">HTML5</h2>
+<section id="qué-es-html" class="level3">
+<h3 class="anchored" data-anchor-id="qué-es-html">¿Qué es HTML?</h3>
+<p>HTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript).</p>
+</section>
+<section id="estructura-básica" class="level3">
+<h3 class="anchored" data-anchor-id="estructura-básica">Estructura básica</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Clase 1 del TC<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  </span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En el código aparecen varias <strong>etiquetas HTML</strong>, y cada una tiene una <strong>etiqueta de apertura</strong> y una <strong>etiqueta de cierre</strong> (por ejemplo, <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code>).<br>
+Estas etiquetas delimitan y organizan el contenido del documento:<br>
+- <code>&lt;head&gt;</code> agrupa la información del documento,<br>
+- <code>&lt;body&gt;</code> contiene lo que verá el usuario,<br>
+- <code>&lt;p&gt;</code> define un párrafo.</p>
+<p>La función de las etiquetas es indicar al navegador qué es cada parte del documento y cómo debe interpretarla.</p>
+</section>
+<section id="head" class="level3">
+<h3 class="anchored" data-anchor-id="head">Head</h3>
+<p>Se corresponde con la cabecera de la pestaña, principalmente solo se modifica el logotipo y el contenido de esta.</p>
+<p>También se utiliza para almacenar los metadatos de la web, así como <em>scripts</em> de JavaScript y hojas de estilo de CSS.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span> Web del TC <span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Clase 1 del TC<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  </span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="body" class="level3">
+<h3 class="anchored" data-anchor-id="body">Body</h3>
+<p>Se corresponde con todo el contenido de la página dentro podemos utilizar multitud de etiquetas, acontinuación expondremos las más importantes.</p>
+<p>Hasta el momento hemos trabajado únicamente con etiquietas invividuales, pero pronto veremos como podemos juntar varias etiquetas simples para obtener estructuras más complejas como tablas o formularios.</p>
+<p>Todo el código mostrado a partir de ahora se asume que esta correctamente ubicado dentro de una etiqueta <code>body</code></p>
+<section id="p-paragraph" class="level4">
+<h4 class="anchored" data-anchor-id="p-paragraph"><code>&lt;p&gt;</code> <em>Paragraph</em></h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="br-break-line" class="level4">
+<h4 class="anchored" data-anchor-id="br-break-line"><code>&lt;br&gt;</code> <em>Break Line</em></h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+<p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ul-unordered-list" class="level4">
+<h4 class="anchored" data-anchor-id="ul-unordered-list"><code>&lt;ul&gt;</code> <em>Unordered list</em></h4>
+<ul>
+<li>Francisco de Quevedo</li>
+<li>Lope de Vega</li>
+<li>Góngora</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">ul</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Francisco de Quevedo<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Lope de Vega<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Góngora<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="ul-ordered-list" class="level4">
+<h4 class="anchored" data-anchor-id="ul-ordered-list"><code>&lt;ul&gt;</code> <em>Ordered list</em></h4>
+<ol type="1">
+<li>Recepción</li>
+<li>Discurso del Rector</li>
+<li>Despedida</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">ol</span><span class="dt">&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Recepción <span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Discruso del Rector<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">li</span><span class="dt">&gt;</span>Despedida<span class="dt">&lt;/</span><span class="kw">li</span><span class="dt">&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">ol</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="h-headings" class="level4">
+<h4 class="anchored" data-anchor-id="h-headings"><code>&lt;h#&gt;</code> <em>Headings</em></h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Título 1<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Título 2<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>Título 3<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h4</span><span class="dt">&gt;</span>Título 4<span class="dt">&lt;/</span><span class="kw">h4</span><span class="dt">&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h5</span><span class="dt">&gt;</span>Título 5<span class="dt">&lt;/</span><span class="kw">h5</span><span class="dt">&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h6</span><span class="dt">&gt;</span>Título 6<span class="dt">&lt;/</span><span class="kw">h6</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="div-divisor-y-span-span" class="level4">
+<h4 class="anchored" data-anchor-id="div-divisor-y-span-span"><code>&lt;div&gt;</code> <em>Divisor</em> y <code>&lt;span&gt;</code> <em>Span</em></h4>
+<p>Etiquetas contenedores, utilizadas para agrupar otras etiquetas, no presentan ningún efecto visible intrínsico, salvo que tras utilizar <code>&lt;div&gt;</code> se produce un salto de línea. Por lo que utilizaremos <code>&lt;div&gt;</code> para agrupar grandes grupos de etiquetas y <code>&lt;span&gt;</code> para fragementos más pequeños</p>
+<section id="div" class="level5">
+<h5 class="anchored" data-anchor-id="div"><code>&lt;div&gt;</code></h5>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Capítulo 2 <span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    Mio Cid Ruy Díaz por Burgos entró,<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    en su conpaña sessaenta pendones.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    Exiénlo ver mugieres e varones,<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    burgeses e burgesas por las finiestras son,<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    plorando de los ojos, tanto avién el dolor,<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    de las sus bocas todos dizían una razón:<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;&lt;/</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    — ¡Dios, qué buen vassallo, si oviesse buen señor!—</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="strong-strong-i-italic" class="level4">
+<h4 class="anchored" data-anchor-id="strong-strong-i-italic"><code>&lt;strong&gt;</code> <em>Strong</em>, <code>&lt;i&gt;</code> <em>Italic</em></h4>
+<p><strong>Negrita</strong> <em>Itálica</em> <strong><em>Negrita e Itálica</em></strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span>Negrita<span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">i</span><span class="dt">&gt;</span>Itálica<span class="dt">&lt;/</span><span class="kw">i</span><span class="dt">&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;&lt;</span><span class="kw">i</span><span class="dt">&gt;</span> Negrita e Itálica<span class="dt">&lt;/</span><span class="kw">i</span><span class="dt">&gt;&lt;/</span><span class="kw">strong</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="comentario" class="level4">
+<h4 class="anchored" data-anchor-id="comentario">Comentario</h4>
+<p>Etiqueta invisible</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Etiqueta invisible<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Soy un comenario --&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

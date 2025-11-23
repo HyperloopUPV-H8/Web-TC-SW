@@ -36,6 +36,9 @@ website:
           - section: "Semana 0"
             contents: 
               - pages/Bloque1/entorno.qmd
+          - section: "Semana 1"
+            contents:
+              - pages/Bloque1/html.qmd
           - text: "Próximamente..."
       - section: "Bloque II Programación"
       - section: "Bloque III Interacción"
@@ -56,6 +59,7 @@ format:
     lang: es
     code-copy: true
     code-overflow: wrap
+    toc-depth: 4
     anchor-sections: true
     css: style/main.css
   pdf:

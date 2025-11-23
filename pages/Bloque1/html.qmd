@@ -1,0 +1,349 @@
+---
+title: "HTML"
+subtitle: "Estructura HTML, etiquetas básicas y diseño web"
+author: "Javier Ribal del Río"
+date: "2025-11-22"
+date-modified: today
+affiliation: "Hyperloop UPV"
+
+format:
+  html: default
+  revealjs: 
+    history: false
+    chalkboard: true
+    output-file: ehtml.html
+    parallax-background-image: ../../img/fondo.png
+    parallax-background-size: "cover" 
+  pdf: default
+format-links: 
+  - pdf
+  - format: revealjs
+    text: Presentación
+    icon: file-slides
+---
+
+**Contenido**
+
+- Estructura básica de las páginas web
+- Introducción a HTML5
+  - Títulos
+  - Links
+  - Listas
+  - Tablas
+  - Bloques `span` y `div`
+  - Formularios
+- Reglas del diseño elementales
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Estructura básica de las páginas web
+
+### ¿Qué es una página web?
+
+Una página web es un **documento digital accesible desde un navegador**, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos.
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### ¿Qué partes tiene una página web? (externas)
+
+![](../../img/S1-01.png)
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+## HTML5
+
+### ¿Qué es HTML?
+
+HTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript).
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+### Estructura básica 
+
+```{.html code-line-numbers="|1|2,12|3,5|7,11|9}
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+  <p>Clase 1 del TC</p>
+  
+</body>
+</html>
+
+```
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+En el código aparecen varias **etiquetas HTML**, y cada una tiene una **etiqueta de apertura** y una **etiqueta de cierre** (por ejemplo, `<p>` y `</p>`).  
+Estas etiquetas delimitan y organizan el contenido del documento:  
+- `<head>` agrupa la información del documento,  
+- `<body>` contiene lo que verá el usuario,  
+- `<p>` define un párrafo.
+
+La función de las etiquetas es indicar al navegador qué es cada parte del documento y cómo debe interpretarla.
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### Head
+
+
+Se corresponde con la cabecera de la pestaña, principalmente solo se modifica el logotipo y el contenido de esta.
+
+También se utiliza para almacenar los metadatos de la web, así como *scripts* de JavaScript y hojas de estilo de CSS.
+
+
+```{.html code-line-numbers="|5"}
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Web del TC </title>
+
+</head>
+
+<body>
+
+  <p>Clase 1 del TC</p>
+  
+</body>
+</html>
+```
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### Body
+
+Se corresponde con todo el contenido de la página dentro podemos utilizar multitud de etiquetas, acontinuación expondremos las más importantes.
+
+Hasta el momento hemos trabajado únicamente con etiquietas invividuales, pero pronto veremos como podemos juntar varias etiquetas simples para obtener estructuras más complejas como tablas o formularios.
+
+Todo el código mostrado a partir de ahora se asume que esta correctamente ubicado dentro de una etiqueta `body`
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+#### `<p>` *Paragraph*
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```{.html}
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+#### `<br>` *Break Line*
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+```{.html}
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+  <br></br>
+  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+#### `<ul>` *Unordered list*
+
+- Francisco de Quevedo
+- Lope de Vega
+- Góngora
+
+```{.html}
+<ul>
+  <li>Francisco de Quevedo</li>
+  <li>Lope de Vega</li>
+  <li>Góngora</li>
+</ul>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+#### `<ul>` *Ordered list*
+
+1. Recepción
+2. Discurso del Rector
+3. Despedida
+
+```{.html}
+<ol>
+  <li>Recepción </li>
+  <li>Discruso del Rector</li>
+  <li>Despedida</li>
+</ol>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### `<h#>` *Headings*
+
+```{.html}
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<h3>Título 3</h3>
+<h4>Título 4</h4>
+<h5>Título 5</h5>
+<h6>Título 6</h6>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### `<div>` *Divisor*  y `<span>` *Span*
+
+Etiquetas contenedores, utilizadas para agrupar otras etiquetas, no presentan ningún efecto visible intrínsico, salvo que tras utilizar `<div>`  se produce un salto de línea. Por lo que utilizaremos `<div>` para agrupar grandes grupos de etiquetas y `<span>` para fragementos más pequeños
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+##### `<div>` 
+
+```{.html}
+<div>
+  <h2>Capítulo 2 </h2>
+  <p>
+    Mio Cid Ruy Díaz por Burgos entró,<br></br>
+    en su conpaña sessaenta pendones.<br></br>
+    Exiénlo ver mugieres e varones,<br></br>
+    burgeses e burgesas por las finiestras son,<br></br>
+    plorando de los ojos, tanto avién el dolor,<br></br>
+    de las sus bocas todos dizían una razón:<br></br>
+    — ¡Dios, qué buen vassallo, si oviesse buen señor!—
+  </p>
+</div>
+
+```
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+#### `<strong>` *Strong*, `<i>` *Italic*
+
+**Negrita**
+*Itálica*
+***Negrita e Itálica***
+
+
+```{.html}
+<strong>Negrita</strong>
+<i>Itálica</i>
+<strong><i> Negrita e Itálica</i></strong>
+```
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### Comentario
+
+Etiqueta invisible
+
+
+
+
+```{.html}
+<p>Etiqueta invisible</p>
+
+<!-- Soy un comenario -->
+```
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
