@@ -39,4 +39,3 @@ La primera tarea de esta semana consiste en diseñar una página web para el equ
 
 Base: [Web](t1-solu.html)
 
-Base: [Web](ta1-solu.html)
