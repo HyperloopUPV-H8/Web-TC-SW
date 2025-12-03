@@ -43,6 +43,7 @@ website:
               - pages/Bloque1/t1.qmd
               - pages/Bloque1/MAhtml2.qmd
               - pages/Bloque1/t1a.qmd
+          - section: "Semana 2"
 
           - text: "Próximamente..."
       - section: "Bloque II Programación"

@@ -1,0 +1,511 @@
+---
+title: "CSS"
+subtitle: "Estilos básicos, clases e ID"
+author: "Javier Ribal del Río"
+date: "2025-11-28"
+date-modified: today
+affiliation: "Hyperloop UPV"
+
+format:
+  html: default
+  revealjs: 
+    history: false
+    chalkboard: true
+    output-file: css_p.html
+    parallax-background-image: ../../img/fondo.png
+    parallax-background-size: "cover" 
+  pdf: default
+format-links: 
+  - pdf
+  - format: revealjs
+    text: Presentación
+    icon: file-slides
+---
+
+**Contenido**
+
+- Problemas del HTML
+- Formato mediente atributo `style` 
+- Selectores básicos (Clases e ID)
+- Formato mediante etiqueta `style` 
+- Formato mediante hojas de estilo
+- Pequeñas reglas de diseño
+- Git y GitHub: metodología de trabajo
+
+
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Problemas de HTML
+
+Hasta el momento hemos trabajado con HTML, que a pesar de ser muy práctico para la creación de la estructura interna de la web, presenta ciertas limitaciones a la hora de modificar el formato de la web, para ello se introduce CSS, una herramienta que nos va a permitir modificar el formato cómodamente.
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Formato con CSS
+
+### Atributo `style` 
+
+Supongamos que tenemos el siguiente elemento
+
+`<p> Hola Mundo<p>`. Por ahora el texto se mostrará en color negro, el color predeterminado de HTML para las etiquetas `<p>`
+
+> <p>Hola mundo</p>
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+Si se desea modificar el formato intrínseco de esta etiqueta `<p>` debemos incluir la propiedad `style` que, como su nombre indica nos permitirá modificar su estilo. Dentro de este atributo se ha de insertar **propiedad CSS** (no confundir con los atributos html). La propiedad CSS especifica que aspecto visual del contenido de la etiqueta. Por ejemplo, si se desea modificar el color de la letra se debe de utilizar la propiedad `color` (nótese que no lleva u).
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+```html
+<p style="color:red">Hola Mundo</p>
+
+<!-- Equivalente en Hexadecimal -->
+
+<p style="color:#ff0000">Hola Mundo</p>
+
+```
+
+> <p style="color:red">Hola Mundo</p>
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+Sí deseamos modificar más de una propiedad CSS deberemos de serparalas dentro de la etiqueta con un punto y coma
+
+
+```html
+<p style="color:#ff0000; font-size: 44px">Hola Mundo</p>
+```
+
+
+><p style="color:#ff0000; font-size: 44px">Hola Mundo</p>
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### Problemas del atributo `style`
+
+El atributo `style` resulta útil para formatear una etiqueta individualmente, pero resulta tedioso y repetitivo para más de una etiqueta. Observe el siguiente ejemplo
+
+
+
+```html
+<p>Autores del culteranismo marcados en rojo<p>
+
+<ul>
+    <li>Francisco de Quevedo</li>
+    <li style="color:red; text-decoration: underline; font-size:30px;">Luis de Góngora</li>
+    <li>Baltasar Gracián</li>
+    <li style="color:red; text-decoration: underline; font-size:30px;">Pedro Soto de Rojas</li>
+    <li>Tirso de Molina</li>
+    <li>Calderón de la Barca</li>
+</ul>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+> <p>Autores del culteranismo marcados en rojo<p>
+> 
+> <ul>
+>     <li>Francisco de Quevedo</li>
+>     <li style="color:red; text-decoration: underline; font-size:30px;">Luis de Góngora</li>
+>     <li>Baltasar Gracián</li>
+>     <li style="color:red; text-decoration: underline; font-size:30px;">Pedro Soto de Rojas</li>
+>     <li>Tirso de Molina</li>
+>     <li>Calderón de la Barca</li>
+> </ul>
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+**Problemas:**
+
+- Repetición de mucho código
+- Alta posibilidad error
+- Poca escalabilidad
+  - Si añadimos por ejempo a Luis Carrillo y Sotomayor (autor culteranista) hay que volver a repetir todo el atributo
+  - Si deseasemos cambiar el color de rojo a verde deberemos modificar cada uno de los atributos
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+### Clases e ID
+####  Clases
+
+La solución a este problema son las clases que nos permiten *identificar* aquellos componentes con características de formato similares. Se agregan como atributos a cada etiqueta
+
+```html
+<p>Autores del culteranismo marcados en rojo<p> <!--En este caso no se marcan en rojo-->
+
+<ul>
+    <li>Francisco de Quevedo</li>
+    <li class="culteranista">Luis de Góngora</li>
+    <li>Baltasar Gracián</li>
+    <li class="culteranista">Pedro Soto de Rojas</li>
+    <li>Tirso de Molina</li>
+    <li>Calderón de la Barca</li>
+</ul>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+##### Etiqueta `<style>`
+
+Ahora para marcar en rojo los culterantistas se ha de indicar el formato de todos en la class `culteranista`, para ello nos definiremos una hoja de estilo que será común para todo el documento. La hoja de estilos se define en el `<head>` de la siguiente forma:
+
+
+```html
+<head>
+<!-- Fragemento HTML -->
+<style>
+  /*Fragmento CSS*/
+  .culteranistas{  /*Nótese el punto*/
+    color: red;
+    text-size: 40px;
+    background-color: blue;
+    text-decoration: underline;  /*Este último ';' no es obligatorio como tal, pero es recomendable, en HTML3 y CSS2 daba error si se incluía*/
+  }
+</style> 
+<!--Fin de la etiqueta Style, seguimos con html-->
+</head>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+Ahora se visualizará correctamente, además se añadirá el fondo azul
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+##### Composición de clases
+
+Suponga que tenemos dos clases, una primera clase que modifica el tipo de letra a `monospace` que aplicaremos a los autores culteranistas y una segunda que modifica el grosor de la letra que se aplicará sobre los autores de lírica.
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+```html
+<head><style>
+  .culteranista {
+    font-family: monospace;
+  }
+  .lirica {
+    font-weight: bold;
+  }
+  .autores {
+    list-style: square;
+  }
+</style></head>
+
+<body>
+  <ul class="autores">
+    <li class="lirica">Fray Luis de León</li>
+    <li class="culteranista">Hortensio Félix de Paravicino</li>
+    <li class="culteranista lirica">Lope de Vega</li>
+    <li class="lirica">San Juan de la Cruz</li>
+  </ul>
+</body>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+><ul style="list-style: square; padding-left: 1.5em;">
+>  <li style="font-weight: bold;">Fray Luis de León</li>
+>  <li style="font-family: monospace;">Hortensio Félix de Paravicino</li>
+>  <li style="font-family: monospace; font-weight: bold;">Lope de Vega</li>
+>  <li style="font-weight: bold;">San Juan de la Cruz</li>
+></ul>
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### ID
+
+Los ID son como las clases pero solo se pueden utlizar una vez por sitio web. Es útil para cosas que no se deben repetir más de una vez por  sitio web. 
+
+```html
+<style>
+#principal{
+  text-align: center
+  color:blue
+}
+</style>
+<!--[...]-->
+<div id="principal">
+  <h4>Teatro Romántico></h4>
+  <p>El retablo romántico se caracteriza por exaltar la libertad creadora,
+    la expresión intensa de los sentimientos individuales, el gusto por lo
+    misterioso y lo sublime, y la reivindicación de la imaginación frente a
+    las reglas clásicas.</p>
+</div>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+>  <h4 style="text-align: center; color: blue;">Teatro Romántico</h4>
+>
+><p style="text-align: center; color: blue;"> El retablo romántico se caracteriza por exaltar la libertad creadora, la expresión intensa de los sentimientos individuales, el gusto por lo misterioso y lo sublime, y la reivindicación de la imaginación frente a las reglas clásicas.
+></p>
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+### Propiedades CSS
+
+#### `border` y `border-radius`
+
+
+La propiedad `border` es una **propiedad abreviada (shorthand)** que en realidad combina **tres propiedades más pequeñas**:
+
+- `border-width`  → grosor del borde  
+- `border-style`  → estilo del borde (solid, dashed, dotted, etc.)  
+- `border-color`  → color del borde  
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+Por ejemplo, estas dos definiciones son **equivalentes**:
+
+```css
+/* Forma abreviada */
+.caja {
+  border: 2px solid red;
+}
+
+/* Forma “desdoblada” en 3 mini propiedades */
+.caja-desdoblada {
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+}
+```
+
+<span style="border: 2px solid red;"> Lope de Vega</span>
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### `border-top, border-right, border-bottom, border-left`
+
+CSS permite aplicar bordes distintos en cada lado.
+Cada uno funciona igual que border pero aplicado a un solo lado:
+
+`border-top`
+
+`border-right`
+
+`border-bottom`
+
+`border-left`
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+```css
+.caja-bordes {
+  border-top: 3px solid red;
+  border-right: 2px dashed blue;
+  border-bottom: 4px dotted green;
+  border-left: 5px double orange;
+}
+```
+
+También pueden desdoblarse:
+
+```css
+.caja-top-desdoblado {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: purple;
+}
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+#### `margin` y `padding`
+
+Las propiedades **`margin`** y **`padding`** controlan el espacio alrededor de los elementos, pero cada una actúa en una zona distinta:
+
+- **`margin`** → espacio **externo**, fuera del borde del elemento  
+- **`padding`** → espacio **interno**, entre el contenido y el borde  
+
+Visualmente:
+
+> <div style="background:#f0f0f0; padding:20px;">
+>
+>  <!-- MARGIN (gris claro alrededor del borde) -->
+>    <!-- BORDER -->
+>    <div style="border:3px solid black">
+>
+>    <!-- PADDING (espacio interno) -->
+>    <div style="background:#d0ffd0; padding:15px;">
+>
+>    <!-- CONTENT -->
+>      <span style="background-color:white">CONTENT</span>
+>    </div>
+>  </div>
+></div>
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+```html
+<div style="background:#f0f0f0; padding:20px;">
+ <!-- MARGIN (gris claro alrededor del borde) -->
+   <!-- BORDER -->
+   <div style="border:3px solid black">
+   <!-- PADDING (espacio interno) -->
+   <div style="background:#d0ffd0; padding:15px;">
+   <!-- CONTENT -->
+     <span style="background-color:white">CONTENT</span>
+   </div>
+ </div>
+</div>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+##### Regla *Trouble* 
+
+
+Cuando `margin` o `padding` usan **4 valores**, el orden siempre es el mismo:
+
+`top, right, bottom, left` 
+
+
+Para recordarlo fácilmente se utiliza la **regla mnemotécnica Trouble**:
+
+- **T** → **Top** (arriba)  
+- **R** → **Right** (derecha)  
+- **B** → **Bottom** (abajo)  
+- **L** → **Left** (izquierda)
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+Es decir:
+
+```css
+margin:    top   right   bottom   left;
+padding:   top   right   bottom   left;
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+::: {.callout-tip}
+## Truco para los ingenieros: *La regla de la mano **derecha***
+
+El orden de los `margin` y de los `padding` siempre es en sentido horario. 
+
+Por lo que podemos utilizar la regla de la mano derecha de la inducción electro magnética asumiendo que el *vector* intensidad apunta hacia la pantalla
+
+:::
+
+####
