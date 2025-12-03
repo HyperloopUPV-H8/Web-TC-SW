@@ -232,7 +232,7 @@ ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
 :::
 
 
-#### `<ul>` *Ordered list*
+#### `<ol>` *Ordered list*
 
 1. Recepción
 2. Discurso del Rector
@@ -442,7 +442,7 @@ Etiqueta invisible
 
 
 
-#### `a` Link
+#### `<a>` Link
 
 [HyperloopUPV](https://hyperloopupv.com/)
 
@@ -493,7 +493,7 @@ En el caso de las etiquetas `<a>` debemos de especificar en los atributos la ref
 :::
 
 
-#### `<forms>` *Forms*
+#### `<form>` *Forms*
 
 Ampliamente utilizados en HTML, trabajan sobre la etiqueta `<input>` la cual tiene muchos tipos.
 
