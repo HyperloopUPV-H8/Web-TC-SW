@@ -1,0 +1,11 @@
+---
+title: "MA: Selectores y Pseudoselectores"
+author: "Javier Ribal del Río"
+date: "2025-12-05"
+date-modified: today
+affiliation: "Hyperloop UPV"
+---
+
+Además del `id` y las `class`, existen más selectores que son ampliamente utilizados en la programación web. El siguiente video los explica muy detallados y sirve como repaso para lo que se ha visto esta semana de CSS. El vídeo está en Inglés y dura 20 minutos.
+
+{{< video https://www.youtube.com/watch?v=l1mER1bV0N0 >}}

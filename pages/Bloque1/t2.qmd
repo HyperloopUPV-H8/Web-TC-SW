@@ -1,0 +1,20 @@
+---
+title: "T2: Web de HL II"
+author: "Javier Ribal del Río"
+date: "2025-12-5"
+date-modified: today
+affiliation: "Hyperloop UPV"
+---
+
+El objetivo de esta tarea, es poner en práctica lo aprendido en clase para ello vamos a formatear la web de nuestro equipo de Hyperloop, (tarea de la semana pasada).
+
+Se debe formatear para que quede como está [Web](t2-solu.html), cuanto más se parezca mejor.
+
+**Notas:**
+
+La hoja de estilos debe de estar incluida en el la etiqueta `<style>` del `<head>`.
+
+Para conseguir que los bordes de la `table`, `td`, `tr`... colapsen (que solo haya un borde y no dos) se debe utilizar la propiedad `border-collapse`.
+
+Si no se realizó la T1, puede utilizar [este archivo html](t1-solu.html) como base (click derechao guardar enlace como).
+

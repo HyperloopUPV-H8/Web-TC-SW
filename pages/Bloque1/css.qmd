@@ -29,7 +29,7 @@ format-links:
 - Selectores básicos (Clases e ID)
 - Formato mediante etiqueta `style` 
 - Formato mediante hojas de estilo
-- Pequeñas reglas de diseño
+- Etiqueta `<meta>`
 - Git y GitHub: metodología de trabajo
 
 
@@ -508,4 +508,66 @@ Por lo que podemos utilizar la regla de la mano derecha de la inducción electro
 
 :::
 
-####
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+### Archivos externos CSS
+
+Incluir en la cabecerá el CSS presenta ventajas como tener la página web en un único archivo. Sin embargo en la práctica normalmente trabajaremos con más de 2 archivos por lo que incluir uno más o uno menos no marca la diferencia. Por lo que podemos separar el `css` en un archivo externo `.css`. De esta forma podremos reutilizar las hojas de estilos.
+
+```html
+<head>
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Etiqueta `<meta>`
+
+
+Las etiquetas `<meta>` en HTML sirven para proporcionar metadatos sobre la página web.
+Estos metadatos no se muestran al usuario, pero son importantes para navegadores, buscadores, redes sociales y dispositivos.
+
+```html
+<head>
+    <meta charset="UTF-8"> <!-- Selecciona el conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "Hace la web Responsive" -->
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Git & GitHub: 
+
+Los comandos de `git` nos permiten utilizar la `cli` para gestionar nuestro repositorio
+
+```bash
+git init # Incializa repositorio (= crear repo con GitHub)
+git clone <url-repo> 
+
+git add <files> # Añade los archivos a la stagging area
+git commit -m "<mensaje de commit>" # commit
+
+git push # push
+git pull # pull
+
+git status # estado actual del repo
+git log # historia reciente del log con poco detalle de profundidad
+
+git diff <file> # muestra la diferencia entre la versión modificada ente un archivo y otro
+```
