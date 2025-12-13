@@ -52,6 +52,12 @@ website:
 
           - text: "Próximamente..."
       - section: "Bloque II Programación"
+        contents:
+          - section: "Repaso Intensivo"
+            contents: 
+            - pages/Bloque2/intensivo.qmd
+            - pages/Bloque2/MAclases.qmd
+            - pages/Bloque2/ti.qmd
       - section: "Bloque III Interacción"
       - section: "Bloque IV Comunicación"
 
@@ -59,7 +65,6 @@ website:
 
     footer: "![](https://i.imgur.com/jbGUd7N.png)<br><br><br> © Javier Ribal del Río <br> 2025 - Hyperloop UPV"
   repo-url: https://github.com/HyperloopUPV-H8/Web-TC-SW
-
 
 format:
   html:

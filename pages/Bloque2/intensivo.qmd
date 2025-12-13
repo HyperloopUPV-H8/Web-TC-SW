@@ -1,0 +1,489 @@
+---
+title: "Repaso Intensivo JS"
+author: "Javier Ribal del Río"
+date: "2025-12-12"
+date-modified: today
+affiliation: "Hyperloop UPV"
+---
+
+**Contenido** 
+
+
+Repaso intensivo de JavaScript, tiene como objetivo dar una introducción del lenguaje, a usuarios que ya tengan experiencia previa programando.
+
+[Descargar archivo de código](intensivo.js) (click derecho guardar enlace como)
+
+---
+
+## Variables y tipos básicos
+
+### Declaración de variables
+
+En JavaScript moderno se utilizan **`let`** y **`const`** (evitar `var`).
+
+* `let`: permite reasignación
+* `const`: no permite reasignación
+* `const` **NO** significa inmutable
+* JavaScript es de **tipado dinámico**
+* El tipo depende del valor, no de la variable
+
+Tipos primitivos:
+
+* `string`
+* `number`
+* `boolean`
+* `null`
+* `undefined`
+
+```js
+let edad = 12;        // number
+let altura = 1.8;     // number
+let nombre = "Javier"; // string
+let casado = false;   // boolean
+
+let ordenador = null; // ausencia intencionada de valor
+let direccion;        // undefined
+```
+
+### Uso de `const`
+
+```js
+const dni = "1235678L";
+dni = "23"; // Error
+```
+
+#### `const` no significa inmutable
+
+```js
+const dni = "12345678L";
+dni = "87654321X"; // Error
+```
+
+Pero:
+
+```js
+const arr = [1, 2, 3];
+arr.push(4); // permitido
+```
+
+
+### Tipado dinámico
+
+* JavaScript es de **tipado dinámico**
+* El tipo depende del valor, no de la variable
+* Una variable puede cambiar de tipo durante la ejecución
+
+```js
+let x = "hola";
+x = 42;      // válido
+x = true;    // válido
+```
+
+Este comportamiento se conoce como ***shadowing*** o cambio dinámico de tipo. En el ejemplo anterior solo existe una variable X cuyo tipo pasa de `Number` a `boolean`
+
+
+
+## `null` vs `undefined`
+
+* `undefined`: variable declarada pero sin valor
+* `null`: ausencia intencionada de valor
+
+JavaScript distingue entre:
+
+> “todavía no hay valor” y “no hay valor”
+
+```js
+console.log(ordenador); // null
+console.log(direccion); // undefined
+```
+
+
+## Aritmética y operadores
+
+### Operadores aritméticos
+
+```js
+let a = 12, b = 4;
+
+a + b
+a - b
+a * b
+a / b
+a % b
+```
+
+```js
+a = a + b;
+a += b;
+a -= b;
+a *= b;
+```
+#### Potencias
+
+```js
+a**b  // Power
+```
+
+
+Incrementos:
+
+```js
+b--; b++;
+--b; ++b;
+```
+
+### Strings y concatenación
+
+```js
+a = "hola ";
+b = "mundo";
+a + b;
+```
+
+
+### Comparación
+
+* `==` compara valor (**evitar**)
+* `===` compara valor y tipo (**usar**)
+
+### Operadores lógicos
+
+* `&&` AND
+* `||` OR
+* `!` NOT
+
+
+### Comparaciones
+
+* `==` compara solo valor (**evitar**)
+* `===` compara valor y tipo (**usar siempre**, aunque sea innecesario)
+
+```js
+5 == "5";   // true
+5 === "5";  // false
+```
+
+
+### Operadores lógicos
+
+* `&&` AND
+* `||` OR
+* `!` NOT
+
+```js
+(a > 0) && (b < 10)
+```
+
+
+## Estructuras de control
+
+### Condicionales
+
+```js
+if (a === b) {
+
+} else if (a > b) {
+
+} else {
+
+}
+```
+
+
+### Bucles
+
+#### `while`
+
+```js
+let x = 20;
+while (x < 50) {
+  x += 10;
+}
+```
+
+#### `for`
+
+```js
+for (let i = 0; i < 10; i++) {
+  // iteración
+}
+```
+
+
+## Funciones
+
+* Encapsulan lógica reutilizable
+* Pueden recibir parámetros
+* Pueden devolver valores
+* Son ciudadanos de primera clase
+
+### Función clásica
+
+```js
+function sumar2(num, num2 = 2) {
+  num += num2;
+  return num;
+}
+```
+
+Paso de variables por **valor**:
+
+```js
+let a = 7;
+let b = sumar2(a, a); // 14
+a; // 7
+```
+
+### Funciones flecha y orden superior
+
+```js
+const concatenarHola = input => input + " Hola";
+concatenarHola("sdf");
+```
+
+```js
+function ejecuta(fun) {
+  fun();
+}
+
+ejecuta(() => { console.log("hola"); });
+```
+
+### Funciones propias de strings
+
+```js
+let a = "jsadfsadf ";
+a.trim();   // Suprimir espacios adicionales
+a.split('a');    // Divide el string en un array c
+a.length;
+```
+
+### Funciones flecha
+
+```js
+const cuadrado = n => n ** 2;
+```
+
+Forma extendida:
+
+```js
+const cuadrado = (n) => {
+  return n ** 2;
+};
+```
+
+
+### Funciones como ciudadanos de primera clase
+
+Las funciones pueden:
+
+* Asignarse a variables
+* Pasarse como argumentos
+* Devolverse como resultado
+
+```js
+function ejecutar(f) {
+  f();
+}
+
+ejecutar(() => console.log("Hola"));
+```
+
+
+## Arrays (base)
+
+* Lista ordenada
+* Índices empiezan en 0
+* Propiedad `length`
+
+```js
+let cajon = [8, "hola", true, () => { return 7 }];
+```
+
+### Acceso
+
+
+```js
+cajon[0]  // 8
+cajon[2] = "rino";       // modificamos la entrada 2  
+```
+
+### Adiciones
+
+```js
+cajon.push(false);
+cajon.unshift(0);
+```
+
+### Eliminaciones
+
+```js
+cajon.pop();
+cajon.shift();
+```
+
+```js
+cajon.length;
+```
+
+
+## Objetos
+
+Un objeto representa una entidad mediante estructura **clave–valor**.
+
+```js
+let gente = { pepe: 7, juanes: 8, andreas: 10, fran: [4, 2] };
+```
+
+### Modificación
+
+```js
+gente.andreas = 32;
+gente.pepe++;
+```
+
+### Acceso dinámico
+
+```js
+let nombre = "pablo";
+
+gente.nombre;      // undefined
+gente[nombre] = 2; // añade propiedad
+```
+
+
+## Referencias vs valores
+
+### Copia por valor
+
+```js
+let a = 5;
+let b = a;
+b++;
+```
+
+`a` no cambia.
+
+### Copia por referencia
+
+```js
+let e3 = ["juan", "pepe"];
+let d = e3;
+
+d.push("andrés");
+```
+
+Ambas variables apuntan al mismo array.
+
+```js
+const poblacion = gente;
+poblacion["julio"] = 8;
+```
+
+La copia por refencia se aplica a objetos y arrays
+
+```js
+let x = ["juan", "pepe"];
+let y = x;
+
+y.push("andrés"); // Se añade en x e y pues son el mismo objeto
+```
+
+Ambas variables apuntan al mismo objeto.
+
+
+## Spread operator (`...`)
+
+* Expande arrays u objetos
+* Permite copiar y combinar
+* Copia superficial
+
+### Arrays
+
+Javier es añadido a `arr2`, pero no a `arr`.
+
+```js
+let arr = ["Alice", "Bob", "Kevin"];
+let arr2 = [...arr, "Javier"];
+```
+
+### Objetos
+
+Ocurre lo mismo con los objetos
+
+```js
+const sociedad = { ...poblacion, julia: 12 };
+```
+
+
+## Funciones de array (JS moderno)
+
+Vamos a trabajar con un **ejemplo completo**, típico en programación funcional.
+
+### Datos de partida
+
+```js
+let y = [2, 4, 6, 7];
+```
+
+
+### Función `cuadrado`
+
+Definimos una función que, dado un número, devuelve su cuadrado:
+
+```js
+const cuadrado = n => n ** 2;
+```
+
+Es equivalente a:
+
+```js
+const cuadrado = (n) => {
+  return n ** 2;
+};
+```
+
+
+### `map`: transformar elementos
+
+Aplicamos `map` para obtener un nuevo array con los cuadrados:
+
+```js
+const y2 = y.map(cuadrado);
+```
+
+Resultado:
+
+```js
+[4, 16, 36, 49]
+```
+
+
+### `filter`: seleccionar elementos
+
+Definimos una función que comprueba si un número es par:
+
+```js
+const even = n => n % 2 === 0;
+```
+
+La usamos con `filter`:
+
+```js
+const yEven = y.filter(even);
+```
+
+
+### Encadenamiento (estilo declarativo)
+
+Podemos encadenar ambas operaciones:
+
+```js
+y
+  .map(n => n ** 2)
+  .filter(n => n % 2 === 0);
+```
+
+> Este estilo es **declarativo**: describimos *qué* queremos hacer con los datos,
+> no *cómo* recorrerlos.
+
