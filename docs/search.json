@@ -7,6 +7,879 @@
     "text": "About this site"
   },
   {
+    "objectID": "pages/Bloque3/DOM.html",
+    "href": "pages/Bloque3/DOM.html",
+    "title": "DOM",
+    "section": "",
+    "text": "El DOM (Document Object Model) es la representación en memoria que el navegador crea a partir del HTML.\n\nEl HTML es estático\nEl DOM es dinámico\nJavaScript interactúa con el DOM, no con el HTML original\n\n\nEl DOM es la página web viva dentro del navegador.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#qué-es-el-dom",
+    "href": "pages/Bloque3/DOM.html#qué-es-el-dom",
+    "title": "DOM",
+    "section": "",
+    "text": "El DOM (Document Object Model) es la representación en memoria que el navegador crea a partir del HTML.\n\nEl HTML es estático\nEl DOM es dinámico\nJavaScript interactúa con el DOM, no con el HTML original\n\n\nEl DOM es la página web viva dentro del navegador.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#el-dom-como-árbol",
+    "href": "pages/Bloque3/DOM.html#el-dom-como-árbol",
+    "title": "DOM",
+    "section": "El DOM como árbol",
+    "text": "El DOM como árbol\nEl DOM tiene estructura de árbol (grafo):\n\nCada etiqueta HTML es un nodo\nLos nodos tienen relaciones (padre, hijos, hermanos)\n\nEjemplo:\n&lt;body&gt;\n  &lt;h1&gt;Título&lt;/h1&gt;\n  &lt;button&gt;Click&lt;/button&gt;\n&lt;/body&gt;\nRepresentación conceptual:\ndocument\n └─ body\n    ├─ h1\n    └─ button",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#acceso-al-dom-desde-javascript",
+    "href": "pages/Bloque3/DOM.html#acceso-al-dom-desde-javascript",
+    "title": "DOM",
+    "section": "Acceso al DOM desde JavaScript",
+    "text": "Acceso al DOM desde JavaScript\nEl navegador nos proporciona el objeto global document, que permite:\n\nBuscar elementos\nLeer su contenido\nModificar la interfaz\n\ndocument\ndocument.body",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#selectores",
+    "href": "pages/Bloque3/DOM.html#selectores",
+    "title": "DOM",
+    "section": "Selectores",
+    "text": "Selectores\n\nPor ID\ndocument.getElementById(\"count\")\ndocument.querySelector(\"#count\")\n\n\nPor etiqueta\ndocument.querySelector(\"button\")\n\n\nPor clase\ndocument.querySelector(\".item\")\ndocument.querySelectorAll(\".item\")\nNotas: - querySelector devuelve el primer elemento - querySelectorAll devuelve una lista - Usan la misma sintaxis que CSS",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#leer-y-modificar-elementos",
+    "href": "pages/Bloque3/DOM.html#leer-y-modificar-elementos",
+    "title": "DOM",
+    "section": "Leer y modificar elementos",
+    "text": "Leer y modificar elementos\nelement.textContent\nelement.textContent = \"Nuevo texto\"\nelement.classList.add(\"active\")\nelement.classList.remove(\"active\")",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#eventos",
+    "href": "pages/Bloque3/DOM.html#eventos",
+    "title": "DOM",
+    "section": "Eventos",
+    "text": "Eventos\nEl DOM permite reaccionar a acciones del usuario mediante eventos.\nbutton.addEventListener(\"click\", () =&gt; {\n  // código a ejecutar\n});\nFlujo típico:\nUsuario → Evento → JavaScript → DOM actualizado",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#ejemplo-contador-con-botón",
+    "href": "pages/Bloque3/DOM.html#ejemplo-contador-con-botón",
+    "title": "DOM",
+    "section": "Ejemplo: contador con botón",
+    "text": "Ejemplo: contador con botón\n\nHTML\n&lt;h1 id=\"count\"&gt;0&lt;/h1&gt;\n&lt;button id=\"btn\"&gt;Sumar 1&lt;/button&gt;\n\n\nJavaScript\nlet count = 0;\n\nconst countEl = document.querySelector(\"#count\");\nconst btn = document.querySelector(\"#btn\");\n\nbtn.addEventListener(\"click\", () =&gt; {\n  count++;\n  countEl.textContent = count;\n});",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/DOM.html#más-ejemplos",
+    "href": "pages/Bloque3/DOM.html#más-ejemplos",
+    "title": "DOM",
+    "section": "Más ejemplos",
+    "text": "Más ejemplos\nEj1: Show input\nEj2: Par e Impar\nEj3: Toggle\nEj4: Creación dinámica\nEj5: Validación básica",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "DOM"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#qué-es-el-dom",
+    "href": "pages/Bloque3/dom.html#qué-es-el-dom",
+    "title": "DOM",
+    "section": "¿Qué es el DOM?",
+    "text": "¿Qué es el DOM?\nEl DOM (Document Object Model) es la representación en memoria que el navegador crea a partir del HTML.\n\nEl HTML es estático\nEl DOM es dinámico\nJavaScript interactúa con el DOM, no con el HTML original\n\n\nEl DOM es la página web viva dentro del navegador."
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#el-dom-como-árbol",
+    "href": "pages/Bloque3/dom.html#el-dom-como-árbol",
+    "title": "DOM",
+    "section": "El DOM como árbol",
+    "text": "El DOM como árbol\nEl DOM tiene estructura de árbol (grafo):\n\nCada etiqueta HTML es un nodo\nLos nodos tienen relaciones (padre, hijos, hermanos)\n\nEjemplo:\n&lt;body&gt;\n  &lt;h1&gt;Título&lt;/h1&gt;\n  &lt;button&gt;Click&lt;/button&gt;\n&lt;/body&gt;"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#acceso-al-dom-desde-javascript",
+    "href": "pages/Bloque3/dom.html#acceso-al-dom-desde-javascript",
+    "title": "DOM",
+    "section": "Acceso al DOM desde JavaScript",
+    "text": "Acceso al DOM desde JavaScript\nEl navegador nos proporciona el objeto global document, que permite:\n\nBuscar elementos\nLeer su contenido\nModificar la interfaz\n\ndocument\ndocument.body"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#selectores",
+    "href": "pages/Bloque3/dom.html#selectores",
+    "title": "DOM",
+    "section": "Selectores",
+    "text": "Selectores\nPor ID\ndocument.getElementById(\"count\")\ndocument.querySelector(\"#count\")\nPor etiqueta\ndocument.querySelector(\"button\")"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#leer-y-modificar-elementos",
+    "href": "pages/Bloque3/dom.html#leer-y-modificar-elementos",
+    "title": "DOM",
+    "section": "Leer y modificar elementos",
+    "text": "Leer y modificar elementos\nelement.textContent\nelement.textContent = \"Nuevo texto\"\nelement.classList.add(\"active\")\nelement.classList.remove(\"active\")"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#eventos",
+    "href": "pages/Bloque3/dom.html#eventos",
+    "title": "DOM",
+    "section": "Eventos",
+    "text": "Eventos\nEl DOM permite reaccionar a acciones del usuario mediante eventos.\nbutton.addEventListener(\"click\", () =&gt; {\n  // código a ejecutar\n});\nFlujo típico:\nUsuario → Evento → JavaScript → DOM actualizado"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#ejemplo-contador-con-botón",
+    "href": "pages/Bloque3/dom.html#ejemplo-contador-con-botón",
+    "title": "DOM",
+    "section": "Ejemplo: contador con botón",
+    "text": "Ejemplo: contador con botón\nHTML\n&lt;h1 id=\"count\"&gt;0&lt;/h1&gt;\n&lt;button id=\"btn\"&gt;Sumar 1&lt;/button&gt;\nJavaScript\nlet count = 0;\n\nconst countEl = document.querySelector(\"#count\");\nconst btn = document.querySelector(\"#btn\");\n\nbtn.addEventListener(\"click\", () =&gt; {\n  count++;\n  countEl.textContent = count;\n});"
+  },
+  {
+    "objectID": "pages/Bloque3/dom.html#más-ejemplos",
+    "href": "pages/Bloque3/dom.html#más-ejemplos",
+    "title": "DOM",
+    "section": "Más ejemplos",
+    "text": "Más ejemplos\nEj1: Show input\nEj2: Par e Impar\nEj3: Toggle\nEj4: Creación dinámica\nEj5: Validación básica"
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html",
+    "href": "pages/Bloque3/t6.html",
+    "title": "T6: Romancero Gitano I",
+    "section": "",
+    "text": "El objetivo de esta tarea es aplicar los conceptos básicos de HTML, CSS y JavaScript (DOM) para crear una página web interactiva que muestre poemas del Romancero gitano de Federico García Lorca y modifique su apariencia visual en función de las diferentes metáforas.\nResultado esperado",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#objetivo-de-la-tarea",
+    "href": "pages/Bloque3/t6.html#objetivo-de-la-tarea",
+    "title": "T6: Romancero Gitano I",
+    "section": "",
+    "text": "El objetivo de esta tarea es aplicar los conceptos básicos de HTML, CSS y JavaScript (DOM) para crear una página web interactiva que muestre poemas del Romancero gitano de Federico García Lorca y modifique su apariencia visual en función de las diferentes metáforas.\nResultado esperado",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#estructura-html",
+    "href": "pages/Bloque3/t6.html#estructura-html",
+    "title": "T6: Romancero Gitano I",
+    "section": "Estructura HTML",
+    "text": "Estructura HTML\nEl documento HTML debe:\n\nEstar correctamente estructurado (&lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;, &lt;body&gt;).\nContener un contenedor principal centrado horizontalmente.\nIncluir, en este orden:\n\nUn elemento para mostrar información métrica del poema (número de estrofas y versos).\nUn elemento para el título del poema.\nUn elemento para el texto del poema, respetando los saltos de verso.\nUn botón que permita cambiar de poema.\n\n\nNo debe utilizarse ningún framework ni librería externa.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#javascript",
+    "href": "pages/Bloque3/t6.html#javascript",
+    "title": "T6: Romancero Gitano I",
+    "section": "JavaScript",
+    "text": "JavaScript\n\nDatos\nEn JavaScript se debe definir un array de objetos, donde cada objeto represente un poema y tenga al menos:\n\nUn título.\nEl texto del poema como una cadena de texto, usando saltos de línea para los versos.\n\nEl cambio de poema debe hacerse recorriendo este array de forma cíclica (cola circular) mediante el botón.\nDescargar poemas (click derecho guardar enlace como)\n\n\nManipulación del DOM\nEl comportamiento de la página debe implementarse exclusivamente con DOM nativo, cumpliendo lo siguiente:\n\nTodas las funciones deben declararse como arrow functions.\nAl pulsar el botón:\n\nSe actualiza el título.\nSe actualiza el texto del poema.\nSe modifica el formato del fondo.\nSe recalculan y muestran:\n\nNúmero de versos.\nNúmero de estrofas (bloques separados por líneas en blanco).\n\n\n\nEl cálculo debe realizarse a partir del texto del poema, no con valores predefinidos.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#css",
+    "href": "pages/Bloque3/t6.html#css",
+    "title": "T6: Romancero Gitano I",
+    "section": "CSS",
+    "text": "CSS\nLorca utiliza las metáforas y la alegoría como elemento principal sobre el que construye sus poemas, al analizar profundamente descubrimos que siempre recurre a las mismas metáforas.\nEl color no se utiliza aquí solo como elemento decorativo, sino como un recurso semántico: cada color representa un símbolo literario presente en el poema.\nDesde el punto de vista técnico: - Los colores de fondo y de texto deben definirse en clases CSS. - JavaScript no decide colores, únicamente decide qué clase aplicar según el contenido del poema.\n\nPalabras clave y colores asociados\nSe debe detectar el texto del poema las siguientes palabras clave y aplicar el color de fondo correspondiente:\n\nluna → fondo negro\nguardia civil → fondo verde militar\nsangre → fondo granate oscuro\ncaballo → fondo color tierra\ncuchillo / navaja → fondo plateado\n\nEl color del texto debe elegirse siempre de forma que exista contraste suficiente con el fondo y se garantice la legibilidad.\nSi el poema contiene varias palabras clave, solo debe aplicarse un único estilo, siguiendo un orden de prioridad definido previamente.\nSi el poema no contiene ninguna de estas palabras, se aplicará un estilo por defecto con colores aleatorios.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#extra-opcional-símbolo-aurora",
+    "href": "pages/Bloque3/t6.html#extra-opcional-símbolo-aurora",
+    "title": "T6: Romancero Gitano I",
+    "section": "Extra opcional: símbolo aurora 🌈",
+    "text": "Extra opcional: símbolo aurora 🌈\nDe forma voluntaria, se puede añadir el símbolo aurora, que tendrá prioridad absoluta sobre todos los demás.\nCuando el poema contenga la palabra aurora, el fondo debe mostrar un degradado animado.\n\nCSS necesario para el extra\n.aurora {\n  background: linear-gradient(120deg,\n    #ff005d,\n    #ff9f1c,\n    #ffee32,\n    #3cff00,\n    #00e5ff,\n    #7a00ff,\n    #ff00c8\n  );\n  background-size: 600% 600%;\n  animation: aurora 10s linear infinite;\n  color: black;\n}\n\n@keyframes aurora {\n  0%   { background-position: 0% 50%; }\n  50%  { background-position: 100% 50%; }\n  100% { background-position: 0% 50%; }\n}",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#consejos",
+    "href": "pages/Bloque3/t6.html#consejos",
+    "title": "T6: Romancero Gitano I",
+    "section": "Consejos",
+    "text": "Consejos\n\nCentrado de la página (layout clásico)\nToda la página debe estar centrada horizontalmente.\nEl centrado se consigue mediante:\n\nUn contenedor con un ancho máximo definido.\nMárgenes automáticos a izquierda y derecha.\n\nDesde el punto de vista conceptual:\n\nmargin: 0 auto no centra texto, centra bloques.\nEl navegador reparte automáticamente el espacio sobrante a ambos lados del contenedor.\n\n\n\nAnimación del cambio de color\nPara evitar que los cambios de color sean bruscos, se utiliza la propiedad transition en CSS.\nEsta propiedad indica al navegador que los cambios en determinadas propiedades visuales deben hacerse de forma progresiva.\nEjemplo conceptual:\nbody {\n  transition: background-color 0.6s, color 0.6s;\n}\nGracias a esta transición: - Cuando JavaScript cambia una clase o un color, - el navegador interpola automáticamente entre el color anterior y el nuevo.\nNo es necesario programar animaciones en JavaScript: CSS se encarga de todo el efecto visual.\n\n\nBúsqueda de una palabra\nPara buscar si determinada palabra determinada se debe utilizar la función includes de la clase string\n\ntexto = \"hoy nieva\";\n\ntexto.includes(\"nieva\");    //TRUE\ntexto.includes(\"llueve\");   //FALSE\n\n\nGeneración del color aleatorio\nPara la generacióndel color aleatorio de puede utilizar la siguiente función\nconst randomColor = () =&gt; '#' + Math.floor(Math.random() * 16777215).toString(16);\n\n\nConteo versos y estrofas\nEl recuento de versos y estrofas debe hacerse a partir del texto del poema, no con valores escritos a mano. A continuación se dan algunas pistas técnicas para abordar este problema.\n\nConteo de versos\nUn verso puede considerarse, a efectos prácticos en esta tarea, como una línea de texto no vacía.\nUna estrategia habitual consiste en: - Separar el texto por saltos de línea. - Eliminar las líneas vacías o formadas solo por espacios. - Contar cuántas líneas válidas quedan.\nEjemplo orientativo:\nconst versos = texto\n  .split('\\n')\n  .filter(linea =&gt; linea.trim() !== '')\n  .length;\nEste enfoque es suficiente para la mayoría de los poemas del Romancero gitano y evita errores frecuentes.\n\n\nConteo de estrofas\nUna estrofa puede entenderse como un bloque de versos separado de otros bloques por una línea en blanco.\nUna posible estrategia es: - Separar el texto usando dos (o más) saltos de línea consecutivos. - Eliminar bloques vacíos. - Contar los bloques resultantes.\nEjemplo orientativo:\nconst estrofas = texto\n  .split(/\\n\\s*\\n/)\n  .filter(bloque =&gt; bloque.trim() !== '')\n  .length;\nEntrega: un único archivo HTML funcional.",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque3/t6.html#recomendaciones-para-afrontar-la-tarea",
+    "href": "pages/Bloque3/t6.html#recomendaciones-para-afrontar-la-tarea",
+    "title": "T6: Romancero Gitano I",
+    "section": "Recomendaciones para afrontar la tarea",
+    "text": "Recomendaciones para afrontar la tarea\nAl enfrentarnos a un proyecto de cierta complejitud, el como afrontarlo resulta de cricial para el desarollo del mismo por ello a a continuación dejo un esquema de implementación modular. Sería mejor no utilizarlo, pero puede ser un buen punto de partida si no se sabe como empezar la app, no es el único proceso de implementación válido ni es más correcto que cualquier otro\n\nEstructura de HTML básica contadores de versos y estrofas placeholders de poema y título y botón\nFormateo CSS parte estática: centrado, tamaño (todo lo que no sea color)\nDefinir clases con colores predeterminados\nLógica interna con JS\n\n\nBuscar palabra\nContar estrofas\nConteo versos\nSelección de clase\nGenerar color aleatorio si procede\n\n\nIntegración con DOM",
+    "crumbs": [
+      "Bloque III Interacción",
+      "Semana 6",
+      "T6: Romancero Gitano I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html",
+    "href": "pages/Bloque2/intensivo.html",
+    "title": "Repaso Intensivo JS",
+    "section": "",
+    "text": "Contenido\nRepaso intensivo de JavaScript, tiene como objetivo dar una introducción del lenguaje, a usuarios que ya tengan experiencia previa programando.\nDescargar archivo de código (click derecho guardar enlace como)",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#variables-y-tipos-básicos",
+    "href": "pages/Bloque2/intensivo.html#variables-y-tipos-básicos",
+    "title": "Repaso Intensivo JS",
+    "section": "Variables y tipos básicos",
+    "text": "Variables y tipos básicos\n\nDeclaración de variables\nEn JavaScript moderno se utilizan let y const (evitar var).\n\nlet: permite reasignación\nconst: no permite reasignación\nconst NO significa inmutable\nJavaScript es de tipado dinámico\nEl tipo depende del valor, no de la variable\n\nTipos primitivos:\n\nstring\nnumber\nboolean\nnull\nundefined\n\nlet edad = 12;        // number\nlet altura = 1.8;     // number\nlet nombre = \"Javier\"; // string\nlet casado = false;   // boolean\n\nlet ordenador = null; // ausencia intencionada de valor\nlet direccion;        // undefined\n\n\nUso de const\nconst dni = \"1235678L\";\ndni = \"23\"; // Error\n\nconst no significa inmutable\nconst dni = \"12345678L\";\ndni = \"87654321X\"; // Error\nPero:\nconst arr = [1, 2, 3];\narr.push(4); // permitido\n\n\n\nTipado dinámico\n\nJavaScript es de tipado dinámico\nEl tipo depende del valor, no de la variable\nUna variable puede cambiar de tipo durante la ejecución\n\nlet x = \"hola\";\nx = 42;      // válido\nx = true;    // válido\nEste comportamiento se conoce como shadowing o cambio dinámico de tipo. En el ejemplo anterior solo existe una variable X cuyo tipo pasa de Number a boolean",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#null-vs-undefined",
+    "href": "pages/Bloque2/intensivo.html#null-vs-undefined",
+    "title": "Repaso Intensivo JS",
+    "section": "null vs undefined",
+    "text": "null vs undefined\n\nundefined: variable declarada pero sin valor\nnull: ausencia intencionada de valor\n\nJavaScript distingue entre:\n\n“todavía no hay valor” y “no hay valor”\n\nconsole.log(ordenador); // null\nconsole.log(direccion); // undefined",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#aritmética-y-operadores",
+    "href": "pages/Bloque2/intensivo.html#aritmética-y-operadores",
+    "title": "Repaso Intensivo JS",
+    "section": "Aritmética y operadores",
+    "text": "Aritmética y operadores\n\nOperadores aritméticos\nlet a = 12, b = 4;\n\na + b\na - b\na * b\na / b\na % b\na = a + b;\na += b;\na -= b;\na *= b;\n\nPotencias\na**b  // Power\nIncrementos:\nb--; b++;\n--b; ++b;\n\n\n\nStrings y concatenación\na = \"hola \";\nb = \"mundo\";\na + b;\n\n\nComparación\n\n== compara valor (evitar)\n=== compara valor y tipo (usar)\n\n\n\nOperadores lógicos\n\n&& AND\n|| OR\n! NOT\n\n\n\nComparaciones\n\n== compara solo valor (evitar)\n=== compara valor y tipo (usar siempre, aunque sea innecesario)\n\n5 == \"5\";   // true\n5 === \"5\";  // false\n\n\nOperadores lógicos\n\n&& AND\n|| OR\n! NOT\n\n(a &gt; 0) && (b &lt; 10)",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#estructuras-de-control",
+    "href": "pages/Bloque2/intensivo.html#estructuras-de-control",
+    "title": "Repaso Intensivo JS",
+    "section": "Estructuras de control",
+    "text": "Estructuras de control\n\nCondicionales\nif (a === b) {\n\n} else if (a &gt; b) {\n\n} else {\n\n}\n\n\nBucles\n\nwhile\nlet x = 20;\nwhile (x &lt; 50) {\n  x += 10;\n}\n\n\nfor\nfor (let i = 0; i &lt; 10; i++) {\n  // iteración\n}",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#funciones",
+    "href": "pages/Bloque2/intensivo.html#funciones",
+    "title": "Repaso Intensivo JS",
+    "section": "Funciones",
+    "text": "Funciones\n\nEncapsulan lógica reutilizable\nPueden recibir parámetros\nPueden devolver valores\nSon ciudadanos de primera clase\n\n\nFunción clásica\nfunction sumar2(num, num2 = 2) {\n  num += num2;\n  return num;\n}\nPaso de variables por valor:\nlet a = 7;\nlet b = sumar2(a, a); // 14\na; // 7\n\n\nFunciones flecha y orden superior\nconst concatenarHola = input =&gt; input + \" Hola\";\nconcatenarHola(\"sdf\");\nfunction ejecuta(fun) {\n  fun();\n}\n\nejecuta(() =&gt; { console.log(\"hola\"); });\n\n\nFunciones propias de strings\nlet a = \"jsadfsadf \";\na.trim();   // Suprimir espacios adicionales\na.split('a');    // Divide el string en un array c\na.length;\n\n\nFunciones flecha\nconst cuadrado = n =&gt; n ** 2;\nForma extendida:\nconst cuadrado = (n) =&gt; {\n  return n ** 2;\n};\n\n\nFunciones como ciudadanos de primera clase\nLas funciones pueden:\n\nAsignarse a variables\nPasarse como argumentos\nDevolverse como resultado\n\nfunction ejecutar(f) {\n  f();\n}\n\nejecutar(() =&gt; console.log(\"Hola\"));",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#arrays-base",
+    "href": "pages/Bloque2/intensivo.html#arrays-base",
+    "title": "Repaso Intensivo JS",
+    "section": "Arrays (base)",
+    "text": "Arrays (base)\n\nLista ordenada\nÍndices empiezan en 0\nPropiedad length\n\nlet cajon = [8, \"hola\", true, () =&gt; { return 7 }];\n\nAcceso\ncajon[0]  // 8\ncajon[2] = \"rino\";       // modificamos la entrada 2  \n\n\nAdiciones\ncajon.push(false);\ncajon.unshift(0);\n\n\nEliminaciones\ncajon.pop();\ncajon.shift();\ncajon.length;",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#objetos",
+    "href": "pages/Bloque2/intensivo.html#objetos",
+    "title": "Repaso Intensivo JS",
+    "section": "Objetos",
+    "text": "Objetos\nUn objeto representa una entidad mediante estructura clave–valor.\nlet gente = { pepe: 7, juanes: 8, andreas: 10, fran: [4, 2] };\n\nModificación\ngente.andreas = 32;\ngente.pepe++;\n\n\nAcceso dinámico\nlet nombre = \"pablo\";\n\ngente.nombre;      // undefined\ngente[nombre] = 2; // añade propiedad",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#referencias-vs-valores",
+    "href": "pages/Bloque2/intensivo.html#referencias-vs-valores",
+    "title": "Repaso Intensivo JS",
+    "section": "Referencias vs valores",
+    "text": "Referencias vs valores\n\nCopia por valor\nlet a = 5;\nlet b = a;\nb++;\na no cambia.\n\n\nCopia por referencia\nlet e3 = [\"juan\", \"pepe\"];\nlet d = e3;\n\nd.push(\"andrés\");\nAmbas variables apuntan al mismo array.\nconst poblacion = gente;\npoblacion[\"julio\"] = 8;\nLa copia por refencia se aplica a objetos y arrays\nlet x = [\"juan\", \"pepe\"];\nlet y = x;\n\ny.push(\"andrés\"); // Se añade en x e y pues son el mismo objeto\nAmbas variables apuntan al mismo objeto.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#spread-operator-...",
+    "href": "pages/Bloque2/intensivo.html#spread-operator-...",
+    "title": "Repaso Intensivo JS",
+    "section": "Spread operator (...)",
+    "text": "Spread operator (...)\n\nExpande arrays u objetos\nPermite copiar y combinar\nCopia superficial\n\n\nArrays\nJavier es añadido a arr2, pero no a arr.\nlet arr = [\"Alice\", \"Bob\", \"Kevin\"];\nlet arr2 = [...arr, \"Javier\"];\n\n\nObjetos\nOcurre lo mismo con los objetos\nconst sociedad = { ...poblacion, julia: 12 };",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/intensivo.html#funciones-de-array-js-moderno",
+    "href": "pages/Bloque2/intensivo.html#funciones-de-array-js-moderno",
+    "title": "Repaso Intensivo JS",
+    "section": "Funciones de array (JS moderno)",
+    "text": "Funciones de array (JS moderno)\nVamos a trabajar con un ejemplo completo, típico en programación funcional.\n\nDatos de partida\nlet y = [2, 4, 6, 7];\n\n\nFunción cuadrado\nDefinimos una función que, dado un número, devuelve su cuadrado:\nconst cuadrado = n =&gt; n ** 2;\nEs equivalente a:\nconst cuadrado = (n) =&gt; {\n  return n ** 2;\n};\n\n\nmap: transformar elementos\nAplicamos map para obtener un nuevo array con los cuadrados:\nconst y2 = y.map(cuadrado);\nResultado:\n[4, 16, 36, 49]\n\n\nfilter: seleccionar elementos\nDefinimos una función que comprueba si un número es par:\nconst even = n =&gt; n % 2 === 0;\nLa usamos con filter:\nconst yEven = y.filter(even);\n\n\nEncadenamiento (estilo declarativo)\nPodemos encadenar ambas operaciones:\ny\n  .map(n =&gt; n ** 2)\n  .filter(n =&gt; n % 2 === 0);\n\nEste estilo es declarativo: describimos qué queremos hacer con los datos, no cómo recorrerlos.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "Repaso Intensivo JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/jsI.html",
+    "href": "pages/Bloque2/jsI.html",
+    "title": "Introducción a JS",
+    "section": "",
+    "text": "Contenido"
+  },
+  {
+    "objectID": "pages/Bloque2/jsI.html#introducción-a-js",
+    "href": "pages/Bloque2/jsI.html#introducción-a-js",
+    "title": "Introducción a JS",
+    "section": "Introducción a JS",
+    "text": "Introducción a JS\n\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:\n\n\n\nCapa\nLenguaje\nFunción principal\n\n\n\n\nContenido\nHTML\nEstructura del documento\n\n\nPresentación\nCSS\nApariencia y diseño\n\n\nComportamiento\nJavaScript\nInteractividad y lógica"
+  },
+  {
+    "objectID": "pages/Bloque2/jsI.html#programación-en-js",
+    "href": "pages/Bloque2/jsI.html#programación-en-js",
+    "title": "Introducción a JS",
+    "section": "Programación en JS",
+    "text": "Programación en JS\n\nCaracterísticas generales de JS\n\nTipado dinámico\n\nTipado débil Coerción Implicita\n\nMultiparadigma\n\nÁmbito léxico (estático)\n\nModelo basado en prototipos (polimorfismo de inclusión por composición)\n\nFunciones de primera clase\n\nFunciones de orden superior\n\n\nClosures / Copia viva\nReflexión (Reflect, Proxy, descriptores)\n\nMetaprogramación\nSin Polimorfismo Ad-hoc de sobrecarga, ni Polimorfismo universal genérico\n\n\nEjecución single-threaded\n\nAsincronía no bloqueante\n\nPromises / async–await\n\nGarbage collection\nInteroperabilidad con JSON\n\n\n\nTipos\n\nPrimitivos\n\nstring — cadenas de texto\n\nnumber — números (enteros y decimales)\nboolean — verdadero o falso\n\nnull — ausencia intencional de valor\n\nundefined — valor no inicializado\n\nsymbol\nbigint\n\n\n\nTipos de referencia\n\nObject\n\nArray\n\nFunc tion\n\nMap / Set\n\nDate\n\n\n\n\nCaracterísticas del sistema de tipos\n\nTipado dinámico\n\nTipado débil\n\nLos primitivos se copian por valor\n\nLos objetos se copian por referencia\n\n\n\nVariables\n\nlet\n\nTipado: dinámico\nAlcance: estático\nMutables\nHoisting\nNo globales\nShadowing permitido\n\n\n\nconst\nNo son verdaderamente constantes\n\nTipado: dinámico\nAlcance: estático\nInmutables en la referencia (no permiten reasignación)\nHoisting\nNo globales\nShadowing permitido\n\n\n\nvar\nNo se usa\n\nTipado: dinámico\nAlcance: de función (no de bloque)\nMutables\nHoisting (inicializadas como undefined)\nGlobales si se declaran en el ámbito global (propiedad de window/globalThis)\nShadowing permitido, pero con reglas inconsistentes (puede causar illegal shadowing en combinación con let/const)"
+  },
+  {
+    "objectID": "pages/Bloque2/jsI-reveal.html#introducción-a-js",
+    "href": "pages/Bloque2/jsI-reveal.html#introducción-a-js",
+    "title": "Introducción a JS",
+    "section": "Introducción a JS",
+    "text": "Introducción a JS\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:"
+  },
+  {
+    "objectID": "pages/Bloque2/jsI-reveal.html#programación-en-js",
+    "href": "pages/Bloque2/jsI-reveal.html#programación-en-js",
+    "title": "Introducción a JS",
+    "section": "Programación en JS",
+    "text": "Programación en JS\nCaracterísticas generales de JS\n\nTipado dinámico\n\nTipado débil Coerción Implicita\n\nMultiparadigma\n\nÁmbito léxico (estático)\n\nModelo basado en prototipos (polimorfismo de inclusión por composición)\n\nFunciones de primera clase\n\nFunciones de orden superior"
+  },
+  {
+    "objectID": "pages/Bloque1/t2.html",
+    "href": "pages/Bloque1/t2.html",
+    "title": "T2: Web de HL II",
+    "section": "",
+    "text": "El objetivo de esta tarea, es poner en práctica lo aprendido en clase para ello vamos a formatear la web de nuestro equipo de Hyperloop, (tarea de la semana pasada).\nSe debe formatear para que quede como está Web, cuanto más se parezca mejor.\nNotas:\nLa hoja de estilos debe de estar incluida en el la etiqueta &lt;style&gt; del &lt;head&gt;.\nPara conseguir que los bordes de la table, td, tr… colapsen (que solo haya un borde y no dos) se debe utilizar la propiedad border-collapse.\nSi no se realizó la T1, puede utilizar este archivo html como base (click derechao guardar enlace como).",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "T2: Web de HL II"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css.html",
+    "href": "pages/Bloque1/css.html",
+    "title": "CSS",
+    "section": "",
+    "text": "Contenido",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "CSS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css.html#problemas-de-html",
+    "href": "pages/Bloque1/css.html#problemas-de-html",
+    "title": "CSS",
+    "section": "Problemas de HTML",
+    "text": "Problemas de HTML\nHasta el momento hemos trabajado con HTML, que a pesar de ser muy práctico para la creación de la estructura interna de la web, presenta ciertas limitaciones a la hora de modificar el formato de la web, para ello se introduce CSS, una herramienta que nos va a permitir modificar el formato cómodamente.",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "CSS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css.html#formato-con-css",
+    "href": "pages/Bloque1/css.html#formato-con-css",
+    "title": "CSS",
+    "section": "Formato con CSS",
+    "text": "Formato con CSS\n\nAtributo style\nSupongamos que tenemos el siguiente elemento\n&lt;p&gt; Hola Mundo&lt;p&gt;. Por ahora el texto se mostrará en color negro, el color predeterminado de HTML para las etiquetas &lt;p&gt;\n\n\nHola mundo\n\n\nSi se desea modificar el formato intrínseco de esta etiqueta &lt;p&gt; debemos incluir la propiedad style que, como su nombre indica nos permitirá modificar su estilo. Dentro de este atributo se ha de insertar propiedad CSS (no confundir con los atributos html). La propiedad CSS especifica que aspecto visual del contenido de la etiqueta. Por ejemplo, si se desea modificar el color de la letra se debe de utilizar la propiedad color (nótese que no lleva u).\n&lt;p style=\"color:red\"&gt;Hola Mundo&lt;/p&gt;\n\n&lt;!-- Equivalente en Hexadecimal --&gt;\n\n&lt;p style=\"color:#ff0000\"&gt;Hola Mundo&lt;/p&gt;\n\n\nHola Mundo\n\n\nSí deseamos modificar más de una propiedad CSS deberemos de serparalas dentro de la etiqueta con un punto y coma\n&lt;p style=\"color:#ff0000; font-size: 44px\"&gt;Hola Mundo&lt;/p&gt;\n\n\nHola Mundo\n\n\n\nProblemas del atributo style\nEl atributo style resulta útil para formatear una etiqueta individualmente, pero resulta tedioso y repetitivo para más de una etiqueta. Observe el siguiente ejemplo\n&lt;p&gt;Autores del culteranismo marcados en rojo&lt;p&gt;\n\n&lt;ul&gt;\n    &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n    &lt;li style=\"color:red; text-decoration: underline; font-size:30px;\"&gt;Luis de Góngora&lt;/li&gt;\n    &lt;li&gt;Baltasar Gracián&lt;/li&gt;\n    &lt;li style=\"color:red; text-decoration: underline; font-size:30px;\"&gt;Pedro Soto de Rojas&lt;/li&gt;\n    &lt;li&gt;Tirso de Molina&lt;/li&gt;\n    &lt;li&gt;Calderón de la Barca&lt;/li&gt;\n&lt;/ul&gt;\n\n\nAutores del culteranismo marcados en rojo\n\n\n\nFrancisco de Quevedo\n\n\nLuis de Góngora\n\n\nBaltasar Gracián\n\n\nPedro Soto de Rojas\n\n\nTirso de Molina\n\n\nCalderón de la Barca\n\n\n\nProblemas:\n\nRepetición de mucho código\nAlta posibilidad error\nPoca escalabilidad\n\nSi añadimos por ejempo a Luis Carrillo y Sotomayor (autor culteranista) hay que volver a repetir todo el atributo\nSi deseasemos cambiar el color de rojo a verde deberemos modificar cada uno de los atributos\n\n\n\n\n\nClases e ID\n\nClases\nLa solución a este problema son las clases que nos permiten identificar aquellos componentes con características de formato similares. Se agregan como atributos a cada etiqueta\n&lt;p&gt;Autores del culteranismo marcados en rojo&lt;p&gt; &lt;!--En este caso no se marcan en rojo--&gt;\n\n&lt;ul&gt;\n    &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Luis de Góngora&lt;/li&gt;\n    &lt;li&gt;Baltasar Gracián&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Pedro Soto de Rojas&lt;/li&gt;\n    &lt;li&gt;Tirso de Molina&lt;/li&gt;\n    &lt;li&gt;Calderón de la Barca&lt;/li&gt;\n&lt;/ul&gt;\n\nEtiqueta &lt;style&gt;\nAhora para marcar en rojo los culterantistas se ha de indicar el formato de todos en la class culteranista, para ello nos definiremos una hoja de estilo que será común para todo el documento. La hoja de estilos se define en el &lt;head&gt; de la siguiente forma:\n&lt;head&gt;\n&lt;!-- Fragemento HTML --&gt;\n&lt;style&gt;\n  /*Fragmento CSS*/\n  .culteranistas{  /*Nótese el punto*/\n    color: red;\n    text-size: 40px;\n    background-color: blue;\n    text-decoration: underline;  /*Este último ';' no es obligatorio como tal, pero es recomendable, en HTML3 y CSS2 daba error si se incluía*/\n  }\n&lt;/style&gt; \n&lt;!--Fin de la etiqueta Style, seguimos con html--&gt;\n&lt;/head&gt;\nAhora se visualizará correctamente, además se añadirá el fondo azul\n\n\nComposición de clases\nSuponga que tenemos dos clases, una primera clase que modifica el tipo de letra a monospace que aplicaremos a los autores culteranistas y una segunda que modifica el grosor de la letra que se aplicará sobre los autores de lírica.\n&lt;head&gt;&lt;style&gt;\n  .culteranista {\n    font-family: monospace;\n  }\n  .lirica {\n    font-weight: bold;\n  }\n  .autores {\n    list-style: square;\n  }\n&lt;/style&gt;&lt;/head&gt;\n\n&lt;body&gt;\n  &lt;ul class=\"autores\"&gt;\n    &lt;li class=\"lirica\"&gt;Fray Luis de León&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Hortensio Félix de Paravicino&lt;/li&gt;\n    &lt;li class=\"culteranista lirica\"&gt;Lope de Vega&lt;/li&gt;\n    &lt;li class=\"lirica\"&gt;San Juan de la Cruz&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/body&gt;\n\n\n\nFray Luis de León\n\n\nHortensio Félix de Paravicino\n\n\nLope de Vega\n\n\nSan Juan de la Cruz\n\n\n\n\n\n\nID\nLos ID son como las clases pero solo se pueden utlizar una vez por sitio web. Es útil para cosas que no se deben repetir más de una vez por sitio web.\n&lt;style&gt;\n#principal{\n  text-align: center\n  color:blue\n}\n&lt;/style&gt;\n&lt;!--[...]--&gt;\n&lt;div id=\"principal\"&gt;\n  &lt;h4&gt;Teatro Romántico&gt;&lt;/h4&gt;\n  &lt;p&gt;El retablo romántico se caracteriza por exaltar la libertad creadora,\n    la expresión intensa de los sentimientos individuales, el gusto por lo\n    misterioso y lo sublime, y la reivindicación de la imaginación frente a\n    las reglas clásicas.&lt;/p&gt;\n&lt;/div&gt;\n\n\nTeatro Romántico\n\n\nEl retablo romántico se caracteriza por exaltar la libertad creadora, la expresión intensa de los sentimientos individuales, el gusto por lo misterioso y lo sublime, y la reivindicación de la imaginación frente a las reglas clásicas.\n\n\n\n\n\nPropiedades CSS\n\nborder y border-radius\nLa propiedad border es una propiedad abreviada (shorthand) que en realidad combina tres propiedades más pequeñas:\n\nborder-width → grosor del borde\n\nborder-style → estilo del borde (solid, dashed, dotted, etc.)\n\nborder-color → color del borde\n\nPor ejemplo, estas dos definiciones son equivalentes:\n/* Forma abreviada */\n.caja {\n  border: 2px solid red;\n}\n\n/* Forma “desdoblada” en 3 mini propiedades */\n.caja-desdoblada {\n  border-width: 2px;\n  border-style: solid;\n  border-color: red;\n}\n Lope de Vega\n\n\nborder-top, border-right, border-bottom, border-left\nCSS permite aplicar bordes distintos en cada lado. Cada uno funciona igual que border pero aplicado a un solo lado:\nborder-top\nborder-right\nborder-bottom\nborder-left\n.caja-bordes {\n  border-top: 3px solid red;\n  border-right: 2px dashed blue;\n  border-bottom: 4px dotted green;\n  border-left: 5px double orange;\n}\nTambién pueden desdoblarse:\n.caja-top-desdoblado {\n  border-top-width: 4px;\n  border-top-style: solid;\n  border-top-color: purple;\n}\n\n\nmargin y padding\nLas propiedades margin y padding controlan el espacio alrededor de los elementos, pero cada una actúa en una zona distinta:\n\nmargin → espacio externo, fuera del borde del elemento\n\npadding → espacio interno, entre el contenido y el borde\n\nVisualmente:\n\n\n \n\n\n\n CONTENT\n\n\n\n\n&lt;div style=\"background:#f0f0f0; padding:20px;\"&gt;\n &lt;!-- MARGIN (gris claro alrededor del borde) --&gt;\n   &lt;!-- BORDER --&gt;\n   &lt;div style=\"border:3px solid black\"&gt;\n   &lt;!-- PADDING (espacio interno) --&gt;\n   &lt;div style=\"background:#d0ffd0; padding:15px;\"&gt;\n   &lt;!-- CONTENT --&gt;\n     &lt;span style=\"background-color:white\"&gt;CONTENT&lt;/span&gt;\n   &lt;/div&gt;\n &lt;/div&gt;\n&lt;/div&gt;\n\nRegla Trouble\nCuando margin o padding usan 4 valores, el orden siempre es el mismo:\ntop, right, bottom, left\nPara recordarlo fácilmente se utiliza la regla mnemotécnica Trouble:\n\nT → Top (arriba)\n\nR → Right (derecha)\n\nB → Bottom (abajo)\n\nL → Left (izquierda)\n\nEs decir:\nmargin:    top   right   bottom   left;\npadding:   top   right   bottom   left;\n\n\n\n\n\n\nTipTruco para los ingenieros: La regla de la mano derecha\n\n\n\nEl orden de los margin y de los padding siempre es en sentido horario.\nPor lo que podemos utilizar la regla de la mano derecha de la inducción electro magnética asumiendo que el vector intensidad apunta hacia la pantalla\n\n\n\n\n\n\nArchivos externos CSS\nIncluir en la cabecerá el CSS presenta ventajas como tener la página web en un único archivo. Sin embargo en la práctica normalmente trabajaremos con más de 2 archivos por lo que incluir uno más o uno menos no marca la diferencia. Por lo que podemos separar el css en un archivo externo .css. De esta forma podremos reutilizar las hojas de estilos.\n&lt;head&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "CSS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css.html#etiqueta-meta",
+    "href": "pages/Bloque1/css.html#etiqueta-meta",
+    "title": "CSS",
+    "section": "Etiqueta <meta>",
+    "text": "Etiqueta &lt;meta&gt;\nLas etiquetas &lt;meta&gt; en HTML sirven para proporcionar metadatos sobre la página web. Estos metadatos no se muestran al usuario, pero son importantes para navegadores, buscadores, redes sociales y dispositivos.\n&lt;head&gt;\n    &lt;meta charset=\"UTF-8\"&gt; &lt;!-- Selecciona el conjunto de caracteres --&gt;\n    &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;!-- \"Hace la web Responsive\" --&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "CSS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css.html#git-github",
+    "href": "pages/Bloque1/css.html#git-github",
+    "title": "CSS",
+    "section": "Git & GitHub:",
+    "text": "Git & GitHub:\nLos comandos de git nos permiten utilizar la cli para gestionar nuestro repositorio\ngit init # Incializa repositorio (= crear repo con GitHub)\ngit clone &lt;url-repo&gt; \n\ngit add &lt;files&gt; # Añade los archivos a la stagging area\ngit commit -m \"&lt;mensaje de commit&gt;\" # commit\n\ngit push # push\ngit pull # pull\n\ngit status # estado actual del repo\ngit log # historia reciente del log con poco detalle de profundidad\n\ngit diff &lt;file&gt; # muestra la diferencia entre la versión modificada ente un archivo y otro",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "CSS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/css_p.html#problemas-de-html",
+    "href": "pages/Bloque1/css_p.html#problemas-de-html",
+    "title": "CSS",
+    "section": "Problemas de HTML",
+    "text": "Problemas de HTML\nHasta el momento hemos trabajado con HTML, que a pesar de ser muy práctico para la creación de la estructura interna de la web, presenta ciertas limitaciones a la hora de modificar el formato de la web, para ello se introduce CSS, una herramienta que nos va a permitir modificar el formato cómodamente."
+  },
+  {
+    "objectID": "pages/Bloque1/css_p.html#formato-con-css",
+    "href": "pages/Bloque1/css_p.html#formato-con-css",
+    "title": "CSS",
+    "section": "Formato con CSS",
+    "text": "Formato con CSS\nAtributo style\nSupongamos que tenemos el siguiente elemento\n&lt;p&gt; Hola Mundo&lt;p&gt;. Por ahora el texto se mostrará en color negro, el color predeterminado de HTML para las etiquetas &lt;p&gt;\n\n\nHola mundo"
+  },
+  {
+    "objectID": "pages/Bloque1/css_p.html#etiqueta-meta",
+    "href": "pages/Bloque1/css_p.html#etiqueta-meta",
+    "title": "CSS",
+    "section": "Etiqueta <meta>",
+    "text": "Etiqueta &lt;meta&gt;\nLas etiquetas &lt;meta&gt; en HTML sirven para proporcionar metadatos sobre la página web. Estos metadatos no se muestran al usuario, pero son importantes para navegadores, buscadores, redes sociales y dispositivos.\n&lt;head&gt;\n    &lt;meta charset=\"UTF-8\"&gt; &lt;!-- Selecciona el conjunto de caracteres --&gt;\n    &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;!-- \"Hace la web Responsive\" --&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;"
+  },
+  {
+    "objectID": "pages/Bloque1/css_p.html#git-github",
+    "href": "pages/Bloque1/css_p.html#git-github",
+    "title": "CSS",
+    "section": "Git & GitHub:",
+    "text": "Git & GitHub:\nLos comandos de git nos permiten utilizar la cli para gestionar nuestro repositorio\ngit init # Incializa repositorio (= crear repo con GitHub)\ngit clone &lt;url-repo&gt; \n\ngit add &lt;files&gt; # Añade los archivos a la stagging area\ngit commit -m \"&lt;mensaje de commit&gt;\" # commit\n\ngit push # push\ngit pull # pull\n\ngit status # estado actual del repo\ngit log # historia reciente del log con poco detalle de profundidad\n\ngit diff &lt;file&gt; # muestra la diferencia entre la versión modificada ente un archivo y otro"
+  },
+  {
+    "objectID": "pages/Bloque1/MAcss.html",
+    "href": "pages/Bloque1/MAcss.html",
+    "title": "MA: Selectores y Pseudoselectores",
+    "section": "",
+    "text": "Además del id y las class, existen más selectores que son ampliamente utilizados en la programación web. El siguiente video los explica muy detallados y sirve como repaso para lo que se ha visto esta semana de CSS. El vídeo está en Inglés y dura 20 minutos.",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "MA: Selectores y Pseudoselectores"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/t1a.html",
+    "href": "pages/Bloque1/t1a.html",
+    "title": "TA1: Mi CV I",
+    "section": "",
+    "text": "A día de hoy es muy importante tener una imagen digital, por ello la tarea extra consite en crearte tu propia página web básica usando html.\nPuedes usar el CV de Antonio Machado como referencia.\nBase: Ejemplo",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "TA1: Mi CV I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html",
+    "href": "pages/Bloque1/bloque1.html",
+    "title": "Bloque I Introducción",
+    "section": "",
+    "text": "El objetivo del bloque 1 es sentar la base para la realización del curso, aprendiendo las competencias mínimas para realizar el curso.\nEn este bloque se hará una introducción: las herramientas de trabajo, el lenguaje de marcado HTML que permite crear páginas web estáticas y el lenguaje de programación de CSS que nos permite formatear webs previamente construidas.\nEste bloque se compone de 3 semanas, 2 tareas de clase y dos tareas voluntarias.",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html#contenido",
+    "href": "pages/Bloque1/bloque1.html#contenido",
+    "title": "Bloque I Introducción",
+    "section": "Contenido",
+    "text": "Contenido\n\n\n\n\n\n\n\n\n\n\n\n\nSemana\nFecha\nContenido\nContenido de la clase\nTarea Clase\nMaterial Extra\nTarea Extra\n\n\n\n\n0\n21/11/2025\nIntroducción\nPresentación TC, VSCode, Git, LiveShare y GitHub\n-\n-\n-\n\n\n1\n28/11/2025\nHTML\nEstructura básica, links, listas, tablas, form, img, div, span\nWeb HL I\nEtiquetas: HTML5, video, iframe\nMi porfolio I\n\n\n2\n05/12/2025\nCSS\nEstilos básicos, clases, id, archivos externos\nWeb HL II\nSelectores y Pseudoclases\nMi porfolio II",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/bloque1.html#material",
+    "href": "pages/Bloque1/bloque1.html#material",
+    "title": "Bloque I Introducción",
+    "section": "Material",
+    "text": "Material\n\nMDN (Mozilla Developer Network), HTML y CSS\nW3Schools HTML y CSS\nVisual Studio Code Manual VSCode\nCSS tricks CSS Avanzado",
+    "crumbs": [
+      "Bloque I Introducción"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/t2a.html",
+    "href": "pages/Bloque1/t2a.html",
+    "title": "TA2: Mi CV II",
+    "section": "",
+    "text": "En la tarea previa definimos nuestra identidad digital, ahora es un buen momento dándole un toque personal con ayuda de CSS.\nSi no se realizó la T1A puede utilizar el CV de Antonio Machado como base sobre la que trabajar. (Click derecho guadrar enlace como)\nImportante: la hoja de estilos debe ser definida como un archivo externo.\nEl objetivo de esta tarea es evaluar, las habilidades de diseño y de investigación, por lo que no hay ningún ejemplo al que imitar. Siguiendo ese objetivo se le recomienda al alumno que investigue y descubrá el máximo número de propiedades CSS.",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 2",
+      "TA2: Mi CV II"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/ehtml.html#estructura-básica-de-las-páginas-web",
+    "href": "pages/Bloque1/ehtml.html#estructura-básica-de-las-páginas-web",
+    "title": "HTML",
+    "section": "Estructura básica de las páginas web",
+    "text": "Estructura básica de las páginas web\n¿Qué es una página web?\nUna página web es un documento digital accesible desde un navegador, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos."
+  },
+  {
+    "objectID": "pages/Bloque1/ehtml.html#html5",
+    "href": "pages/Bloque1/ehtml.html#html5",
+    "title": "HTML",
+    "section": "HTML5",
+    "text": "HTML5\n¿Qué es HTML?\nHTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript)."
+  },
+  {
+    "objectID": "pages/Bloque1/ehtml.html#primer-repo-de-git",
+    "href": "pages/Bloque1/ehtml.html#primer-repo-de-git",
+    "title": "HTML",
+    "section": "Primer repo de Git",
+    "text": "Primer repo de Git\n\nIniciar sesión en cuenta de GitHub\nBarra superior derecha, Símbolo + &gt; New Repo\nRepository Name\nDescription of the repo\nVisibility\nAdd README\nCrear repositorio"
+  },
+  {
+    "objectID": "pages/Bloque1/html.html",
+    "href": "pages/Bloque1/html.html",
+    "title": "HTML",
+    "section": "",
+    "text": "Contenido",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "HTML"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/html.html#estructura-básica-de-las-páginas-web",
+    "href": "pages/Bloque1/html.html#estructura-básica-de-las-páginas-web",
+    "title": "HTML",
+    "section": "Estructura básica de las páginas web",
+    "text": "Estructura básica de las páginas web\n\n¿Qué es una página web?\nUna página web es un documento digital accesible desde un navegador, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos.\n\n\n¿Qué partes tiene una página web? (externas)",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "HTML"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/html.html#html5",
+    "href": "pages/Bloque1/html.html#html5",
+    "title": "HTML",
+    "section": "HTML5",
+    "text": "HTML5\n\n¿Qué es HTML?\nHTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript).\n\n\nEstructura básica\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n&lt;/head&gt;\n\n&lt;body&gt;\n\n  &lt;p&gt;Clase 1 del TC&lt;/p&gt;\n  \n&lt;/body&gt;\n&lt;/html&gt;\nEn el código aparecen varias etiquetas HTML, y cada una tiene una etiqueta de apertura y una etiqueta de cierre (por ejemplo, &lt;p&gt; y &lt;/p&gt;).\nEstas etiquetas delimitan y organizan el contenido del documento:\n- &lt;head&gt; agrupa la información del documento,\n- &lt;body&gt; contiene lo que verá el usuario,\n- &lt;p&gt; define un párrafo.\nLa función de las etiquetas es indicar al navegador qué es cada parte del documento y cómo debe interpretarla.\n\n\nHead\nSe corresponde con la cabecera de la pestaña, principalmente solo se modifica el logotipo y el contenido de esta.\nTambién se utiliza para almacenar los metadatos de la web, así como scripts de JavaScript y hojas de estilo de CSS.\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n  &lt;title&gt; Web del TC &lt;/title&gt;\n\n&lt;/head&gt;\n\n&lt;body&gt;\n\n  &lt;p&gt;Clase 1 del TC&lt;/p&gt;\n  \n&lt;/body&gt;\n&lt;/html&gt;\n\n\nBody\nSe corresponde con todo el contenido de la página dentro podemos utilizar multitud de etiquetas, acontinuación expondremos las más importantes.\nHasta el momento hemos trabajado únicamente con etiquietas invividuales, pero pronto veremos como podemos juntar varias etiquetas simples para obtener estructuras más complejas como tablas o formularios.\nTodo el código mostrado a partir de ahora se asume que esta correctamente ubicado dentro de una etiqueta body\n\n&lt;p&gt; Paragraph\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;p&gt;\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;/p&gt;\n\n\n&lt;br&gt; Break Line\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\nullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;p&gt;\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n  &lt;br&gt;&lt;/br&gt;\n  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;/p&gt;\n\n\n&lt;ul&gt; Unordered list\n\nFrancisco de Quevedo\nLope de Vega\nGóngora\n\n&lt;ul&gt;\n  &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n  &lt;li&gt;Lope de Vega&lt;/li&gt;\n  &lt;li&gt;Góngora&lt;/li&gt;\n&lt;/ul&gt;\n\n\n&lt;ol&gt; Ordered list\n\nRecepción\nDiscurso del Rector\nDespedida\n\n&lt;ol&gt;\n  &lt;li&gt;Recepción &lt;/li&gt;\n  &lt;li&gt;Discruso del Rector&lt;/li&gt;\n  &lt;li&gt;Despedida&lt;/li&gt;\n&lt;/ol&gt;\n\n\n&lt;h#&gt; Headings\n&lt;h1&gt;Título 1&lt;/h1&gt;\n&lt;h2&gt;Título 2&lt;/h2&gt;\n&lt;h3&gt;Título 3&lt;/h3&gt;\n&lt;h4&gt;Título 4&lt;/h4&gt;\n&lt;h5&gt;Título 5&lt;/h5&gt;\n&lt;h6&gt;Título 6&lt;/h6&gt;\n\n\n&lt;div&gt; Divisor y &lt;span&gt; Span\nEtiquetas contenedores, utilizadas para agrupar otras etiquetas, no presentan ningún efecto visible intrínsico, salvo que tras utilizar &lt;div&gt; se produce un salto de línea. Por lo que utilizaremos &lt;div&gt; para agrupar grandes grupos de etiquetas y &lt;span&gt; para fragementos más pequeños\n\n&lt;div&gt;\n&lt;div&gt;\n  &lt;h2&gt;Capítulo 2 &lt;/h2&gt;\n  &lt;p&gt;\n    Mio Cid Ruy Díaz por Burgos entró,&lt;br&gt;&lt;/br&gt;\n    en su conpaña sessaenta pendones.&lt;br&gt;&lt;/br&gt;\n    Exiénlo ver mugieres e varones,&lt;br&gt;&lt;/br&gt;\n    burgeses e burgesas por las finiestras son,&lt;br&gt;&lt;/br&gt;\n    plorando de los ojos, tanto avién el dolor,&lt;br&gt;&lt;/br&gt;\n    de las sus bocas todos dizían una razón:&lt;br&gt;&lt;/br&gt;\n    — ¡Dios, qué buen vassallo, si oviesse buen señor!—\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n&lt;strong&gt; Strong, &lt;i&gt; Italic\nNegrita Itálica Negrita e Itálica\n&lt;strong&gt;Negrita&lt;/strong&gt;\n&lt;i&gt;Itálica&lt;/i&gt;\n&lt;strong&gt;&lt;i&gt; Negrita e Itálica&lt;/i&gt;&lt;/strong&gt;\n\n\nComentario\nEtiqueta invisible\n&lt;p&gt;Etiqueta invisible&lt;/p&gt;\n\n&lt;!-- Soy un comenario --&gt;\n\n\nTablas\n\n\n\n\nProducto\n\n\nCantidad\n\n\nPrecio (€)\n\n\n\n\n\n\nManzanas\n\n\n10\n\n\n3,50\n\n\n\n\nNaranjas\n\n\n8\n\n\n4,00\n\n\n\n\nPlátanos\n\n\n6\n\n\n2,80\n\n\n\n\n\n\nTotal\n\n\n24\n\n\n10,30\n\n\n\n\n&lt;table&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Producto&lt;/th&gt;\n      &lt;th&gt;Cantidad&lt;/th&gt;\n      &lt;th&gt;Precio (€)&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Manzanas&lt;/td&gt;\n      &lt;td&gt;10&lt;/td&gt;\n      &lt;td&gt;3,50&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Naranjas&lt;/td&gt;\n      &lt;td&gt;8&lt;/td&gt;\n      &lt;td&gt;4,00&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Plátanos&lt;/td&gt;\n      &lt;td&gt;6&lt;/td&gt;\n      &lt;td&gt;2,80&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Total&lt;/td&gt;\n      &lt;td&gt;24&lt;/td&gt;\n      &lt;td&gt;10,30&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;\n\n\n&lt;a&gt; Link\nHyperloopUPV\n&lt;!-- ¿Qué pasa con la URL --&gt;\n&lt;a&gt;Hyperloop UPV&lt;/a&gt;\n\nPropiedades HTML\nLas etiquetas o elementos html disponen de atributos que nos permiten modificar su comportamiento interno.\nEn el caso de las etiquetas &lt;a&gt; debemos de especificar en los atributos la referncia en cuestión\n  &lt;a href=\"https://hyperloopupv.com/\"&gt; HyperloopUPV &lt;/a&gt;\n\n\n\n&lt;img&gt; Image\n\n\n\n“Plaza de la Reina”\n\n\n&lt;img src=\"../pr.jpg\" alt=\"Plaza con una fuente en el centro alrdedor casetas y fincas\"&gt;\n\n\n&lt;form&gt; Forms\nAmpliamente utilizados en HTML, trabajan sobre la etiqueta &lt;input&gt; la cual tiene muchos tipos.\n\n&lt;input type=\"text\"&gt;\n\nNombre: \n\n&lt;form&gt;\n\n  &lt;label for=\"first-name\"&gt;Nombre:&lt;/label&gt;\n\n  &lt;input type=\"text\" name=\"first-name\"/&gt;\n&lt;/form&gt;\n\n\n&lt;input type=\"number\"&gt;\n\nEdad: \n\n&lt;form&gt;\n\n  &lt;label for=\"age\"&gt;Edad:&lt;/label&gt;\n\n  &lt;input type=\"number\" name=\"age\" /&gt;\n&lt;/form&gt;\n\n\n&lt;input type=\"radio\"&gt;\n\nSubsistema:   Software   Firmware \n\n&lt;form&gt;\n\n  &lt;label for=\"sub\"&gt;Subsistema: &lt;/label&gt;&lt;br /&gt;\n  &lt;input type=\"radio\" name=\"sub\" value=\"software\" /&gt; Software &lt;br /&gt;\n  &lt;input type=\"radio\" name=\"sub\" value=\"firmware\" /&gt; Firmware &lt;br /&gt;\n\n&lt;/form&gt;\n\n\n&lt;input type=\"submit\"&gt;\n\nNombre:  \n\n\n&lt;form&gt;\n\n  &lt;label for=\"first-name\"&gt;Nombre:&lt;/label&gt;\n  &lt;input type=\"text\" name=\"first-name\"/&gt;\n\n  &lt;br/&gt;\n\n  &lt;input type=\"submit\"/&gt;\n&lt;/form&gt;\n\n\n\n&lt;button&gt; Button\nPor ahora no los utilizaremos, pero es importante saber que existen\n\nSuscribirse\n\n&lt;button&gt;Suscribirse&lt;/button&gt;",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "HTML"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/html.html#primer-repo-de-git",
+    "href": "pages/Bloque1/html.html#primer-repo-de-git",
+    "title": "HTML",
+    "section": "Primer repo de Git",
+    "text": "Primer repo de Git\n\nIniciar sesión en cuenta de GitHub\nBarra superior derecha, Símbolo + &gt; New Repo\nRepository Name\nDescription of the repo\nVisibility\nAdd README\nCrear repositorio\n\n\n\nDesde la ventana del repositorio creado\nCode &lt;&gt; &gt; Clone &gt; HTTPS &gt; Copiar URL\nDesde VScode\nClonar repositorio (si no aparece F1, paleta de comandos Clonar Repositorio)\nPegar la URL del repo\nPresionar intro (equivalente a git clone)\n\n\n\nRealizar cambios\nDesde la barra derecha seleccionar menú de Git (3 nodos interconectados por dos aristas)\nAgregar presionando el + los archivos a la staging area (equivalente a git add &lt;file&gt;)\nEscribir mensaje de commit y presionar botón de confirmación (equivalente a git commit)\n\n\nUna vez se hayan realizados todos los commits deseados presionar la rueda de sincronización en la barra de estado. Este último cambio es equivalente a ejecutar git pull y git push.\npush sube los cambios al repositorio remoto pull actualiza los cambios de repositorio remoto por el local",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "HTML"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/t1.html",
+    "href": "pages/Bloque1/t1.html",
+    "title": "T1: Web de HL I",
+    "section": "",
+    "text": "La primera tarea de esta semana consiste en diseñar una página web para el equipo de generación espontánea llamado Hyperloop UPV, la web debe de ser realizada en un archivo HTML y debe de constar por lo menos de los siguientes apartados y estructura\n\nTítulo principal de la página &lt;h1&gt;\nVarios secciones cada una introducida por un título &lt;h2&gt; (si es necesario hacer &lt;h3&gt;)\n\nDescripción del equipo\nLista desordenada de los subsistemas\nLista de Partners por orden de importancia (UPV, )\nUn día en Hyperloop (nótese el título del apartado en cursiva)\n\nBreve descripción de lo que hacemos en el equipo, alguna foto\n\nMiembros\n\nUna tabla de miembros por subsistema (inventarse los datos)\n\nFormulario para solicitar unirse al equipo que solicite\n\nNombre\nApellido\nCurso (radius button)\nBotón de enviar\n\nLink a la web del TC de SW y a la oficial del equipo\n\nCada sección debe de estar contenido en un div de la siguiente forma\n\n&lt;div&gt;\n\n  &lt;h2&gt;Títlo de sección&lt;/h2&gt;\n\n  &lt;Contenido de la sección /&gt;\n\n&lt;/div&gt;\nBase: Web",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "T1: Web de HL I"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/MAhtml2.html",
+    "href": "pages/Bloque1/MAhtml2.html",
+    "title": "MA: Mas HTML",
+    "section": "",
+    "text": "Durante la explicación de teoría vista esta semana en clase nos hemos introducido en las etiquetas básicas de HTML.\nA continuación una selección de etiquetas que no hemos visto en clase, pero resulta interesante conocer, puesto que en determinadas ocasiones son útiles. Cada ítem de la lista es un enlace a la documentación de Mozilla donde está explicado el funcionamiento de la etiqueta de forma exhaustiva. No hay que conocer todos los aspectos de cada etiqueta, basta con tener una idea general de como funcionan.\n\ninput types. Muy importante conocer todos los tipos de inputs\ncode\niframe. Útil y ampliamente extendida\nhr. Línea horizontal\nfigure y figcaption. Permite insertar figura y pie de figura.\naudio. Insertar un audio en la página web.\nvideo. Insertar un audio en la página web.\nheader, main, footer. Son como &lt;div&gt; pero ya con usos por defecto preasignados.",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 1",
+      "MA: Mas HTML"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#ide",
+    "href": "pages/Bloque1/entorno-reveal.html#ide",
+    "title": "Preparación del entorno de trabajo",
+    "section": "IDE",
+    "text": "IDE\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados"
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
+    "href": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Node.JS y NPM",
+    "text": "Node.JS y NPM\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend."
+  },
+  {
+    "objectID": "pages/Bloque1/entorno-reveal.html#git-y-github",
+    "href": "pages/Bloque1/entorno-reveal.html#git-y-github",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Git y GitHub",
+    "text": "Git y GitHub\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión."
+  },
+  {
+    "objectID": "pages/Bloque1/entorno.html",
+    "href": "pages/Bloque1/entorno.html",
+    "title": "Preparación del entorno de trabajo",
+    "section": "",
+    "text": "Contenido",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 0",
+      "Preparación del entorno de trabajo"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/entorno.html#ide",
+    "href": "pages/Bloque1/entorno.html#ide",
+    "title": "Preparación del entorno de trabajo",
+    "section": "IDE",
+    "text": "IDE\n\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados\n\n\n\n¿Cuántas IDE existen?\n\nAndroid Studio\nRStudio\nEclipse\n\n\n\n¿Qué IDE utilizaremos nosotros?\nPrincipalmente trabajaremos con VSCode una IDE de proposito general que configuraremos para el desarrollo frontend\n\nInstalación de VScode\n\nEnlace\n\n\nFamiliarizarse con VSCode\n\nBarra lateral:\n\nExplorador de archivos\nMenú de Git\nMenú de extensiones\nBuscar\nDebugger\n\nEditor o área de edición: componente más importante de la IDE, lugar donde se escribe el código.\n\n\n\nExtensiones\nLas extensiones son aplicaciones software desarolladas por empresas o por particulares para modificar o agregar una nueva funcionalidad a las IDE. Pueden ir desde pequeñas modificaciones del tema o de la UI, o incorporar nuevas funcionalidades como la interacción con bases de datos.\n\nLiveServer\nNosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)\n\nInstalación de LiveServer\n\n\nEntrar en el menú de extensiones\nBuscar por liveserver\nSeleccionar extensión\nInstalar\n\n\nAl concluir la instalación debería de aparecer en la parte derecha de la barra de estado (barra interior)",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 0",
+      "Preparación del entorno de trabajo"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/entorno.html#node.js-y-npm",
+    "href": "pages/Bloque1/entorno.html#node.js-y-npm",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Node.JS y NPM",
+    "text": "Node.JS y NPM\n\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend.\n\n\n¿Qué es NPM?\nNPM (Node Package Manager) es el gestor de paquetes de Node.js.\nFacilita la instalación, actualización y gestión de librerías que amplían las funcionalidades de los proyectos.\nDescarga node y npm nodejs.org",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 0",
+      "Preparación del entorno de trabajo"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque1/entorno.html#git-y-github",
+    "href": "pages/Bloque1/entorno.html#git-y-github",
+    "title": "Preparación del entorno de trabajo",
+    "section": "Git y GitHub",
+    "text": "Git y GitHub\n\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.\n\n\n¿Qué es GitHub?\nGitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos. Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.\n\n\nGit frente GitHub\n\nGit es la herramienta de control de versiones.(Software Libre, Linux Fundation)\nGitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)\n\n\n\nUso de Git y GitHub\nEn Hyperloop UPV, tanto en los subsistemas de Software y Firmware utilizamos GitHub como herramienta de gestión de código.\nNosotros en el TC, también trataremos de facilitarnos con esta herramienta\n\n\nInstalación de Git y Cuenta de GitHub\n\nInstalación de Git\nCuenta de GitHub\n\n\n\nDiagrama de trabajo de Git\n\n\nGit en VScode",
+    "crumbs": [
+      "Bloque I Introducción",
+      "Semana 0",
+      "Preparación del entorno de trabajo"
+    ]
+  },
+  {
+    "objectID": "pages/rubric.html",
+    "href": "pages/rubric.html",
+    "title": "Rúbrica de evaluación",
+    "section": "",
+    "text": "Durante el curso seguiremos la siguiente rúbrica para la calificación de las tareas. A pesar de que las calificaciones no son importantes, la rúbrica es un buen recordatorio de que aspectos hay que tener en cuenta en la programación web.\n\n\n\nPuntuación\n\n\nNo aplica\n\n\nDeficiente(0–4)\n\n\nInsuficiente(4–5)\n\n\nAceptable(5–7)\n\n\nBueno(7–9)\n\n\nExcelente(9–10)\n\n\n\n\nDiseño\n\n\nNo aplica.\n\n\nDiseño desordenado y/o con problemas de visualización funcional.\n\n\nDiseño básico pero con problemas de visualización o estructura.\n\n\nDiseño claro y ordenado, cumple los requisitos básicos.\n\n\nDiseño cuidado, buena estética y estructura clara.\n\n\nDiseño profesional, limpio, pulido y sobresaliente.\n\n\n\n\nProgramación\n\n\nNo aplica.\n\n\nCódigo incompleto o con errores graves.\n\n\nCódigo funcional parcialmente y/o con errores importantes.\n\n\nCódigo funcional y adecuado a la tarea.\n\n\nCódigo bien estructurado con mejoras respecto a lo exigido.\n\n\nCódigo impecable, eficiente y muy bien organizado.\n\n\n\n\nEsfuerzo e implicación\n\n\nNo aplica.\n\n\nBajo esfuerzo o dedicación mínima.\n\n\nEsfuerzo adecuado pero limitado.\n\n\nEsfuerzo notable, cumple con lo requerido.\n\n\nEsfuerzo claro, trabajo más allá de lo solicitado.\n\n\nDedicación sobresaliente y trabajo excepcional.\n\n\n\n\nDocumentación / Claridad\n\n\nNo aplica.\n\n\nDocumentación mínima o inexistente.\n\n\nDocumentación incompleta o confusa.\n\n\nDocumentación clara y suficiente.\n\n\nDocumentación bien presentada y detallada.\n\n\nDocumentación excelente y altamente profesional.\n\n\n\n\nFuncionalidad\n\n\nNo aplica.\n\n\nNo funciona o no cumple objetivos.\n\n\nFunciona de forma parcial.\n\n\nFunciona correctamente.\n\n\nFunciona con mejoras o funcionalidades extra.\n\n\nFunciona perfectamente y supera expectativas.\n\n\n\n\nInnovación\n\n\n(Nota extra)\n\n\n\n\nTOTAL:\n\n\n\n\n/60\n\n\n\n\nObservaciones:\n\n\n\n\n\nLa nota total será sobre 60 si hay algun criterio que no se aplique, se modificará la nota para que esté sobre base 60.",
+    "crumbs": [
+      "Rúbrica de evaluación"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html",
+    "href": "pages/Bloque2/ti.html",
+    "title": "TI: Ejercicios JS",
+    "section": "",
+    "text": "El objetivo de estos ejercicios es repasar aquellas funcionalidades de JavaScript que difieren del resto de lenguajes de programación empirica, por lo que los siguentes ejercicios de DEBEN DE RESOLVER SIN UTILIZAR NINGUNA CONDICIONAL NI NINGÚN BUCLE.\nPrincipalmente trabajarás con:\nDebe de realizar la tarea enun archivo js, para comprobar el resultado debe de ejecutar desde la terminal con node nombreArchivo.js.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-1",
+    "href": "pages/Bloque2/ti.html#ejercicio-1",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 1",
+    "text": "Ejercicio 1\nDefina un array llamado arrOriginal con el siguiente contenido numérico. Este array será el origen de datos para los ejercicios posteriores, salvo que se indique lo contrario.\n3, 4, 2, 4, 4, 5, 12, 24, 3, 23, 232, 2, -3, -9, 2, -23, 200, -23, 12, 43, 4, -32, -32, 0, 23, 23",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-2",
+    "href": "pages/Bloque2/ti.html#ejercicio-2",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 2",
+    "text": "Ejercicio 2\nPartiendo del array arrOriginal, imprima por pantalla la siguiente frase:\n\n\"En el subsistema de software somos x miembros\"\n\ndonde x debe tomar, sucesivamente, cada uno de los valores de arrOriginal.\nImprima por pantalla el resultado.\n\nSalida esperada (ejemplo):\n\nEn el subsistema de software somos 3 miembros\nEn el subsistema de software somos 4 miembros\nEn el subsistema de software somos 2 miembros",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-3",
+    "href": "pages/Bloque2/ti.html#ejercicio-3",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 3",
+    "text": "Ejercicio 3\nPartiendo de arrOriginal, cree un nuevo array llamado arrPositivos que contenga únicamente números positivos.\nUtilice arrPositivos para imprimir por pantalla las frases correspondientes.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-4",
+    "href": "pages/Bloque2/ti.html#ejercicio-4",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 4",
+    "text": "Ejercicio 4\nPartiendo de arrPositivos, cree un nuevo array llamado arrValidos que cumpla además el siguiente criterio:\n\nEl número máximo de personas es 10\n\nImprima por pantalla las frases correspondientes a arrValidos.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-5",
+    "href": "pages/Bloque2/ti.html#ejercicio-5",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 5",
+    "text": "Ejercicio 5\nPartiendo nuevamente de arrOriginal, cree un nuevo array llamado arrFiltrado que contenga únicamente aquellos elementos que cumplan todas las siguientes condiciones:\n\nSean positivos\n\nSean pares\n\nSean menores que 100",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-6",
+    "href": "pages/Bloque2/ti.html#ejercicio-6",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 6",
+    "text": "Ejercicio 6\nPartiendo de arrFiltrado:\n\nCree un nuevo array llamado arrCubos elevando al cubo cada uno de sus elementos\n\nA partir de arrCubos, cree un nuevo array llamado arrCubosFiltrados que contenga únicamente aquellos valores cuyo resultado termine en 0.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-7",
+    "href": "pages/Bloque2/ti.html#ejercicio-7",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 7",
+    "text": "Ejercicio 7\nPartiendo de arrCubosFiltrados, cree un nuevo array llamado arrFinal añadiendo el valor 21.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
+    "objectID": "pages/Bloque2/ti.html#ejercicio-8",
+    "href": "pages/Bloque2/ti.html#ejercicio-8",
+    "title": "TI: Ejercicios JS",
+    "section": "Ejercicio 8",
+    "text": "Ejercicio 8\nPartiendo de arrFinal, cree un nuevo array independiente llamado arrCopia, de forma que cualquier modificación posterior no afecte a arrFinal.",
+    "crumbs": [
+      "Bloque II Programación",
+      "Repaso Intensivo",
+      "TI: Ejercicios JS"
+    ]
+  },
+  {
     "objectID": "pages/Bloque2/MAclases.html",
     "href": "pages/Bloque2/MAclases.html",
     "title": "MA: Clases ES6",
@@ -187,616 +1060,15 @@
     ]
   },
   {
-    "objectID": "pages/Bloque2/ti.html",
-    "href": "pages/Bloque2/ti.html",
-    "title": "TI: Ejercicios JS",
+    "objectID": "pages/Bloque3/MAcss2.html",
+    "href": "pages/Bloque3/MAcss2.html",
+    "title": "MA: CSS Flex y CSS",
     "section": "",
-    "text": "El objetivo de estos ejercicios es repasar aquellas funcionalidades de JavaScript que difieren del resto de lenguajes de programación empirica, por lo que los siguentes ejercicios de DEBEN DE RESOLVER SIN UTILIZAR NINGUNA CONDICIONAL NI NINGÚN BUCLE.\nPrincipalmente trabajarás con:\nDebe de realizar la tarea enun archivo js, para comprobar el resultado debe de ejecutar desde la terminal con node nombreArchivo.js.",
+    "text": "Además de las propiedades estudiadas de CSS también hay algunas críticas que debido a la falta de tiempo no se han podido explicar como es el caso de display a continuación estos dos vídeos profundizan en los modos flex y grid formas diferentes de diseñar la estructura de la página",
     "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-1",
-    "href": "pages/Bloque2/ti.html#ejercicio-1",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 1",
-    "text": "Ejercicio 1\nDefina un array llamado arrOriginal con el siguiente contenido numérico. Este array será el origen de datos para los ejercicios posteriores, salvo que se indique lo contrario.\n3, 4, 2, 4, 4, 5, 12, 24, 3, 23, 232, 2, -3, -9, 2, -23, 200, -23, 12, 43, 4, -32, -32, 0, 23, 23",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-2",
-    "href": "pages/Bloque2/ti.html#ejercicio-2",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 2",
-    "text": "Ejercicio 2\nPartiendo del array arrOriginal, imprima por pantalla la siguiente frase:\n\n\"En el subsistema de software somos x miembros\"\n\ndonde x debe tomar, sucesivamente, cada uno de los valores de arrOriginal.\nImprima por pantalla el resultado.\n\nSalida esperada (ejemplo):\n\nEn el subsistema de software somos 3 miembros\nEn el subsistema de software somos 4 miembros\nEn el subsistema de software somos 2 miembros",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-3",
-    "href": "pages/Bloque2/ti.html#ejercicio-3",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 3",
-    "text": "Ejercicio 3\nPartiendo de arrOriginal, cree un nuevo array llamado arrPositivos que contenga únicamente números positivos.\nUtilice arrPositivos para imprimir por pantalla las frases correspondientes.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-4",
-    "href": "pages/Bloque2/ti.html#ejercicio-4",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 4",
-    "text": "Ejercicio 4\nPartiendo de arrPositivos, cree un nuevo array llamado arrValidos que cumpla además el siguiente criterio:\n\nEl número máximo de personas es 10\n\nImprima por pantalla las frases correspondientes a arrValidos.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-5",
-    "href": "pages/Bloque2/ti.html#ejercicio-5",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 5",
-    "text": "Ejercicio 5\nPartiendo nuevamente de arrOriginal, cree un nuevo array llamado arrFiltrado que contenga únicamente aquellos elementos que cumplan todas las siguientes condiciones:\n\nSean positivos\n\nSean pares\n\nSean menores que 100",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-6",
-    "href": "pages/Bloque2/ti.html#ejercicio-6",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 6",
-    "text": "Ejercicio 6\nPartiendo de arrFiltrado:\n\nCree un nuevo array llamado arrCubos elevando al cubo cada uno de sus elementos\n\nA partir de arrCubos, cree un nuevo array llamado arrCubosFiltrados que contenga únicamente aquellos valores cuyo resultado termine en 0.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-7",
-    "href": "pages/Bloque2/ti.html#ejercicio-7",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 7",
-    "text": "Ejercicio 7\nPartiendo de arrCubosFiltrados, cree un nuevo array llamado arrFinal añadiendo el valor 21.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/ti.html#ejercicio-8",
-    "href": "pages/Bloque2/ti.html#ejercicio-8",
-    "title": "TI: Ejercicios JS",
-    "section": "Ejercicio 8",
-    "text": "Ejercicio 8\nPartiendo de arrFinal, cree un nuevo array independiente llamado arrCopia, de forma que cualquier modificación posterior no afecte a arrFinal.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "TI: Ejercicios JS"
-    ]
-  },
-  {
-    "objectID": "pages/rubric.html",
-    "href": "pages/rubric.html",
-    "title": "Rúbrica de evaluación",
-    "section": "",
-    "text": "Durante el curso seguiremos la siguiente rúbrica para la calificación de las tareas. A pesar de que las calificaciones no son importantes, la rúbrica es un buen recordatorio de que aspectos hay que tener en cuenta en la programación web.\n\n\n\nPuntuación\n\n\nNo aplica\n\n\nDeficiente(0–4)\n\n\nInsuficiente(4–5)\n\n\nAceptable(5–7)\n\n\nBueno(7–9)\n\n\nExcelente(9–10)\n\n\n\n\nDiseño\n\n\nNo aplica.\n\n\nDiseño desordenado y/o con problemas de visualización funcional.\n\n\nDiseño básico pero con problemas de visualización o estructura.\n\n\nDiseño claro y ordenado, cumple los requisitos básicos.\n\n\nDiseño cuidado, buena estética y estructura clara.\n\n\nDiseño profesional, limpio, pulido y sobresaliente.\n\n\n\n\nProgramación\n\n\nNo aplica.\n\n\nCódigo incompleto o con errores graves.\n\n\nCódigo funcional parcialmente y/o con errores importantes.\n\n\nCódigo funcional y adecuado a la tarea.\n\n\nCódigo bien estructurado con mejoras respecto a lo exigido.\n\n\nCódigo impecable, eficiente y muy bien organizado.\n\n\n\n\nEsfuerzo e implicación\n\n\nNo aplica.\n\n\nBajo esfuerzo o dedicación mínima.\n\n\nEsfuerzo adecuado pero limitado.\n\n\nEsfuerzo notable, cumple con lo requerido.\n\n\nEsfuerzo claro, trabajo más allá de lo solicitado.\n\n\nDedicación sobresaliente y trabajo excepcional.\n\n\n\n\nDocumentación / Claridad\n\n\nNo aplica.\n\n\nDocumentación mínima o inexistente.\n\n\nDocumentación incompleta o confusa.\n\n\nDocumentación clara y suficiente.\n\n\nDocumentación bien presentada y detallada.\n\n\nDocumentación excelente y altamente profesional.\n\n\n\n\nFuncionalidad\n\n\nNo aplica.\n\n\nNo funciona o no cumple objetivos.\n\n\nFunciona de forma parcial.\n\n\nFunciona correctamente.\n\n\nFunciona con mejoras o funcionalidades extra.\n\n\nFunciona perfectamente y supera expectativas.\n\n\n\n\nInnovación\n\n\n(Nota extra)\n\n\n\n\nTOTAL:\n\n\n\n\n/60\n\n\n\n\nObservaciones:\n\n\n\n\n\nLa nota total será sobre 60 si hay algun criterio que no se aplique, se modificará la nota para que esté sobre base 60.",
-    "crumbs": [
-      "Rúbrica de evaluación"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/entorno.html",
-    "href": "pages/Bloque1/entorno.html",
-    "title": "Preparación del entorno de trabajo",
-    "section": "",
-    "text": "Contenido",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 0",
-      "Preparación del entorno de trabajo"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/entorno.html#ide",
-    "href": "pages/Bloque1/entorno.html#ide",
-    "title": "Preparación del entorno de trabajo",
-    "section": "IDE",
-    "text": "IDE\n\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados\n\n\n\n¿Cuántas IDE existen?\n\nAndroid Studio\nRStudio\nEclipse\n\n\n\n¿Qué IDE utilizaremos nosotros?\nPrincipalmente trabajaremos con VSCode una IDE de proposito general que configuraremos para el desarrollo frontend\n\nInstalación de VScode\n\nEnlace\n\n\nFamiliarizarse con VSCode\n\nBarra lateral:\n\nExplorador de archivos\nMenú de Git\nMenú de extensiones\nBuscar\nDebugger\n\nEditor o área de edición: componente más importante de la IDE, lugar donde se escribe el código.\n\n\n\nExtensiones\nLas extensiones son aplicaciones software desarolladas por empresas o por particulares para modificar o agregar una nueva funcionalidad a las IDE. Pueden ir desde pequeñas modificaciones del tema o de la UI, o incorporar nuevas funcionalidades como la interacción con bases de datos.\n\nLiveServer\nNosotros para el transcurso del curso utilizaremos la extensión Liveserver que nos permitirá desplegar comodamente un pequeño servidor para la programación con HTML (Ahondaremos más la próxima semana)\n\nInstalación de LiveServer\n\n\nEntrar en el menú de extensiones\nBuscar por liveserver\nSeleccionar extensión\nInstalar\n\n\nAl concluir la instalación debería de aparecer en la parte derecha de la barra de estado (barra interior)",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 0",
-      "Preparación del entorno de trabajo"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/entorno.html#node.js-y-npm",
-    "href": "pages/Bloque1/entorno.html#node.js-y-npm",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Node.JS y NPM",
-    "text": "Node.JS y NPM\n\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend.\n\n\n¿Qué es NPM?\nNPM (Node Package Manager) es el gestor de paquetes de Node.js.\nFacilita la instalación, actualización y gestión de librerías que amplían las funcionalidades de los proyectos.\nDescarga node y npm nodejs.org",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 0",
-      "Preparación del entorno de trabajo"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/entorno.html#git-y-github",
-    "href": "pages/Bloque1/entorno.html#git-y-github",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Git y GitHub",
-    "text": "Git y GitHub\n\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión.\n\n\n¿Qué es GitHub?\nGitHub es una plataforma en la nube que utiliza Git para almacenar y gestionar proyectos. Permite compartir código, colaborar con otros desarrolladores y mantener un control de versiones centralizado.\n\n\nGit frente GitHub\n\nGit es la herramienta de control de versiones.(Software Libre, Linux Fundation)\nGitHub es la plataforma online donde se alojan los repositorios y se facilita el trabajo en equipo. (Coporativa Microsoft)\n\n\n\nUso de Git y GitHub\nEn Hyperloop UPV, tanto en los subsistemas de Software y Firmware utilizamos GitHub como herramienta de gestión de código.\nNosotros en el TC, también trataremos de facilitarnos con esta herramienta\n\n\nInstalación de Git y Cuenta de GitHub\n\nInstalación de Git\nCuenta de GitHub\n\n\n\nDiagrama de trabajo de Git\n\n\nGit en VScode",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 0",
-      "Preparación del entorno de trabajo"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#ide",
-    "href": "pages/Bloque1/entorno-reveal.html#ide",
-    "title": "Preparación del entorno de trabajo",
-    "section": "IDE",
-    "text": "IDE\n¿Qué es una IDE?\nLas Integrated development environment (IDE) son aplicaciones diseñadas para facilitar la programación a los programadores.\nAunque no hay una lista de características propias de las IDE, suelen tener características comunes, por ejemplo:\n\nDebugger integrado en la interfaz\nGestor de archivos\nEditor de código inteligente: autocompletados"
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
-    "href": "pages/Bloque1/entorno-reveal.html#node.js-y-npm",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Node.JS y NPM",
-    "text": "Node.JS y NPM\n¿Qué es node JS?\nNode.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome.\nPermite ejecutar código JavaScript directamente en el sistema operativo, sin depender de un navegador.\nDe este modo, el mismo lenguaje puede usarse tanto en el frontend como en el backend."
-  },
-  {
-    "objectID": "pages/Bloque1/entorno-reveal.html#git-y-github",
-    "href": "pages/Bloque1/entorno-reveal.html#git-y-github",
-    "title": "Preparación del entorno de trabajo",
-    "section": "Git y GitHub",
-    "text": "Git y GitHub\n¿Qué es Git?\nGit es un sistema de control de versiones distribuido. Permite registrar los cambios de un proyecto, volver a versiones anteriores y trabajar de forma colaborativa sin sobrescribir el trabajo de otros. Cada usuario dispone de una copia completa del repositorio, lo que facilita el trabajo sin conexión."
-  },
-  {
-    "objectID": "pages/Bloque1/MAhtml2.html",
-    "href": "pages/Bloque1/MAhtml2.html",
-    "title": "MA: Mas HTML",
-    "section": "",
-    "text": "Durante la explicación de teoría vista esta semana en clase nos hemos introducido en las etiquetas básicas de HTML.\nA continuación una selección de etiquetas que no hemos visto en clase, pero resulta interesante conocer, puesto que en determinadas ocasiones son útiles. Cada ítem de la lista es un enlace a la documentación de Mozilla donde está explicado el funcionamiento de la etiqueta de forma exhaustiva. No hay que conocer todos los aspectos de cada etiqueta, basta con tener una idea general de como funcionan.\n\ninput types. Muy importante conocer todos los tipos de inputs\ncode\niframe. Útil y ampliamente extendida\nhr. Línea horizontal\nfigure y figcaption. Permite insertar figura y pie de figura.\naudio. Insertar un audio en la página web.\nvideo. Insertar un audio en la página web.\nheader, main, footer. Son como &lt;div&gt; pero ya con usos por defecto preasignados.",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "MA: Mas HTML"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/t1.html",
-    "href": "pages/Bloque1/t1.html",
-    "title": "T1: Web de HL I",
-    "section": "",
-    "text": "La primera tarea de esta semana consiste en diseñar una página web para el equipo de generación espontánea llamado Hyperloop UPV, la web debe de ser realizada en un archivo HTML y debe de constar por lo menos de los siguientes apartados y estructura\n\nTítulo principal de la página &lt;h1&gt;\nVarios secciones cada una introducida por un título &lt;h2&gt; (si es necesario hacer &lt;h3&gt;)\n\nDescripción del equipo\nLista desordenada de los subsistemas\nLista de Partners por orden de importancia (UPV, )\nUn día en Hyperloop (nótese el título del apartado en cursiva)\n\nBreve descripción de lo que hacemos en el equipo, alguna foto\n\nMiembros\n\nUna tabla de miembros por subsistema (inventarse los datos)\n\nFormulario para solicitar unirse al equipo que solicite\n\nNombre\nApellido\nCurso (radius button)\nBotón de enviar\n\nLink a la web del TC de SW y a la oficial del equipo\n\nCada sección debe de estar contenido en un div de la siguiente forma\n\n&lt;div&gt;\n\n  &lt;h2&gt;Títlo de sección&lt;/h2&gt;\n\n  &lt;Contenido de la sección /&gt;\n\n&lt;/div&gt;\nBase: Web",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "T1: Web de HL I"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/html.html",
-    "href": "pages/Bloque1/html.html",
-    "title": "HTML",
-    "section": "",
-    "text": "Contenido",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "HTML"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/html.html#estructura-básica-de-las-páginas-web",
-    "href": "pages/Bloque1/html.html#estructura-básica-de-las-páginas-web",
-    "title": "HTML",
-    "section": "Estructura básica de las páginas web",
-    "text": "Estructura básica de las páginas web\n\n¿Qué es una página web?\nUna página web es un documento digital accesible desde un navegador, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos.\n\n\n¿Qué partes tiene una página web? (externas)",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "HTML"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/html.html#html5",
-    "href": "pages/Bloque1/html.html#html5",
-    "title": "HTML",
-    "section": "HTML5",
-    "text": "HTML5\n\n¿Qué es HTML?\nHTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript).\n\n\nEstructura básica\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n&lt;/head&gt;\n\n&lt;body&gt;\n\n  &lt;p&gt;Clase 1 del TC&lt;/p&gt;\n  \n&lt;/body&gt;\n&lt;/html&gt;\nEn el código aparecen varias etiquetas HTML, y cada una tiene una etiqueta de apertura y una etiqueta de cierre (por ejemplo, &lt;p&gt; y &lt;/p&gt;).\nEstas etiquetas delimitan y organizan el contenido del documento:\n- &lt;head&gt; agrupa la información del documento,\n- &lt;body&gt; contiene lo que verá el usuario,\n- &lt;p&gt; define un párrafo.\nLa función de las etiquetas es indicar al navegador qué es cada parte del documento y cómo debe interpretarla.\n\n\nHead\nSe corresponde con la cabecera de la pestaña, principalmente solo se modifica el logotipo y el contenido de esta.\nTambién se utiliza para almacenar los metadatos de la web, así como scripts de JavaScript y hojas de estilo de CSS.\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\n  &lt;title&gt; Web del TC &lt;/title&gt;\n\n&lt;/head&gt;\n\n&lt;body&gt;\n\n  &lt;p&gt;Clase 1 del TC&lt;/p&gt;\n  \n&lt;/body&gt;\n&lt;/html&gt;\n\n\nBody\nSe corresponde con todo el contenido de la página dentro podemos utilizar multitud de etiquetas, acontinuación expondremos las más importantes.\nHasta el momento hemos trabajado únicamente con etiquietas invividuales, pero pronto veremos como podemos juntar varias etiquetas simples para obtener estructuras más complejas como tablas o formularios.\nTodo el código mostrado a partir de ahora se asume que esta correctamente ubicado dentro de una etiqueta body\n\n&lt;p&gt; Paragraph\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;p&gt;\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;/p&gt;\n\n\n&lt;br&gt; Break Line\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\nullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;p&gt;\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\n  &lt;br&gt;&lt;/br&gt;\n  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n&lt;/p&gt;\n\n\n&lt;ul&gt; Unordered list\n\nFrancisco de Quevedo\nLope de Vega\nGóngora\n\n&lt;ul&gt;\n  &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n  &lt;li&gt;Lope de Vega&lt;/li&gt;\n  &lt;li&gt;Góngora&lt;/li&gt;\n&lt;/ul&gt;\n\n\n&lt;ol&gt; Ordered list\n\nRecepción\nDiscurso del Rector\nDespedida\n\n&lt;ol&gt;\n  &lt;li&gt;Recepción &lt;/li&gt;\n  &lt;li&gt;Discruso del Rector&lt;/li&gt;\n  &lt;li&gt;Despedida&lt;/li&gt;\n&lt;/ol&gt;\n\n\n&lt;h#&gt; Headings\n&lt;h1&gt;Título 1&lt;/h1&gt;\n&lt;h2&gt;Título 2&lt;/h2&gt;\n&lt;h3&gt;Título 3&lt;/h3&gt;\n&lt;h4&gt;Título 4&lt;/h4&gt;\n&lt;h5&gt;Título 5&lt;/h5&gt;\n&lt;h6&gt;Título 6&lt;/h6&gt;\n\n\n&lt;div&gt; Divisor y &lt;span&gt; Span\nEtiquetas contenedores, utilizadas para agrupar otras etiquetas, no presentan ningún efecto visible intrínsico, salvo que tras utilizar &lt;div&gt; se produce un salto de línea. Por lo que utilizaremos &lt;div&gt; para agrupar grandes grupos de etiquetas y &lt;span&gt; para fragementos más pequeños\n\n&lt;div&gt;\n&lt;div&gt;\n  &lt;h2&gt;Capítulo 2 &lt;/h2&gt;\n  &lt;p&gt;\n    Mio Cid Ruy Díaz por Burgos entró,&lt;br&gt;&lt;/br&gt;\n    en su conpaña sessaenta pendones.&lt;br&gt;&lt;/br&gt;\n    Exiénlo ver mugieres e varones,&lt;br&gt;&lt;/br&gt;\n    burgeses e burgesas por las finiestras son,&lt;br&gt;&lt;/br&gt;\n    plorando de los ojos, tanto avién el dolor,&lt;br&gt;&lt;/br&gt;\n    de las sus bocas todos dizían una razón:&lt;br&gt;&lt;/br&gt;\n    — ¡Dios, qué buen vassallo, si oviesse buen señor!—\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n&lt;strong&gt; Strong, &lt;i&gt; Italic\nNegrita Itálica Negrita e Itálica\n&lt;strong&gt;Negrita&lt;/strong&gt;\n&lt;i&gt;Itálica&lt;/i&gt;\n&lt;strong&gt;&lt;i&gt; Negrita e Itálica&lt;/i&gt;&lt;/strong&gt;\n\n\nComentario\nEtiqueta invisible\n&lt;p&gt;Etiqueta invisible&lt;/p&gt;\n\n&lt;!-- Soy un comenario --&gt;\n\n\nTablas\n\n\n\n\nProducto\n\n\nCantidad\n\n\nPrecio (€)\n\n\n\n\n\n\nManzanas\n\n\n10\n\n\n3,50\n\n\n\n\nNaranjas\n\n\n8\n\n\n4,00\n\n\n\n\nPlátanos\n\n\n6\n\n\n2,80\n\n\n\n\n\n\nTotal\n\n\n24\n\n\n10,30\n\n\n\n\n&lt;table&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Producto&lt;/th&gt;\n      &lt;th&gt;Cantidad&lt;/th&gt;\n      &lt;th&gt;Precio (€)&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Manzanas&lt;/td&gt;\n      &lt;td&gt;10&lt;/td&gt;\n      &lt;td&gt;3,50&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Naranjas&lt;/td&gt;\n      &lt;td&gt;8&lt;/td&gt;\n      &lt;td&gt;4,00&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Plátanos&lt;/td&gt;\n      &lt;td&gt;6&lt;/td&gt;\n      &lt;td&gt;2,80&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Total&lt;/td&gt;\n      &lt;td&gt;24&lt;/td&gt;\n      &lt;td&gt;10,30&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;\n\n\n&lt;a&gt; Link\nHyperloopUPV\n&lt;!-- ¿Qué pasa con la URL --&gt;\n&lt;a&gt;Hyperloop UPV&lt;/a&gt;\n\nPropiedades HTML\nLas etiquetas o elementos html disponen de atributos que nos permiten modificar su comportamiento interno.\nEn el caso de las etiquetas &lt;a&gt; debemos de especificar en los atributos la referncia en cuestión\n  &lt;a href=\"https://hyperloopupv.com/\"&gt; HyperloopUPV &lt;/a&gt;\n\n\n\n&lt;img&gt; Image\n\n\n\n“Plaza de la Reina”\n\n\n&lt;img src=\"../pr.jpg\" alt=\"Plaza con una fuente en el centro alrdedor casetas y fincas\"&gt;\n\n\n&lt;form&gt; Forms\nAmpliamente utilizados en HTML, trabajan sobre la etiqueta &lt;input&gt; la cual tiene muchos tipos.\n\n&lt;input type=\"text\"&gt;\n\nNombre: \n\n&lt;form&gt;\n\n  &lt;label for=\"first-name\"&gt;Nombre:&lt;/label&gt;\n\n  &lt;input type=\"text\" name=\"first-name\"/&gt;\n&lt;/form&gt;\n\n\n&lt;input type=\"number\"&gt;\n\nEdad: \n\n&lt;form&gt;\n\n  &lt;label for=\"age\"&gt;Edad:&lt;/label&gt;\n\n  &lt;input type=\"number\" name=\"age\" /&gt;\n&lt;/form&gt;\n\n\n&lt;input type=\"radio\"&gt;\n\nSubsistema:   Software   Firmware \n\n&lt;form&gt;\n\n  &lt;label for=\"sub\"&gt;Subsistema: &lt;/label&gt;&lt;br /&gt;\n  &lt;input type=\"radio\" name=\"sub\" value=\"software\" /&gt; Software &lt;br /&gt;\n  &lt;input type=\"radio\" name=\"sub\" value=\"firmware\" /&gt; Firmware &lt;br /&gt;\n\n&lt;/form&gt;\n\n\n&lt;input type=\"submit\"&gt;\n\nNombre:  \n\n\n&lt;form&gt;\n\n  &lt;label for=\"first-name\"&gt;Nombre:&lt;/label&gt;\n  &lt;input type=\"text\" name=\"first-name\"/&gt;\n\n  &lt;br/&gt;\n\n  &lt;input type=\"submit\"/&gt;\n&lt;/form&gt;\n\n\n\n&lt;button&gt; Button\nPor ahora no los utilizaremos, pero es importante saber que existen\n\nSuscribirse\n\n&lt;button&gt;Suscribirse&lt;/button&gt;",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "HTML"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/html.html#primer-repo-de-git",
-    "href": "pages/Bloque1/html.html#primer-repo-de-git",
-    "title": "HTML",
-    "section": "Primer repo de Git",
-    "text": "Primer repo de Git\n\nIniciar sesión en cuenta de GitHub\nBarra superior derecha, Símbolo + &gt; New Repo\nRepository Name\nDescription of the repo\nVisibility\nAdd README\nCrear repositorio\n\n\n\nDesde la ventana del repositorio creado\nCode &lt;&gt; &gt; Clone &gt; HTTPS &gt; Copiar URL\nDesde VScode\nClonar repositorio (si no aparece F1, paleta de comandos Clonar Repositorio)\nPegar la URL del repo\nPresionar intro (equivalente a git clone)\n\n\n\nRealizar cambios\nDesde la barra derecha seleccionar menú de Git (3 nodos interconectados por dos aristas)\nAgregar presionando el + los archivos a la staging area (equivalente a git add &lt;file&gt;)\nEscribir mensaje de commit y presionar botón de confirmación (equivalente a git commit)\n\n\nUna vez se hayan realizados todos los commits deseados presionar la rueda de sincronización en la barra de estado. Este último cambio es equivalente a ejecutar git pull y git push.\npush sube los cambios al repositorio remoto pull actualiza los cambios de repositorio remoto por el local",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "HTML"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/ehtml.html#estructura-básica-de-las-páginas-web",
-    "href": "pages/Bloque1/ehtml.html#estructura-básica-de-las-páginas-web",
-    "title": "HTML",
-    "section": "Estructura básica de las páginas web",
-    "text": "Estructura básica de las páginas web\n¿Qué es una página web?\nUna página web es un documento digital accesible desde un navegador, compuesto por HTML, CSS y, cuando es necesario, JavaScript. Representa la unidad básica de contenido o interacción dentro de un sitio web y puede integrar tanto información estática como elementos dinámicos."
-  },
-  {
-    "objectID": "pages/Bloque1/ehtml.html#html5",
-    "href": "pages/Bloque1/ehtml.html#html5",
-    "title": "HTML",
-    "section": "HTML5",
-    "text": "HTML5\n¿Qué es HTML?\nHTML es un lenguaje de marcas que permite definir la estructura y el contenido de un documento para la web. Mediante un conjunto de etiquetas, el desarrollador describe elementos como textos, imágenes, enlaces o formularios, indicando su función dentro de la página. Es la base sobre la que posteriormente se aplican estilos (CSS) y comportamientos dinámicos (JavaScript)."
-  },
-  {
-    "objectID": "pages/Bloque1/ehtml.html#primer-repo-de-git",
-    "href": "pages/Bloque1/ehtml.html#primer-repo-de-git",
-    "title": "HTML",
-    "section": "Primer repo de Git",
-    "text": "Primer repo de Git\n\nIniciar sesión en cuenta de GitHub\nBarra superior derecha, Símbolo + &gt; New Repo\nRepository Name\nDescription of the repo\nVisibility\nAdd README\nCrear repositorio"
-  },
-  {
-    "objectID": "pages/Bloque1/t2a.html",
-    "href": "pages/Bloque1/t2a.html",
-    "title": "TA2: Mi CV II",
-    "section": "",
-    "text": "En la tarea previa definimos nuestra identidad digital, ahora es un buen momento dándole un toque personal con ayuda de CSS.\nSi no se realizó la T1A puede utilizar el CV de Antonio Machado como base sobre la que trabajar. (Click derecho guadrar enlace como)\nImportante: la hoja de estilos debe ser definida como un archivo externo.\nEl objetivo de esta tarea es evaluar, las habilidades de diseño y de investigación, por lo que no hay ningún ejemplo al que imitar. Siguiendo ese objetivo se le recomienda al alumno que investigue y descubrá el máximo número de propiedades CSS.",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "TA2: Mi CV II"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/bloque1.html",
-    "href": "pages/Bloque1/bloque1.html",
-    "title": "Bloque I Introducción",
-    "section": "",
-    "text": "El objetivo del bloque 1 es sentar la base para la realización del curso, aprendiendo las competencias mínimas para realizar el curso.\nEn este bloque se hará una introducción: las herramientas de trabajo, el lenguaje de marcado HTML que permite crear páginas web estáticas y el lenguaje de programación de CSS que nos permite formatear webs previamente construidas.\nEste bloque se compone de 3 semanas, 2 tareas de clase y dos tareas voluntarias.",
-    "crumbs": [
-      "Bloque I Introducción"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/bloque1.html#contenido",
-    "href": "pages/Bloque1/bloque1.html#contenido",
-    "title": "Bloque I Introducción",
-    "section": "Contenido",
-    "text": "Contenido\n\n\n\n\n\n\n\n\n\n\n\n\nSemana\nFecha\nContenido\nContenido de la clase\nTarea Clase\nMaterial Extra\nTarea Extra\n\n\n\n\n0\n21/11/2025\nIntroducción\nPresentación TC, VSCode, Git, LiveShare y GitHub\n-\n-\n-\n\n\n1\n28/11/2025\nHTML\nEstructura básica, links, listas, tablas, form, img, div, span\nWeb HL I\nEtiquetas: HTML5, video, iframe\nMi porfolio I\n\n\n2\n05/12/2025\nCSS\nEstilos básicos, clases, id, archivos externos\nWeb HL II\nSelectores y Pseudoclases\nMi porfolio II",
-    "crumbs": [
-      "Bloque I Introducción"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/bloque1.html#material",
-    "href": "pages/Bloque1/bloque1.html#material",
-    "title": "Bloque I Introducción",
-    "section": "Material",
-    "text": "Material\n\nMDN (Mozilla Developer Network), HTML y CSS\nW3Schools HTML y CSS\nVisual Studio Code Manual VSCode\nCSS tricks CSS Avanzado",
-    "crumbs": [
-      "Bloque I Introducción"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/t1a.html",
-    "href": "pages/Bloque1/t1a.html",
-    "title": "TA1: Mi CV I",
-    "section": "",
-    "text": "A día de hoy es muy importante tener una imagen digital, por ello la tarea extra consite en crearte tu propia página web básica usando html.\nPuedes usar el CV de Antonio Machado como referencia.\nBase: Ejemplo",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 1",
-      "TA1: Mi CV I"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/MAcss.html",
-    "href": "pages/Bloque1/MAcss.html",
-    "title": "MA: Selectores y Pseudoselectores",
-    "section": "",
-    "text": "Además del id y las class, existen más selectores que son ampliamente utilizados en la programación web. El siguiente video los explica muy detallados y sirve como repaso para lo que se ha visto esta semana de CSS. El vídeo está en Inglés y dura 20 minutos.",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "MA: Selectores y Pseudoselectores"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/css_p.html#problemas-de-html",
-    "href": "pages/Bloque1/css_p.html#problemas-de-html",
-    "title": "CSS",
-    "section": "Problemas de HTML",
-    "text": "Problemas de HTML\nHasta el momento hemos trabajado con HTML, que a pesar de ser muy práctico para la creación de la estructura interna de la web, presenta ciertas limitaciones a la hora de modificar el formato de la web, para ello se introduce CSS, una herramienta que nos va a permitir modificar el formato cómodamente."
-  },
-  {
-    "objectID": "pages/Bloque1/css_p.html#formato-con-css",
-    "href": "pages/Bloque1/css_p.html#formato-con-css",
-    "title": "CSS",
-    "section": "Formato con CSS",
-    "text": "Formato con CSS\nAtributo style\nSupongamos que tenemos el siguiente elemento\n&lt;p&gt; Hola Mundo&lt;p&gt;. Por ahora el texto se mostrará en color negro, el color predeterminado de HTML para las etiquetas &lt;p&gt;\n\n\nHola mundo"
-  },
-  {
-    "objectID": "pages/Bloque1/css_p.html#etiqueta-meta",
-    "href": "pages/Bloque1/css_p.html#etiqueta-meta",
-    "title": "CSS",
-    "section": "Etiqueta <meta>",
-    "text": "Etiqueta &lt;meta&gt;\nLas etiquetas &lt;meta&gt; en HTML sirven para proporcionar metadatos sobre la página web. Estos metadatos no se muestran al usuario, pero son importantes para navegadores, buscadores, redes sociales y dispositivos.\n&lt;head&gt;\n    &lt;meta charset=\"UTF-8\"&gt; &lt;!-- Selecciona el conjunto de caracteres --&gt;\n    &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;!-- \"Hace la web Responsive\" --&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;"
-  },
-  {
-    "objectID": "pages/Bloque1/css_p.html#git-github",
-    "href": "pages/Bloque1/css_p.html#git-github",
-    "title": "CSS",
-    "section": "Git & GitHub:",
-    "text": "Git & GitHub:\nLos comandos de git nos permiten utilizar la cli para gestionar nuestro repositorio\ngit init # Incializa repositorio (= crear repo con GitHub)\ngit clone &lt;url-repo&gt; \n\ngit add &lt;files&gt; # Añade los archivos a la stagging area\ngit commit -m \"&lt;mensaje de commit&gt;\" # commit\n\ngit push # push\ngit pull # pull\n\ngit status # estado actual del repo\ngit log # historia reciente del log con poco detalle de profundidad\n\ngit diff &lt;file&gt; # muestra la diferencia entre la versión modificada ente un archivo y otro"
-  },
-  {
-    "objectID": "pages/Bloque1/css.html",
-    "href": "pages/Bloque1/css.html",
-    "title": "CSS",
-    "section": "",
-    "text": "Contenido",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "CSS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/css.html#problemas-de-html",
-    "href": "pages/Bloque1/css.html#problemas-de-html",
-    "title": "CSS",
-    "section": "Problemas de HTML",
-    "text": "Problemas de HTML\nHasta el momento hemos trabajado con HTML, que a pesar de ser muy práctico para la creación de la estructura interna de la web, presenta ciertas limitaciones a la hora de modificar el formato de la web, para ello se introduce CSS, una herramienta que nos va a permitir modificar el formato cómodamente.",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "CSS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/css.html#formato-con-css",
-    "href": "pages/Bloque1/css.html#formato-con-css",
-    "title": "CSS",
-    "section": "Formato con CSS",
-    "text": "Formato con CSS\n\nAtributo style\nSupongamos que tenemos el siguiente elemento\n&lt;p&gt; Hola Mundo&lt;p&gt;. Por ahora el texto se mostrará en color negro, el color predeterminado de HTML para las etiquetas &lt;p&gt;\n\n\nHola mundo\n\n\nSi se desea modificar el formato intrínseco de esta etiqueta &lt;p&gt; debemos incluir la propiedad style que, como su nombre indica nos permitirá modificar su estilo. Dentro de este atributo se ha de insertar propiedad CSS (no confundir con los atributos html). La propiedad CSS especifica que aspecto visual del contenido de la etiqueta. Por ejemplo, si se desea modificar el color de la letra se debe de utilizar la propiedad color (nótese que no lleva u).\n&lt;p style=\"color:red\"&gt;Hola Mundo&lt;/p&gt;\n\n&lt;!-- Equivalente en Hexadecimal --&gt;\n\n&lt;p style=\"color:#ff0000\"&gt;Hola Mundo&lt;/p&gt;\n\n\nHola Mundo\n\n\nSí deseamos modificar más de una propiedad CSS deberemos de serparalas dentro de la etiqueta con un punto y coma\n&lt;p style=\"color:#ff0000; font-size: 44px\"&gt;Hola Mundo&lt;/p&gt;\n\n\nHola Mundo\n\n\n\nProblemas del atributo style\nEl atributo style resulta útil para formatear una etiqueta individualmente, pero resulta tedioso y repetitivo para más de una etiqueta. Observe el siguiente ejemplo\n&lt;p&gt;Autores del culteranismo marcados en rojo&lt;p&gt;\n\n&lt;ul&gt;\n    &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n    &lt;li style=\"color:red; text-decoration: underline; font-size:30px;\"&gt;Luis de Góngora&lt;/li&gt;\n    &lt;li&gt;Baltasar Gracián&lt;/li&gt;\n    &lt;li style=\"color:red; text-decoration: underline; font-size:30px;\"&gt;Pedro Soto de Rojas&lt;/li&gt;\n    &lt;li&gt;Tirso de Molina&lt;/li&gt;\n    &lt;li&gt;Calderón de la Barca&lt;/li&gt;\n&lt;/ul&gt;\n\n\nAutores del culteranismo marcados en rojo\n\n\n\nFrancisco de Quevedo\n\n\nLuis de Góngora\n\n\nBaltasar Gracián\n\n\nPedro Soto de Rojas\n\n\nTirso de Molina\n\n\nCalderón de la Barca\n\n\n\nProblemas:\n\nRepetición de mucho código\nAlta posibilidad error\nPoca escalabilidad\n\nSi añadimos por ejempo a Luis Carrillo y Sotomayor (autor culteranista) hay que volver a repetir todo el atributo\nSi deseasemos cambiar el color de rojo a verde deberemos modificar cada uno de los atributos\n\n\n\n\n\nClases e ID\n\nClases\nLa solución a este problema son las clases que nos permiten identificar aquellos componentes con características de formato similares. Se agregan como atributos a cada etiqueta\n&lt;p&gt;Autores del culteranismo marcados en rojo&lt;p&gt; &lt;!--En este caso no se marcan en rojo--&gt;\n\n&lt;ul&gt;\n    &lt;li&gt;Francisco de Quevedo&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Luis de Góngora&lt;/li&gt;\n    &lt;li&gt;Baltasar Gracián&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Pedro Soto de Rojas&lt;/li&gt;\n    &lt;li&gt;Tirso de Molina&lt;/li&gt;\n    &lt;li&gt;Calderón de la Barca&lt;/li&gt;\n&lt;/ul&gt;\n\nEtiqueta &lt;style&gt;\nAhora para marcar en rojo los culterantistas se ha de indicar el formato de todos en la class culteranista, para ello nos definiremos una hoja de estilo que será común para todo el documento. La hoja de estilos se define en el &lt;head&gt; de la siguiente forma:\n&lt;head&gt;\n&lt;!-- Fragemento HTML --&gt;\n&lt;style&gt;\n  /*Fragmento CSS*/\n  .culteranistas{  /*Nótese el punto*/\n    color: red;\n    text-size: 40px;\n    background-color: blue;\n    text-decoration: underline;  /*Este último ';' no es obligatorio como tal, pero es recomendable, en HTML3 y CSS2 daba error si se incluía*/\n  }\n&lt;/style&gt; \n&lt;!--Fin de la etiqueta Style, seguimos con html--&gt;\n&lt;/head&gt;\nAhora se visualizará correctamente, además se añadirá el fondo azul\n\n\nComposición de clases\nSuponga que tenemos dos clases, una primera clase que modifica el tipo de letra a monospace que aplicaremos a los autores culteranistas y una segunda que modifica el grosor de la letra que se aplicará sobre los autores de lírica.\n&lt;head&gt;&lt;style&gt;\n  .culteranista {\n    font-family: monospace;\n  }\n  .lirica {\n    font-weight: bold;\n  }\n  .autores {\n    list-style: square;\n  }\n&lt;/style&gt;&lt;/head&gt;\n\n&lt;body&gt;\n  &lt;ul class=\"autores\"&gt;\n    &lt;li class=\"lirica\"&gt;Fray Luis de León&lt;/li&gt;\n    &lt;li class=\"culteranista\"&gt;Hortensio Félix de Paravicino&lt;/li&gt;\n    &lt;li class=\"culteranista lirica\"&gt;Lope de Vega&lt;/li&gt;\n    &lt;li class=\"lirica\"&gt;San Juan de la Cruz&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/body&gt;\n\n\n\nFray Luis de León\n\n\nHortensio Félix de Paravicino\n\n\nLope de Vega\n\n\nSan Juan de la Cruz\n\n\n\n\n\n\nID\nLos ID son como las clases pero solo se pueden utlizar una vez por sitio web. Es útil para cosas que no se deben repetir más de una vez por sitio web.\n&lt;style&gt;\n#principal{\n  text-align: center\n  color:blue\n}\n&lt;/style&gt;\n&lt;!--[...]--&gt;\n&lt;div id=\"principal\"&gt;\n  &lt;h4&gt;Teatro Romántico&gt;&lt;/h4&gt;\n  &lt;p&gt;El retablo romántico se caracteriza por exaltar la libertad creadora,\n    la expresión intensa de los sentimientos individuales, el gusto por lo\n    misterioso y lo sublime, y la reivindicación de la imaginación frente a\n    las reglas clásicas.&lt;/p&gt;\n&lt;/div&gt;\n\n\nTeatro Romántico\n\n\nEl retablo romántico se caracteriza por exaltar la libertad creadora, la expresión intensa de los sentimientos individuales, el gusto por lo misterioso y lo sublime, y la reivindicación de la imaginación frente a las reglas clásicas.\n\n\n\n\n\nPropiedades CSS\n\nborder y border-radius\nLa propiedad border es una propiedad abreviada (shorthand) que en realidad combina tres propiedades más pequeñas:\n\nborder-width → grosor del borde\n\nborder-style → estilo del borde (solid, dashed, dotted, etc.)\n\nborder-color → color del borde\n\nPor ejemplo, estas dos definiciones son equivalentes:\n/* Forma abreviada */\n.caja {\n  border: 2px solid red;\n}\n\n/* Forma “desdoblada” en 3 mini propiedades */\n.caja-desdoblada {\n  border-width: 2px;\n  border-style: solid;\n  border-color: red;\n}\n Lope de Vega\n\n\nborder-top, border-right, border-bottom, border-left\nCSS permite aplicar bordes distintos en cada lado. Cada uno funciona igual que border pero aplicado a un solo lado:\nborder-top\nborder-right\nborder-bottom\nborder-left\n.caja-bordes {\n  border-top: 3px solid red;\n  border-right: 2px dashed blue;\n  border-bottom: 4px dotted green;\n  border-left: 5px double orange;\n}\nTambién pueden desdoblarse:\n.caja-top-desdoblado {\n  border-top-width: 4px;\n  border-top-style: solid;\n  border-top-color: purple;\n}\n\n\nmargin y padding\nLas propiedades margin y padding controlan el espacio alrededor de los elementos, pero cada una actúa en una zona distinta:\n\nmargin → espacio externo, fuera del borde del elemento\n\npadding → espacio interno, entre el contenido y el borde\n\nVisualmente:\n\n\n \n\n\n\n CONTENT\n\n\n\n\n&lt;div style=\"background:#f0f0f0; padding:20px;\"&gt;\n &lt;!-- MARGIN (gris claro alrededor del borde) --&gt;\n   &lt;!-- BORDER --&gt;\n   &lt;div style=\"border:3px solid black\"&gt;\n   &lt;!-- PADDING (espacio interno) --&gt;\n   &lt;div style=\"background:#d0ffd0; padding:15px;\"&gt;\n   &lt;!-- CONTENT --&gt;\n     &lt;span style=\"background-color:white\"&gt;CONTENT&lt;/span&gt;\n   &lt;/div&gt;\n &lt;/div&gt;\n&lt;/div&gt;\n\nRegla Trouble\nCuando margin o padding usan 4 valores, el orden siempre es el mismo:\ntop, right, bottom, left\nPara recordarlo fácilmente se utiliza la regla mnemotécnica Trouble:\n\nT → Top (arriba)\n\nR → Right (derecha)\n\nB → Bottom (abajo)\n\nL → Left (izquierda)\n\nEs decir:\nmargin:    top   right   bottom   left;\npadding:   top   right   bottom   left;\n\n\n\n\n\n\nTipTruco para los ingenieros: La regla de la mano derecha\n\n\n\nEl orden de los margin y de los padding siempre es en sentido horario.\nPor lo que podemos utilizar la regla de la mano derecha de la inducción electro magnética asumiendo que el vector intensidad apunta hacia la pantalla\n\n\n\n\n\n\nArchivos externos CSS\nIncluir en la cabecerá el CSS presenta ventajas como tener la página web en un único archivo. Sin embargo en la práctica normalmente trabajaremos con más de 2 archivos por lo que incluir uno más o uno menos no marca la diferencia. Por lo que podemos separar el css en un archivo externo .css. De esta forma podremos reutilizar las hojas de estilos.\n&lt;head&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "CSS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/css.html#etiqueta-meta",
-    "href": "pages/Bloque1/css.html#etiqueta-meta",
-    "title": "CSS",
-    "section": "Etiqueta <meta>",
-    "text": "Etiqueta &lt;meta&gt;\nLas etiquetas &lt;meta&gt; en HTML sirven para proporcionar metadatos sobre la página web. Estos metadatos no se muestran al usuario, pero son importantes para navegadores, buscadores, redes sociales y dispositivos.\n&lt;head&gt;\n    &lt;meta charset=\"UTF-8\"&gt; &lt;!-- Selecciona el conjunto de caracteres --&gt;\n    &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;!-- \"Hace la web Responsive\" --&gt;\n    &lt;title&gt;Mi Página&lt;/title&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n&lt;/head&gt;",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "CSS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/css.html#git-github",
-    "href": "pages/Bloque1/css.html#git-github",
-    "title": "CSS",
-    "section": "Git & GitHub:",
-    "text": "Git & GitHub:\nLos comandos de git nos permiten utilizar la cli para gestionar nuestro repositorio\ngit init # Incializa repositorio (= crear repo con GitHub)\ngit clone &lt;url-repo&gt; \n\ngit add &lt;files&gt; # Añade los archivos a la stagging area\ngit commit -m \"&lt;mensaje de commit&gt;\" # commit\n\ngit push # push\ngit pull # pull\n\ngit status # estado actual del repo\ngit log # historia reciente del log con poco detalle de profundidad\n\ngit diff &lt;file&gt; # muestra la diferencia entre la versión modificada ente un archivo y otro",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "CSS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque1/t2.html",
-    "href": "pages/Bloque1/t2.html",
-    "title": "T2: Web de HL II",
-    "section": "",
-    "text": "El objetivo de esta tarea, es poner en práctica lo aprendido en clase para ello vamos a formatear la web de nuestro equipo de Hyperloop, (tarea de la semana pasada).\nSe debe formatear para que quede como está Web, cuanto más se parezca mejor.\nNotas:\nLa hoja de estilos debe de estar incluida en el la etiqueta &lt;style&gt; del &lt;head&gt;.\nPara conseguir que los bordes de la table, td, tr… colapsen (que solo haya un borde y no dos) se debe utilizar la propiedad border-collapse.\nSi no se realizó la T1, puede utilizar este archivo html como base (click derechao guardar enlace como).",
-    "crumbs": [
-      "Bloque I Introducción",
-      "Semana 2",
-      "T2: Web de HL II"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/jsI-reveal.html#introducción-a-js",
-    "href": "pages/Bloque2/jsI-reveal.html#introducción-a-js",
-    "title": "Introducción a JS",
-    "section": "Introducción a JS",
-    "text": "Introducción a JS\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:"
-  },
-  {
-    "objectID": "pages/Bloque2/jsI-reveal.html#programación-en-js",
-    "href": "pages/Bloque2/jsI-reveal.html#programación-en-js",
-    "title": "Introducción a JS",
-    "section": "Programación en JS",
-    "text": "Programación en JS\nCaracterísticas generales de JS\n\nTipado dinámico\n\nTipado débil Coerción Implicita\n\nMultiparadigma\n\nÁmbito léxico (estático)\n\nModelo basado en prototipos (polimorfismo de inclusión por composición)\n\nFunciones de primera clase\n\nFunciones de orden superior"
-  },
-  {
-    "objectID": "pages/Bloque2/jsI.html",
-    "href": "pages/Bloque2/jsI.html",
-    "title": "Introducción a JS",
-    "section": "",
-    "text": "Contenido"
-  },
-  {
-    "objectID": "pages/Bloque2/jsI.html#introducción-a-js",
-    "href": "pages/Bloque2/jsI.html#introducción-a-js",
-    "title": "Introducción a JS",
-    "section": "Introducción a JS",
-    "text": "Introducción a JS\n\n¿Qué es JavaScript?\n\nEs el lenguaje de programación del navegador.\nCreado en 1995 por Brendan Eich\nPermite crear comportamientos dinámicos: responder a clics, validar formularios, mostrar u ocultar elementos, generar contenido nuevo, etc.\nSe ejecuta directamente en el navegador, sin necesidad de instalación.\nJunto con HTML y CSS forma el trinomio esencial del desarrollo web\n\nLa siguiente tabla recuerda las difrencias entre HTML, CSS y JS:\n\n\n\nCapa\nLenguaje\nFunción principal\n\n\n\n\nContenido\nHTML\nEstructura del documento\n\n\nPresentación\nCSS\nApariencia y diseño\n\n\nComportamiento\nJavaScript\nInteractividad y lógica"
-  },
-  {
-    "objectID": "pages/Bloque2/jsI.html#programación-en-js",
-    "href": "pages/Bloque2/jsI.html#programación-en-js",
-    "title": "Introducción a JS",
-    "section": "Programación en JS",
-    "text": "Programación en JS\n\nCaracterísticas generales de JS\n\nTipado dinámico\n\nTipado débil Coerción Implicita\n\nMultiparadigma\n\nÁmbito léxico (estático)\n\nModelo basado en prototipos (polimorfismo de inclusión por composición)\n\nFunciones de primera clase\n\nFunciones de orden superior\n\n\nClosures / Copia viva\nReflexión (Reflect, Proxy, descriptores)\n\nMetaprogramación\nSin Polimorfismo Ad-hoc de sobrecarga, ni Polimorfismo universal genérico\n\n\nEjecución single-threaded\n\nAsincronía no bloqueante\n\nPromises / async–await\n\nGarbage collection\nInteroperabilidad con JSON\n\n\n\nTipos\n\nPrimitivos\n\nstring — cadenas de texto\n\nnumber — números (enteros y decimales)\nboolean — verdadero o falso\n\nnull — ausencia intencional de valor\n\nundefined — valor no inicializado\n\nsymbol\nbigint\n\n\n\nTipos de referencia\n\nObject\n\nArray\n\nFunc tion\n\nMap / Set\n\nDate\n\n\n\n\nCaracterísticas del sistema de tipos\n\nTipado dinámico\n\nTipado débil\n\nLos primitivos se copian por valor\n\nLos objetos se copian por referencia\n\n\n\nVariables\n\nlet\n\nTipado: dinámico\nAlcance: estático\nMutables\nHoisting\nNo globales\nShadowing permitido\n\n\n\nconst\nNo son verdaderamente constantes\n\nTipado: dinámico\nAlcance: estático\nInmutables en la referencia (no permiten reasignación)\nHoisting\nNo globales\nShadowing permitido\n\n\n\nvar\nNo se usa\n\nTipado: dinámico\nAlcance: de función (no de bloque)\nMutables\nHoisting (inicializadas como undefined)\nGlobales si se declaran en el ámbito global (propiedad de window/globalThis)\nShadowing permitido, pero con reglas inconsistentes (puede causar illegal shadowing en combinación con let/const)"
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html",
-    "href": "pages/Bloque2/intensivo.html",
-    "title": "Repaso Intensivo JS",
-    "section": "",
-    "text": "Contenido\nRepaso intensivo de JavaScript, tiene como objetivo dar una introducción del lenguaje, a usuarios que ya tengan experiencia previa programando.\nDescargar archivo de código (click derecho guardar enlace como)",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#variables-y-tipos-básicos",
-    "href": "pages/Bloque2/intensivo.html#variables-y-tipos-básicos",
-    "title": "Repaso Intensivo JS",
-    "section": "Variables y tipos básicos",
-    "text": "Variables y tipos básicos\n\nDeclaración de variables\nEn JavaScript moderno se utilizan let y const (evitar var).\n\nlet: permite reasignación\nconst: no permite reasignación\nconst NO significa inmutable\nJavaScript es de tipado dinámico\nEl tipo depende del valor, no de la variable\n\nTipos primitivos:\n\nstring\nnumber\nboolean\nnull\nundefined\n\nlet edad = 12;        // number\nlet altura = 1.8;     // number\nlet nombre = \"Javier\"; // string\nlet casado = false;   // boolean\n\nlet ordenador = null; // ausencia intencionada de valor\nlet direccion;        // undefined\n\n\nUso de const\nconst dni = \"1235678L\";\ndni = \"23\"; // Error\n\nconst no significa inmutable\nconst dni = \"12345678L\";\ndni = \"87654321X\"; // Error\nPero:\nconst arr = [1, 2, 3];\narr.push(4); // permitido\n\n\n\nTipado dinámico\n\nJavaScript es de tipado dinámico\nEl tipo depende del valor, no de la variable\nUna variable puede cambiar de tipo durante la ejecución\n\nlet x = \"hola\";\nx = 42;      // válido\nx = true;    // válido\nEste comportamiento se conoce como shadowing o cambio dinámico de tipo. En el ejemplo anterior solo existe una variable X cuyo tipo pasa de Number a boolean",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#null-vs-undefined",
-    "href": "pages/Bloque2/intensivo.html#null-vs-undefined",
-    "title": "Repaso Intensivo JS",
-    "section": "null vs undefined",
-    "text": "null vs undefined\n\nundefined: variable declarada pero sin valor\nnull: ausencia intencionada de valor\n\nJavaScript distingue entre:\n\n“todavía no hay valor” y “no hay valor”\n\nconsole.log(ordenador); // null\nconsole.log(direccion); // undefined",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#aritmética-y-operadores",
-    "href": "pages/Bloque2/intensivo.html#aritmética-y-operadores",
-    "title": "Repaso Intensivo JS",
-    "section": "Aritmética y operadores",
-    "text": "Aritmética y operadores\n\nOperadores aritméticos\nlet a = 12, b = 4;\n\na + b\na - b\na * b\na / b\na % b\na = a + b;\na += b;\na -= b;\na *= b;\n\nPotencias\na**b  // Power\nIncrementos:\nb--; b++;\n--b; ++b;\n\n\n\nStrings y concatenación\na = \"hola \";\nb = \"mundo\";\na + b;\n\n\nComparación\n\n== compara valor (evitar)\n=== compara valor y tipo (usar)\n\n\n\nOperadores lógicos\n\n&& AND\n|| OR\n! NOT\n\n\n\nComparaciones\n\n== compara solo valor (evitar)\n=== compara valor y tipo (usar siempre, aunque sea innecesario)\n\n5 == \"5\";   // true\n5 === \"5\";  // false\n\n\nOperadores lógicos\n\n&& AND\n|| OR\n! NOT\n\n(a &gt; 0) && (b &lt; 10)",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#estructuras-de-control",
-    "href": "pages/Bloque2/intensivo.html#estructuras-de-control",
-    "title": "Repaso Intensivo JS",
-    "section": "Estructuras de control",
-    "text": "Estructuras de control\n\nCondicionales\nif (a === b) {\n\n} else if (a &gt; b) {\n\n} else {\n\n}\n\n\nBucles\n\nwhile\nlet x = 20;\nwhile (x &lt; 50) {\n  x += 10;\n}\n\n\nfor\nfor (let i = 0; i &lt; 10; i++) {\n  // iteración\n}",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#funciones",
-    "href": "pages/Bloque2/intensivo.html#funciones",
-    "title": "Repaso Intensivo JS",
-    "section": "Funciones",
-    "text": "Funciones\n\nEncapsulan lógica reutilizable\nPueden recibir parámetros\nPueden devolver valores\nSon ciudadanos de primera clase\n\n\nFunción clásica\nfunction sumar2(num, num2 = 2) {\n  num += num2;\n  return num;\n}\nPaso de variables por valor:\nlet a = 7;\nlet b = sumar2(a, a); // 14\na; // 7\n\n\nFunciones flecha y orden superior\nconst concatenarHola = input =&gt; input + \" Hola\";\nconcatenarHola(\"sdf\");\nfunction ejecuta(fun) {\n  fun();\n}\n\nejecuta(() =&gt; { console.log(\"hola\"); });\n\n\nFunciones propias de strings\nlet a = \"jsadfsadf \";\na.trim();   // Suprimir espacios adicionales\na.split('a');    // Divide el string en un array c\na.length;\n\n\nFunciones flecha\nconst cuadrado = n =&gt; n ** 2;\nForma extendida:\nconst cuadrado = (n) =&gt; {\n  return n ** 2;\n};\n\n\nFunciones como ciudadanos de primera clase\nLas funciones pueden:\n\nAsignarse a variables\nPasarse como argumentos\nDevolverse como resultado\n\nfunction ejecutar(f) {\n  f();\n}\n\nejecutar(() =&gt; console.log(\"Hola\"));",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#arrays-base",
-    "href": "pages/Bloque2/intensivo.html#arrays-base",
-    "title": "Repaso Intensivo JS",
-    "section": "Arrays (base)",
-    "text": "Arrays (base)\n\nLista ordenada\nÍndices empiezan en 0\nPropiedad length\n\nlet cajon = [8, \"hola\", true, () =&gt; { return 7 }];\n\nAcceso\ncajon[0]  // 8\ncajon[2] = \"rino\";       // modificamos la entrada 2  \n\n\nAdiciones\ncajon.push(false);\ncajon.unshift(0);\n\n\nEliminaciones\ncajon.pop();\ncajon.shift();\ncajon.length;",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#objetos",
-    "href": "pages/Bloque2/intensivo.html#objetos",
-    "title": "Repaso Intensivo JS",
-    "section": "Objetos",
-    "text": "Objetos\nUn objeto representa una entidad mediante estructura clave–valor.\nlet gente = { pepe: 7, juanes: 8, andreas: 10, fran: [4, 2] };\n\nModificación\ngente.andreas = 32;\ngente.pepe++;\n\n\nAcceso dinámico\nlet nombre = \"pablo\";\n\ngente.nombre;      // undefined\ngente[nombre] = 2; // añade propiedad",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#referencias-vs-valores",
-    "href": "pages/Bloque2/intensivo.html#referencias-vs-valores",
-    "title": "Repaso Intensivo JS",
-    "section": "Referencias vs valores",
-    "text": "Referencias vs valores\n\nCopia por valor\nlet a = 5;\nlet b = a;\nb++;\na no cambia.\n\n\nCopia por referencia\nlet e3 = [\"juan\", \"pepe\"];\nlet d = e3;\n\nd.push(\"andrés\");\nAmbas variables apuntan al mismo array.\nconst poblacion = gente;\npoblacion[\"julio\"] = 8;\nLa copia por refencia se aplica a objetos y arrays\nlet x = [\"juan\", \"pepe\"];\nlet y = x;\n\ny.push(\"andrés\"); // Se añade en x e y pues son el mismo objeto\nAmbas variables apuntan al mismo objeto.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#spread-operator-...",
-    "href": "pages/Bloque2/intensivo.html#spread-operator-...",
-    "title": "Repaso Intensivo JS",
-    "section": "Spread operator (...)",
-    "text": "Spread operator (...)\n\nExpande arrays u objetos\nPermite copiar y combinar\nCopia superficial\n\n\nArrays\nJavier es añadido a arr2, pero no a arr.\nlet arr = [\"Alice\", \"Bob\", \"Kevin\"];\nlet arr2 = [...arr, \"Javier\"];\n\n\nObjetos\nOcurre lo mismo con los objetos\nconst sociedad = { ...poblacion, julia: 12 };",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
-    ]
-  },
-  {
-    "objectID": "pages/Bloque2/intensivo.html#funciones-de-array-js-moderno",
-    "href": "pages/Bloque2/intensivo.html#funciones-de-array-js-moderno",
-    "title": "Repaso Intensivo JS",
-    "section": "Funciones de array (JS moderno)",
-    "text": "Funciones de array (JS moderno)\nVamos a trabajar con un ejemplo completo, típico en programación funcional.\n\nDatos de partida\nlet y = [2, 4, 6, 7];\n\n\nFunción cuadrado\nDefinimos una función que, dado un número, devuelve su cuadrado:\nconst cuadrado = n =&gt; n ** 2;\nEs equivalente a:\nconst cuadrado = (n) =&gt; {\n  return n ** 2;\n};\n\n\nmap: transformar elementos\nAplicamos map para obtener un nuevo array con los cuadrados:\nconst y2 = y.map(cuadrado);\nResultado:\n[4, 16, 36, 49]\n\n\nfilter: seleccionar elementos\nDefinimos una función que comprueba si un número es par:\nconst even = n =&gt; n % 2 === 0;\nLa usamos con filter:\nconst yEven = y.filter(even);\n\n\nEncadenamiento (estilo declarativo)\nPodemos encadenar ambas operaciones:\ny\n  .map(n =&gt; n ** 2)\n  .filter(n =&gt; n % 2 === 0);\n\nEste estilo es declarativo: describimos qué queremos hacer con los datos, no cómo recorrerlos.",
-    "crumbs": [
-      "Bloque II Programación",
-      "Repaso Intensivo",
-      "Repaso Intensivo JS"
+      "Bloque III Interacción",
+      "Semana 6",
+      "MA: CSS Flex y CSS"
     ]
   },
   {

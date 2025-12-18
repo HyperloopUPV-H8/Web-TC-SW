@@ -1,0 +1,210 @@
+---
+title: "DOM"
+subtitle: "Árbol de DOM, selectores"
+author: "Javier Ribal del Río"
+date: "2025-12-19"
+date-modified: today
+affiliation: "Hyperloop UPV"
+
+format:
+  html: default
+  revealjs: 
+    history: false
+    chalkboard: true
+    output-file: dom.html
+    parallax-background-image: ../../img/fondo.png
+    parallax-background-size: "cover" 
+  pdf: default
+format-links: 
+  - pdf
+  - format: revealjs
+    text: Presentación
+    icon: file-slides
+---
+
+## ¿Qué es el DOM?
+
+El DOM (Document Object Model) es la **representación en memoria** que el navegador crea a partir del HTML.
+
+- El HTML es estático
+- El DOM es dinámico
+- JavaScript interactúa con el DOM, no con el HTML original
+
+> El DOM es la página web viva dentro del navegador.
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## El DOM como árbol
+
+El DOM tiene estructura de **árbol** (grafo):
+
+- Cada etiqueta HTML es un nodo
+- Los nodos tienen relaciones (padre, hijos, hermanos)
+
+Ejemplo:
+
+```html
+<body>
+  <h1>Título</h1>
+  <button>Click</button>
+</body>
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+Representación conceptual:
+
+```
+document
+ └─ body
+    ├─ h1
+    └─ button
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Acceso al DOM desde JavaScript
+
+El navegador nos proporciona  el objeto global `document`, que permite:
+
+- Buscar elementos
+- Leer su contenido
+- Modificar la interfaz
+
+```js
+document
+document.body
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Selectores
+
+### Por ID
+```js
+document.getElementById("count")
+document.querySelector("#count")
+```
+
+### Por etiqueta
+```js
+document.querySelector("button")
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+### Por clase
+```js
+document.querySelector(".item")
+document.querySelectorAll(".item")
+```
+
+Notas:
+- `querySelector` devuelve el **primer** elemento
+- `querySelectorAll` devuelve una **lista**
+- Usan la misma sintaxis que CSS
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+
+## Leer y modificar elementos
+
+```js
+element.textContent
+element.textContent = "Nuevo texto"
+```
+
+```js
+element.classList.add("active")
+element.classList.remove("active")
+```
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Eventos
+
+El DOM permite reaccionar a acciones del usuario mediante eventos.
+
+```js
+button.addEventListener("click", () => {
+  // código a ejecutar
+});
+```
+
+Flujo típico:
+
+```
+Usuario → Evento → JavaScript → DOM actualizado
+```
+
+
+::: {.content-visible when-format="revealjs"}
+
+---
+
+:::
+
+## Ejemplo: contador con botón
+
+### HTML
+```html
+<h1 id="count">0</h1>
+<button id="btn">Sumar 1</button>
+```
+
+### JavaScript
+```js
+let count = 0;
+
+const countEl = document.querySelector("#count");
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  count++;
+  countEl.textContent = count;
+});
+```
+
+---
+
+
+## Más ejemplos
+
+[Ej1: Show input](Ejemplos/Ej1.html)
+
+[Ej2: Par e Impar](Ejemplos/Ej2.html)
+
+[Ej3: Toggle](Ejemplos/Ej3.html)
+
+[Ej4: Creación dinámica](Ejemplos/Ej4.html)
+
+[Ej5: Validación básica](Ejemplos/Ej5.html)

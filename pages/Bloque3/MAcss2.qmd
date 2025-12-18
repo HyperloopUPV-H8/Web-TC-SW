@@ -1,0 +1,13 @@
+---
+title: "MA: CSS Flex y CSS"
+author: "Javier Ribal del Río"
+date: "2025-12-19"
+date-modified: today
+affiliation: "Hyperloop UPV"
+---
+
+Además de las propiedades estudiadas de CSS también hay algunas críticas que debido a la falta de tiempo no se han podido explicar como es el caso de `display` a continuación estos dos vídeos profundizan en los modos `flex` y `grid` formas diferentes de diseñar la estructura de la página
+
+{{< video https://www.youtube.com/watch?v=phWxA89Dy94 >}}
+
+{{< video https://www.youtube.com/watch?v=EiNiSFIPIQE >}}

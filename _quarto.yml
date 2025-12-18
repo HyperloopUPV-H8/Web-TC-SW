@@ -49,8 +49,6 @@ website:
               - pages/Bloque1/t2.qmd
               - pages/Bloque1/MAcss.qmd
               - pages/Bloque1/t2a.qmd
-
-          - text: "Próximamente..."
       - section: "Bloque II Programación"
         contents:
           - section: "Repaso Intensivo"
@@ -59,6 +57,14 @@ website:
             - pages/Bloque2/MAclases.qmd
             - pages/Bloque2/ti.qmd
       - section: "Bloque III Interacción"
+        contents:
+          - section: "Semana 6"
+            contents: 
+            - pages/Bloque3/DOM.qmd
+            - pages/Bloque3/t6.qmd
+            - pages/Bloque3/MAcss2.qmd
+          - text: "Próximamente..."
+
       - section: "Bloque IV Comunicación"
 
       - pages/rubric.qmd
