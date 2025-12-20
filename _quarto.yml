@@ -54,8 +54,10 @@ website:
           - section: "Repaso Intensivo"
             contents: 
             - pages/Bloque2/intensivo.qmd
-            - pages/Bloque2/MAclases.qmd
             - pages/Bloque2/ti.qmd
+            - pages/Bloque2/MAclases.qmd
+            - pages/Bloque2/tia.qmd
+            
       - section: "Bloque III Interacción"
         contents:
           - section: "Semana 6"
