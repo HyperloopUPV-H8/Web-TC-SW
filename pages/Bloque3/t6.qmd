@@ -24,7 +24,7 @@ El documento HTML debe:
 - Incluir, en este orden:
   1. Un elemento para mostrar **información métrica** del poema (número de estrofas y versos).
   2. Un elemento para el **título del poema**.
-  3. Un elemento para el **texto del poema**, respetando los saltos de verso.
+  3. Un elemento para el **texto del poema**, respetando los saltos de verso utilizando la etiqueta `<pre>`.
   4. Un **botón** que permita cambiar de poema.
 
 No debe utilizarse ningún *framework* ni librería externa.
