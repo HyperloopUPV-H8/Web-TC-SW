@@ -75,7 +75,6 @@ Desde el punto de vista técnico:
 
 Se debe detectar el texto del poema las siguientes **palabras clave** y aplicar el **color de fondo correspondiente**:
 
-- **luna** → fondo **negro**
 - **guardia civil** → fondo **verde militar**
 - **sangre** → fondo **granate oscuro**
 - **caballo** → fondo **color tierra**
